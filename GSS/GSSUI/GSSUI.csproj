@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08D1EE90-F327-4E3A-8A0C-68CE6E9F4169}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSSUI</RootNamespace>
+    <AssemblyName>GSSUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBUtility\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AClass\GraphicsTools.cs" />
+    <Compile Include="AClass\TaskMenu.cs" />
+    <Compile Include="AControl\AButton\AButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\AButton\ControlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\AContextMenu\AContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\AContextMenu\AContextMenu.Designer.cs">
+      <DependentUpon>AContextMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\AContextMenu\AToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\AContextMenu\AToolStripMenuItem.Designer.cs">
+      <DependentUpon>AToolStripMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ACorlorControl\ColorAreaAndSliderUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AControl\ACorlorControl\ColorAreaAndSliderUserControl.designer.cs">
+      <DependentUpon>ColorAreaAndSliderUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ACorlorControl\ColorAreaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AControl\ACorlorControl\ColorAreaUserControl.Designer.cs">
+      <DependentUpon>ColorAreaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ACorlorControl\ColorSliderUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AControl\ACorlorControl\ColorSliderUserControl.designer.cs">
+      <DependentUpon>ColorSliderUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\APager\ControlPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AControl\APager\ControlPager.Designer.cs">
+      <DependentUpon>ControlPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\APictrueBox\APictrueBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\APictrueBox\APictrueBox.Designer.cs">
+      <DependentUpon>APictrueBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ARichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ARichTextBox.Designer.cs">
+      <DependentUpon>ARichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ARichTextBoxE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ARichTextBoxE.Designer.cs">
+      <DependentUpon>ARichTextBoxE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ATextBoxU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ATextBoxU.Designer.cs">
+      <DependentUpon>ATextBoxU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ARichTextBoxEE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\ARichTextBox\ARichTextBoxEE.Designer.cs">
+      <DependentUpon>ARichTextBoxEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AControl\AThirTreeView\AThirTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\AThirTreeView\AThirTreeViewCtr.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AControl\AThirTreeView\AThirTreeViewCtr.Designer.cs">
+      <DependentUpon>AThirTreeViewCtr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AForm\ABaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\ABaseForm.Designer.cs">
+      <DependentUpon>ABaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AClass\ImageDrawRect.cs" />
+    <Compile Include="AClass\ImageObject.cs" />
+    <Compile Include="AClass\NativeMethods.cs" />
+    <Compile Include="AClass\Win32.cs" />
+    <Compile Include="AForm\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AForm\FormMainSkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\FormMainSkin.Designer.cs">
+      <DependentUpon>FormMainSkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AForm\FormMainW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\FormMainW.Designer.cs">
+      <DependentUpon>FormMainW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AForm\FormMainB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\FormMainB.Designer.cs">
+      <DependentUpon>FormMainB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AForm\FormMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\FormMsgBox.Designer.cs">
+      <DependentUpon>FormMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AForm\FormSkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AForm\FormSkin.Designer.cs">
+      <DependentUpon>FormSkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseButton.Designer.cs">
+      <DependentUpon>BaseButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors\ColorConverting.cs" />
+    <Compile Include="Colors\HsbColor.cs" />
+    <Compile Include="Colors\HslColor.cs" />
+    <Compile Include="Colors\RgbColor.cs" />
+    <Compile Include="CUI\AntiAliasGraphics.cs" />
+    <Compile Include="CUI\ControlBoxManager.cs" />
+    <Compile Include="CUI\ControlBoxState.cs" />
+    <Compile Include="CUI\ControlBoxStyle.cs" />
+    <Compile Include="CUI\ControlPaintEx.cs" />
+    <Compile Include="CUI\GraphicsPathHelper.cs" />
+    <Compile Include="CUI\MouseOperate.cs" />
+    <Compile Include="CUI\NativeMethods.cs" />
+    <Compile Include="CUI\RenderHelper.cs" />
+    <Compile Include="CUI\RoundStyle.cs" />
+    <Compile Include="CUI\SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUI\SkinFormBackgroundRenderEvent.cs" />
+    <Compile Include="CUI\SkinFormBorderRenderEvent.cs" />
+    <Compile Include="CUI\SkinFormCaptionRenderEvent.cs" />
+    <Compile Include="CUI\SkinFormColorTable.cs" />
+    <Compile Include="CUI\SkinFormControlBoxRenderEvent.cs" />
+    <Compile Include="CUI\SkinFormProfessionalRenderer.cs" />
+    <Compile Include="CUI\SkinFormRenderer.cs" />
+    <Compile Include="DataGridViewUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewUI.Designer.cs">
+      <DependentUpon>DataGridViewUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUI.Designer.cs">
+      <DependentUpon>FormUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniHelper.cs" />
+    <Compile Include="LanguageResource\Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgBox.cs" />
+    <Compile Include="PartBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonUI.Designer.cs">
+      <DependentUpon>ButtonUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShareData.cs" />
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseButton.resx">
+      <DependentUpon>BaseButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonUI.resx">
+      <DependentUpon>ButtonUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUI.resx">
+      <DependentUpon>FormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResource\Language.ko-kr.resx" />
+    <EmbeddedResource Include="LanguageResource\Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AForm\ABaseForm.resx">
+      <DependentUpon>ABaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSRes\border\bg.bmp" />
+    <EmbeddedResource Include="GSSRes\border\borderbl.bmp" />
+    <EmbeddedResource Include="GSSRes\border\borderbm.bmp" />
+    <EmbeddedResource Include="GSSRes\border\borderbr.bmp" />
+    <EmbeddedResource Include="GSSRes\border\borderml.bmp" />
+    <EmbeddedResource Include="GSSRes\border\bordermr.bmp" />
+    <EmbeddedResource Include="GSSRes\border\bordertl.bmp" />
+    <EmbeddedResource Include="GSSRes\border\bordertm.bmp" />
+    <EmbeddedResource Include="GSSRes\border\bordertr.bmp" />
+    <EmbeddedResource Include="GSSRes\border\CloseBtn.bmp" />
+    <EmbeddedResource Include="GSSRes\border\MaxBtn.bmp" />
+    <EmbeddedResource Include="GSSRes\border\MinBtn.bmp" />
+    <EmbeddedResource Include="GSSRes\button\btndown.bmp" />
+    <EmbeddedResource Include="GSSRes\button\btnfore.bmp" />
+    <EmbeddedResource Include="GSSRes\button\btnnomal.bmp" />
+    <EmbeddedResource Include="GSSRes\checkbox\check.bmp" />
+    <EmbeddedResource Include="GSSRes\checkbox\check2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AForm\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AForm\FormMainSkin.resx">
+      <DependentUpon>FormMainSkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AForm\FormMainW.resx">
+      <DependentUpon>FormMainW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AForm\FormMainB.resx">
+      <DependentUpon>FormMainB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASkinImg\ButtonImg\Botton2.png" />
+    <EmbeddedResource Include="ASkinImg\ButtonImg\Button.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\aio_light_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\aio_png_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\all_inside02_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\all_inside03_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\all_inside_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\all_light_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\btn_close.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\btn_max.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\btn_mini.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\btn_restore.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\main_light_bkg.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\main_png_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\FormImg\aio_png_bkg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AControl\ARichTextBox\ARichTextBox.resx">
+      <DependentUpon>ARichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AControl\ARichTextBox\ATextBoxU.resx">
+      <DependentUpon>ATextBoxU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASkinImg\FormImg\menuEx_background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AForm\FormMsgBox.resx">
+      <DependentUpon>FormMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASkinImg\Shade\GSSlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\FormImg\sysmessagebox_errorFile.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\sysmessagebox_inforFile.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\sysmessagebox_questionFile.png" />
+    <EmbeddedResource Include="ASkinImg\FormImg\sysmessagebox_warningFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AControl\ACorlorControl\ColorAreaAndSliderUserControl.resx">
+      <DependentUpon>ColorAreaAndSliderUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AControl\ACorlorControl\ColorAreaUserControl.resx">
+      <DependentUpon>ColorAreaUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AControl\ACorlorControl\ColorSliderUserControl.resx">
+      <DependentUpon>ColorSliderUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AForm\FormSkin.resx">
+      <DependentUpon>FormSkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASkinImg\Shade\logoXlJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\colorslider_dragbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\colour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\All_iconbutton_highlightBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\ShadingBkg.png" />
+    <EmbeddedResource Include="ASkinImg\Shade\shading_highlight.png" />
+    <EmbeddedResource Include="ASkinImg\Shade\TbAdjustColorNormal.png" />
+    <EmbeddedResource Include="ASkinImg\Shade\TbAdjustColorPushed.png" />
+    <EmbeddedResource Include="ASkinImg\Shade\TbShadingNormal.png" />
+    <EmbeddedResource Include="ASkinImg\Shade\TbShadingPushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97tiyuzhibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_png_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all_inside_bkg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all_inside_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomLeft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomMiddle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseDown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseMove.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseNormal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_light_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_png_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaxDown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaxMove.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaxNormal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Middle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiddleLeft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiddleRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinDown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinMove.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinNormal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectSkinDown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectSkinMove.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectSkinNormal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_errorFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_inforFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysmessagebox_questionFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopLeft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopMiddle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASkinImg\Shade\wallpaper_blue_02.jpg" />
+    <EmbeddedResource Include="ASkinImg\Shade\wallpaper_gray_01.jpg" />
+    <EmbeddedResource Include="ASkinImg\Shade\wallpaper_green_01.jpg" />
+    <EmbeddedResource Include="ASkinImg\Shade\wallpaper_Thallos.jpg" />
+    <EmbeddedResource Include="ASkinImg\Shade\wallpaper_black_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w5.jpg" />
+    <None Include="Resources\w4.jpg" />
+    <None Include="Resources\w3.jpg" />
+    <None Include="Resources\w2.jpg" />
+    <None Include="Resources\w1.jpg" />
+    <None Include="Resources\w6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AControl\APager\ControlPager.resx">
+      <DependentUpon>ControlPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AControl\ARichTextBox\ARichTextBoxE.resx">
+      <DependentUpon>ARichTextBoxE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AControl\ARichTextBox\ARichTextBoxEE.resx">
+      <DependentUpon>ARichTextBoxEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AControl\AThirTreeView\AThirTreeViewCtr.resx">
+      <DependentUpon>AThirTreeViewCtr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASkinImg\Shade\wallpaper_bliss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

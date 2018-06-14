@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ServiceZoneConfig.asmx.cs" Class="WebServiceZoneConfig.ServiceZ" %>

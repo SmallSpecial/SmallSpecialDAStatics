@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GameZoneToolLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GameZoneToolLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GameZoneToolLoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSTaskAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="note" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qq" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gdata" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="file" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSTaskAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GSSTaskAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSTaskAddRequst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gdata" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="answer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSTaskAddRequstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GSSTaskAddRequstResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSCountDetailAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:CountDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CountDetail">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Screenwidth" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Screenheight" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Year" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Month" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Day" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hour" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Game" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Page" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IESoft" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CLR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WinBit" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Time" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GSSCountDetailAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GSSCountDetailAddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSTaskList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSTaskListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GSSTaskListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSMSGAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="note" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gdata" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSMSGAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GSSMSGAddResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSMSGList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GSSMSGListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GSSMSGListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GameZoneToolLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:GameZoneToolLogin" />
+  </wsdl:message>
+  <wsdl:message name="GameZoneToolLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:GameZoneToolLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GSSTaskAddSoapIn">
+    <wsdl:part name="parameters" element="tns:GSSTaskAdd" />
+  </wsdl:message>
+  <wsdl:message name="GSSTaskAddSoapOut">
+    <wsdl:part name="parameters" element="tns:GSSTaskAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="GSSTaskAddRequstSoapIn">
+    <wsdl:part name="parameters" element="tns:GSSTaskAddRequst" />
+  </wsdl:message>
+  <wsdl:message name="GSSTaskAddRequstSoapOut">
+    <wsdl:part name="parameters" element="tns:GSSTaskAddRequstResponse" />
+  </wsdl:message>
+  <wsdl:message name="GSSCountDetailAddSoapIn">
+    <wsdl:part name="parameters" element="tns:GSSCountDetailAdd" />
+  </wsdl:message>
+  <wsdl:message name="GSSCountDetailAddSoapOut">
+    <wsdl:part name="parameters" element="tns:GSSCountDetailAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="GSSTaskListSoapIn">
+    <wsdl:part name="parameters" element="tns:GSSTaskList" />
+  </wsdl:message>
+  <wsdl:message name="GSSTaskListSoapOut">
+    <wsdl:part name="parameters" element="tns:GSSTaskListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GSSMSGAddSoapIn">
+    <wsdl:part name="parameters" element="tns:GSSMSGAdd" />
+  </wsdl:message>
+  <wsdl:message name="GSSMSGAddSoapOut">
+    <wsdl:part name="parameters" element="tns:GSSMSGAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="GSSMSGListSoapIn">
+    <wsdl:part name="parameters" element="tns:GSSMSGList" />
+  </wsdl:message>
+  <wsdl:message name="GSSMSGListSoapOut">
+    <wsdl:part name="parameters" element="tns:GSSMSGListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceGSSSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GameZoneToolLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">战区架设工具用户验证</wsdl:documentation>
+      <wsdl:input message="tns:GameZoneToolLoginSoapIn" />
+      <wsdl:output message="tns:GameZoneToolLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskAdd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GSS工单信息提交</wsdl:documentation>
+      <wsdl:input message="tns:GSSTaskAddSoapIn" />
+      <wsdl:output message="tns:GSSTaskAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskAddRequst">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GSS工单信息提交(问卷调查)</wsdl:documentation>
+      <wsdl:input message="tns:GSSTaskAddRequstSoapIn" />
+      <wsdl:output message="tns:GSSTaskAddRequstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GSSCountDetailAdd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GSS统计计数</wsdl:documentation>
+      <wsdl:input message="tns:GSSCountDetailAddSoapIn" />
+      <wsdl:output message="tns:GSSCountDetailAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GSS工单信息查询</wsdl:documentation>
+      <wsdl:input message="tns:GSSTaskListSoapIn" />
+      <wsdl:output message="tns:GSSTaskListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GSSMSGAdd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GSS工单信息提交（消息）</wsdl:documentation>
+      <wsdl:input message="tns:GSSMSGAddSoapIn" />
+      <wsdl:output message="tns:GSSMSGAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GSSMSGList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GSS工单信息查询（消息）</wsdl:documentation>
+      <wsdl:input message="tns:GSSMSGListSoapIn" />
+      <wsdl:output message="tns:GSSMSGListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceGSSSoap" type="tns:WebServiceGSSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GameZoneToolLogin">
+      <soap:operation soapAction="http://tempuri.org/GameZoneToolLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskAdd">
+      <soap:operation soapAction="http://tempuri.org/GSSTaskAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskAddRequst">
+      <soap:operation soapAction="http://tempuri.org/GSSTaskAddRequst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSCountDetailAdd">
+      <soap:operation soapAction="http://tempuri.org/GSSCountDetailAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskList">
+      <soap:operation soapAction="http://tempuri.org/GSSTaskList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSMSGAdd">
+      <soap:operation soapAction="http://tempuri.org/GSSMSGAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSMSGList">
+      <soap:operation soapAction="http://tempuri.org/GSSMSGList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceGSSSoap12" type="tns:WebServiceGSSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GameZoneToolLogin">
+      <soap12:operation soapAction="http://tempuri.org/GameZoneToolLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskAdd">
+      <soap12:operation soapAction="http://tempuri.org/GSSTaskAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskAddRequst">
+      <soap12:operation soapAction="http://tempuri.org/GSSTaskAddRequst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSCountDetailAdd">
+      <soap12:operation soapAction="http://tempuri.org/GSSCountDetailAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSTaskList">
+      <soap12:operation soapAction="http://tempuri.org/GSSTaskList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSMSGAdd">
+      <soap12:operation soapAction="http://tempuri.org/GSSMSGAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSSMSGList">
+      <soap12:operation soapAction="http://tempuri.org/GSSMSGList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceGSS">
+    <wsdl:port name="WebServiceGSSSoap" binding="tns:WebServiceGSSSoap">
+      <soap:address location="http://localhost:2207/WebServiceGSS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceGSSSoap12" binding="tns:WebServiceGSSSoap12">
+      <soap12:address location="http://localhost:2207/WebServiceGSS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

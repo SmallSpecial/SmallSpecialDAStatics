@@ -1,0 +1,4 @@
+﻿service response code of description.
+
+1.unlock user or role 
+2016= the user/role Not locked

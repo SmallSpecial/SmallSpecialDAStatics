@@ -1,0 +1,17 @@
+﻿  .timeSpans>div {
+        display:inline-block;
+        height: 50px;
+    }.timeSpan {
+        border:solid 2px #213838;
+        margin-right: 10px;
+        padding: 10px 10px;
+        cursor:pointer;
+    } 
+    .timeSpanClick {
+        color: red;
+    }
+    .queryBtn {
+        padding: 7px;
+        border: solid 2px #52cdda;
+        cursor:pointer;
+    }

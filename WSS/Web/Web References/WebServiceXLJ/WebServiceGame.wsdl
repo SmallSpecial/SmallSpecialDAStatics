@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGameUsersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameRoles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameRolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGameRolesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameRoleDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameRoleDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGameRoleDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserLock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locktype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserLockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserLockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserlocktype">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserlocktypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserlocktypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameZones">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetGameZonesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGameZonesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleLock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rolename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locktype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleLockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetRoleLockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleNoLock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleNoLockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetRoleNoLockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserNoLock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserNoLockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserNoLockResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLockInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLockInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLockInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChildDisInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChildDisInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChildDisInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearChildDisInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearChildDisInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearChildDisInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserOnline">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserOnlineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserOnlineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserOffline">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserOfflineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserOfflineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserNameChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserNameChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserNameChangeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleNameChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rolename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleNameChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetRoleNameChangeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleZoneChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zoneid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetRoleZoneChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetRoleZoneChangeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserGMUse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newuserpsw" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gmname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserGMUseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserGMUseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserGMBack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserGMBackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserGMBackResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserLockIP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipbegin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipend" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserLockIPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserLockIPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserPersonID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserPersonIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearUserPersonIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearUserEmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserPSWProtect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserPSWProtectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearUserPSWProtectResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserSecondPSW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearUserSecondPSWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearUserSecondPSWResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserPSWinit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserPSWinitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserPSWinitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBattleZones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="start" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="limit" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sort" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dir" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBattleZonesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBattleZonesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveBattleZones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveBattleZonesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveBattleZonesResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Response">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBattleLines">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetBattleLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBattleLinesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveBattleLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveBattleLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveBattleLinesResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGameServers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetGameServersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGameServersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveGameServers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveGameServersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveGameServersResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGameUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGameUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetGameUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGameUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGameRolesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGameRoles" />
+  </wsdl:message>
+  <wsdl:message name="GetGameRolesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGameRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGameRoleDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGameRoleDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetGameRoleDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGameRoleDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserLockSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserLock" />
+  </wsdl:message>
+  <wsdl:message name="SetUserLockSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserlocktypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserlocktype" />
+  </wsdl:message>
+  <wsdl:message name="GetUserlocktypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserlocktypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGameZonesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGameZones" />
+  </wsdl:message>
+  <wsdl:message name="GetGameZonesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGameZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleLockSoapIn">
+    <wsdl:part name="parameters" element="tns:SetRoleLock" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleLockSoapOut">
+    <wsdl:part name="parameters" element="tns:SetRoleLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleNoLockSoapIn">
+    <wsdl:part name="parameters" element="tns:SetRoleNoLock" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleNoLockSoapOut">
+    <wsdl:part name="parameters" element="tns:SetRoleNoLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserNoLockSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserNoLock" />
+  </wsdl:message>
+  <wsdl:message name="SetUserNoLockSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserNoLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLockInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLockInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetLockInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLockInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChildDisInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChildDisInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetChildDisInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChildDisInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearChildDisInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearChildDisInfo" />
+  </wsdl:message>
+  <wsdl:message name="ClearChildDisInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearChildDisInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserOnlineSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserOnline" />
+  </wsdl:message>
+  <wsdl:message name="GetUserOnlineSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserOnlineResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserOfflineSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserOffline" />
+  </wsdl:message>
+  <wsdl:message name="SetUserOfflineSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserOfflineResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserNameChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserNameChange" />
+  </wsdl:message>
+  <wsdl:message name="SetUserNameChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserNameChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleNameChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetRoleNameChange" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleNameChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetRoleNameChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleZoneChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetRoleZoneChange" />
+  </wsdl:message>
+  <wsdl:message name="SetRoleZoneChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetRoleZoneChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserGMUseSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserGMUse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserGMUseSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserGMUseResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserGMBackSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserGMBack" />
+  </wsdl:message>
+  <wsdl:message name="SetUserGMBackSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserGMBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserLockIPSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserLockIP" />
+  </wsdl:message>
+  <wsdl:message name="SetUserLockIPSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserLockIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserPersonIDSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearUserPersonID" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserPersonIDSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearUserPersonIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearUserEmail" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearUserEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserPSWProtectSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearUserPSWProtect" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserPSWProtectSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearUserPSWProtectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserSecondPSWSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearUserSecondPSW" />
+  </wsdl:message>
+  <wsdl:message name="ClearUserSecondPSWSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearUserSecondPSWResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserPSWinitSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserPSWinit" />
+  </wsdl:message>
+  <wsdl:message name="SetUserPSWinitSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserPSWinitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBattleZonesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBattleZones" />
+  </wsdl:message>
+  <wsdl:message name="GetBattleZonesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBattleZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveBattleZonesSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveBattleZones" />
+  </wsdl:message>
+  <wsdl:message name="SaveBattleZonesSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveBattleZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBattleLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBattleLines" />
+  </wsdl:message>
+  <wsdl:message name="GetBattleLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBattleLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveBattleLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveBattleLines" />
+  </wsdl:message>
+  <wsdl:message name="SaveBattleLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveBattleLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGameServersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGameServers" />
+  </wsdl:message>
+  <wsdl:message name="GetGameServersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGameServersResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveGameServersSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveGameServers" />
+  </wsdl:message>
+  <wsdl:message name="SaveGameServersSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveGameServersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceGameSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameUsers">
+      <wsdl:input message="tns:GetGameUsersSoapIn" />
+      <wsdl:output message="tns:GetGameUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameRoles">
+      <wsdl:input message="tns:GetGameRolesSoapIn" />
+      <wsdl:output message="tns:GetGameRolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameRoleDetail">
+      <wsdl:input message="tns:GetGameRoleDetailSoapIn" />
+      <wsdl:output message="tns:GetGameRoleDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserLock">
+      <wsdl:input message="tns:SetUserLockSoapIn" />
+      <wsdl:output message="tns:SetUserLockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserlocktype">
+      <wsdl:input message="tns:GetUserlocktypeSoapIn" />
+      <wsdl:output message="tns:GetUserlocktypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameZones">
+      <wsdl:input message="tns:GetGameZonesSoapIn" />
+      <wsdl:output message="tns:GetGameZonesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleLock">
+      <wsdl:input message="tns:SetRoleLockSoapIn" />
+      <wsdl:output message="tns:SetRoleLockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleNoLock">
+      <wsdl:input message="tns:SetRoleNoLockSoapIn" />
+      <wsdl:output message="tns:SetRoleNoLockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserNoLock">
+      <wsdl:input message="tns:SetUserNoLockSoapIn" />
+      <wsdl:output message="tns:SetUserNoLockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLockInfo">
+      <wsdl:input message="tns:GetLockInfoSoapIn" />
+      <wsdl:output message="tns:GetLockInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChildDisInfo">
+      <wsdl:input message="tns:GetChildDisInfoSoapIn" />
+      <wsdl:output message="tns:GetChildDisInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearChildDisInfo">
+      <wsdl:input message="tns:ClearChildDisInfoSoapIn" />
+      <wsdl:output message="tns:ClearChildDisInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserOnline">
+      <wsdl:input message="tns:GetUserOnlineSoapIn" />
+      <wsdl:output message="tns:GetUserOnlineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserOffline">
+      <wsdl:input message="tns:SetUserOfflineSoapIn" />
+      <wsdl:output message="tns:SetUserOfflineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserNameChange">
+      <wsdl:input message="tns:SetUserNameChangeSoapIn" />
+      <wsdl:output message="tns:SetUserNameChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleNameChange">
+      <wsdl:input message="tns:SetRoleNameChangeSoapIn" />
+      <wsdl:output message="tns:SetRoleNameChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleZoneChange">
+      <wsdl:input message="tns:SetRoleZoneChangeSoapIn" />
+      <wsdl:output message="tns:SetRoleZoneChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserGMUse">
+      <wsdl:input message="tns:SetUserGMUseSoapIn" />
+      <wsdl:output message="tns:SetUserGMUseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserGMBack">
+      <wsdl:input message="tns:SetUserGMBackSoapIn" />
+      <wsdl:output message="tns:SetUserGMBackSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserLockIP">
+      <wsdl:input message="tns:SetUserLockIPSoapIn" />
+      <wsdl:output message="tns:SetUserLockIPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserPersonID">
+      <wsdl:input message="tns:ClearUserPersonIDSoapIn" />
+      <wsdl:output message="tns:ClearUserPersonIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserEmail">
+      <wsdl:input message="tns:ClearUserEmailSoapIn" />
+      <wsdl:output message="tns:ClearUserEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserPSWProtect">
+      <wsdl:input message="tns:ClearUserPSWProtectSoapIn" />
+      <wsdl:output message="tns:ClearUserPSWProtectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserSecondPSW">
+      <wsdl:input message="tns:ClearUserSecondPSWSoapIn" />
+      <wsdl:output message="tns:ClearUserSecondPSWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPSWinit">
+      <wsdl:input message="tns:SetUserPSWinitSoapIn" />
+      <wsdl:output message="tns:SetUserPSWinitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBattleZones">
+      <wsdl:input message="tns:GetBattleZonesSoapIn" />
+      <wsdl:output message="tns:GetBattleZonesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBattleZones">
+      <wsdl:input message="tns:SaveBattleZonesSoapIn" />
+      <wsdl:output message="tns:SaveBattleZonesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBattleLines">
+      <wsdl:input message="tns:GetBattleLinesSoapIn" />
+      <wsdl:output message="tns:GetBattleLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBattleLines">
+      <wsdl:input message="tns:SaveBattleLinesSoapIn" />
+      <wsdl:output message="tns:SaveBattleLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameServers">
+      <wsdl:input message="tns:GetGameServersSoapIn" />
+      <wsdl:output message="tns:GetGameServersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGameServers">
+      <wsdl:input message="tns:SaveGameServersSoapIn" />
+      <wsdl:output message="tns:SaveGameServersSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceGameSoap" type="tns:WebServiceGameSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameUsers">
+      <soap:operation soapAction="http://tempuri.org/GetGameUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameRoles">
+      <soap:operation soapAction="http://tempuri.org/GetGameRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameRoleDetail">
+      <soap:operation soapAction="http://tempuri.org/GetGameRoleDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserLock">
+      <soap:operation soapAction="http://tempuri.org/SetUserLock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserlocktype">
+      <soap:operation soapAction="http://tempuri.org/GetUserlocktype" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameZones">
+      <soap:operation soapAction="http://tempuri.org/GetGameZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleLock">
+      <soap:operation soapAction="http://tempuri.org/SetRoleLock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleNoLock">
+      <soap:operation soapAction="http://tempuri.org/SetRoleNoLock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserNoLock">
+      <soap:operation soapAction="http://tempuri.org/SetUserNoLock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLockInfo">
+      <soap:operation soapAction="http://tempuri.org/GetLockInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChildDisInfo">
+      <soap:operation soapAction="http://tempuri.org/GetChildDisInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearChildDisInfo">
+      <soap:operation soapAction="http://tempuri.org/ClearChildDisInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserOnline">
+      <soap:operation soapAction="http://tempuri.org/GetUserOnline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserOffline">
+      <soap:operation soapAction="http://tempuri.org/SetUserOffline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserNameChange">
+      <soap:operation soapAction="http://tempuri.org/SetUserNameChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleNameChange">
+      <soap:operation soapAction="http://tempuri.org/SetRoleNameChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleZoneChange">
+      <soap:operation soapAction="http://tempuri.org/SetRoleZoneChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserGMUse">
+      <soap:operation soapAction="http://tempuri.org/SetUserGMUse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserGMBack">
+      <soap:operation soapAction="http://tempuri.org/SetUserGMBack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserLockIP">
+      <soap:operation soapAction="http://tempuri.org/SetUserLockIP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserPersonID">
+      <soap:operation soapAction="http://tempuri.org/ClearUserPersonID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserEmail">
+      <soap:operation soapAction="http://tempuri.org/ClearUserEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserPSWProtect">
+      <soap:operation soapAction="http://tempuri.org/ClearUserPSWProtect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserSecondPSW">
+      <soap:operation soapAction="http://tempuri.org/ClearUserSecondPSW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPSWinit">
+      <soap:operation soapAction="http://tempuri.org/SetUserPSWinit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBattleZones">
+      <soap:operation soapAction="http://tempuri.org/GetBattleZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBattleZones">
+      <soap:operation soapAction="http://tempuri.org/SaveBattleZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBattleLines">
+      <soap:operation soapAction="http://tempuri.org/GetBattleLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBattleLines">
+      <soap:operation soapAction="http://tempuri.org/SaveBattleLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameServers">
+      <soap:operation soapAction="http://tempuri.org/GetGameServers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGameServers">
+      <soap:operation soapAction="http://tempuri.org/SaveGameServers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceGameSoap12" type="tns:WebServiceGameSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameUsers">
+      <soap12:operation soapAction="http://tempuri.org/GetGameUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameRoles">
+      <soap12:operation soapAction="http://tempuri.org/GetGameRoles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameRoleDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetGameRoleDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserLock">
+      <soap12:operation soapAction="http://tempuri.org/SetUserLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserlocktype">
+      <soap12:operation soapAction="http://tempuri.org/GetUserlocktype" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameZones">
+      <soap12:operation soapAction="http://tempuri.org/GetGameZones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleLock">
+      <soap12:operation soapAction="http://tempuri.org/SetRoleLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleNoLock">
+      <soap12:operation soapAction="http://tempuri.org/SetRoleNoLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserNoLock">
+      <soap12:operation soapAction="http://tempuri.org/SetUserNoLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLockInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetLockInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChildDisInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetChildDisInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearChildDisInfo">
+      <soap12:operation soapAction="http://tempuri.org/ClearChildDisInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserOnline">
+      <soap12:operation soapAction="http://tempuri.org/GetUserOnline" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserOffline">
+      <soap12:operation soapAction="http://tempuri.org/SetUserOffline" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserNameChange">
+      <soap12:operation soapAction="http://tempuri.org/SetUserNameChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleNameChange">
+      <soap12:operation soapAction="http://tempuri.org/SetRoleNameChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRoleZoneChange">
+      <soap12:operation soapAction="http://tempuri.org/SetRoleZoneChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserGMUse">
+      <soap12:operation soapAction="http://tempuri.org/SetUserGMUse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserGMBack">
+      <soap12:operation soapAction="http://tempuri.org/SetUserGMBack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserLockIP">
+      <soap12:operation soapAction="http://tempuri.org/SetUserLockIP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserPersonID">
+      <soap12:operation soapAction="http://tempuri.org/ClearUserPersonID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserEmail">
+      <soap12:operation soapAction="http://tempuri.org/ClearUserEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserPSWProtect">
+      <soap12:operation soapAction="http://tempuri.org/ClearUserPSWProtect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserSecondPSW">
+      <soap12:operation soapAction="http://tempuri.org/ClearUserSecondPSW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPSWinit">
+      <soap12:operation soapAction="http://tempuri.org/SetUserPSWinit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBattleZones">
+      <soap12:operation soapAction="http://tempuri.org/GetBattleZones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBattleZones">
+      <soap12:operation soapAction="http://tempuri.org/SaveBattleZones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBattleLines">
+      <soap12:operation soapAction="http://tempuri.org/GetBattleLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBattleLines">
+      <soap12:operation soapAction="http://tempuri.org/SaveBattleLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameServers">
+      <soap12:operation soapAction="http://tempuri.org/GetGameServers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGameServers">
+      <soap12:operation soapAction="http://tempuri.org/SaveGameServers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceGame">
+    <wsdl:port name="WebServiceGameSoap" binding="tns:WebServiceGameSoap">
+      <soap:address location="http://localhost:2109/WebServiceGame.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceGameSoap12" binding="tns:WebServiceGameSoap12">
+      <soap12:address location="http://localhost:2109/WebServiceGame.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

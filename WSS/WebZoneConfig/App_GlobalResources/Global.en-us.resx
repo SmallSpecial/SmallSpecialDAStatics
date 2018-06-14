@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StringAdd" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="StringAlertTitle" xml:space="preserve">
+    <value>系统警告</value>
+  </data>
+  <data name="StringBigZoneID" xml:space="preserve">
+    <value>所属大区</value>
+  </data>
+  <data name="StringBigZoneID0" xml:space="preserve">
+    <value>第一大区</value>
+  </data>
+  <data name="StringBigZoneID1" xml:space="preserve">
+    <value>第二大区</value>
+  </data>
+  <data name="StringCampID" xml:space="preserve">
+    <value>阵营(国家)</value>
+  </data>
+  <data name="StringCampID0" xml:space="preserve">
+    <value>国家一</value>
+  </data>
+  <data name="StringCampID1" xml:space="preserve">
+    <value>国家二</value>
+  </data>
+  <data name="StringChargeType" xml:space="preserve">
+    <value>收费类型</value>
+  </data>
+  <data name="StringChargeType0" xml:space="preserve">
+    <value>免费</value>
+  </data>
+  <data name="StringChargeType1" xml:space="preserve">
+    <value>收费</value>
+  </data>
+  <data name="StringCommitDone" xml:space="preserve">
+    <value>提交成功</value>
+  </data>
+  <data name="StringCommitDoneT" xml:space="preserve">
+    <value>数据保存成功</value>
+  </data>
+  <data name="StringCommitFailed" xml:space="preserve">
+    <value>提交失败</value>
+  </data>
+  <data name="StringCurVersion" xml:space="preserve">
+    <value>当前版本</value>
+  </data>
+  <data name="StringDelete" xml:space="preserve">
+    <value>删除选中行</value>
+  </data>
+  <data name="StringGameConfig" xml:space="preserve">
+    <value>游戏参数配置</value>
+  </data>
+  <data name="StringGameKey" xml:space="preserve">
+    <value>GameConfig键</value>
+  </data>
+  <data name="StringGameNote" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="StringGameSimpleVersionListConfig" xml:space="preserve">
+    <value>简单升级文件配置</value>
+  </data>
+  <data name="StringGameValue" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="StringGameVersionListConfig" xml:space="preserve">
+    <value>升级文件配置</value>
+  </data>
+  <data name="StringGameVersionListCurVer" xml:space="preserve">
+    <value>当前版本</value>
+  </data>
+  <data name="StringGameVersionListDownFileSize" xml:space="preserve">
+    <value>降级文件大小</value>
+  </data>
+  <data name="StringGameVersionListFileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="StringGameVersionListID" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="StringGameVersionListLowVer" xml:space="preserve">
+    <value>低版本(从哪个版本升级)</value>
+  </data>
+  <data name="StringGameVersionListTime" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="StringGameVersionListUpFileSize" xml:space="preserve">
+    <value>升级文件大小</value>
+  </data>
+  <data name="StringGSConfig" xml:space="preserve">
+    <value>GameServer配置</value>
+  </data>
+  <data name="StringGSID" xml:space="preserve">
+    <value>GS编号</value>
+  </data>
+  <data name="StringGSIP" xml:space="preserve">
+    <value>GSIP地址</value>
+  </data>
+  <data name="StringGSName" xml:space="preserve">
+    <value>GS名称</value>
+  </data>
+  <data name="StringGSNGSID" xml:space="preserve">
+    <value>连接的NGS(战区)</value>
+  </data>
+  <data name="StringGSSceneID" xml:space="preserve">
+    <value>GS场景编</value>
+  </data>
+  <data name="StringIsRefresh" xml:space="preserve">
+    <value>数据发生改变您未保存。您确定要加载/刷新数据？</value>
+  </data>
+  <data name="StringIsToDelete" xml:space="preserve">
+    <value>确定要删除选中记录</value>
+  </data>
+  <data name="StringLineConfig" xml:space="preserve">
+    <value>战线配置</value>
+  </data>
+  <data name="StringLineDBISID" xml:space="preserve">
+    <value>连接DBIS的编号</value>
+  </data>
+  <data name="StringLineIP" xml:space="preserve">
+    <value>网关服务器IP</value>
+  </data>
+  <data name="StringLineMaxUser" xml:space="preserve">
+    <value>最大允许在线人数</value>
+  </data>
+  <data name="StringLineName" xml:space="preserve">
+    <value>战线名称</value>
+  </data>
+  <data name="StringLineNGSID" xml:space="preserve">
+    <value>NGS编号</value>
+  </data>
+  <data name="StringLinePingPort" xml:space="preserve">
+    <value>PING的端口</value>
+  </data>
+  <data name="StringLinePort" xml:space="preserve">
+    <value>网关服务器端口</value>
+  </data>
+  <data name="StringLineState" xml:space="preserve">
+    <value>当前状态</value>
+  </data>
+  <data name="StringLineState0" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="StringLineState1" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="StringLineState2" xml:space="preserve">
+    <value>内部调试</value>
+  </data>
+  <data name="StringLineZoneID" xml:space="preserve">
+    <value>所属战区</value>
+  </data>
+  <data name="StringLoadException" xml:space="preserve">
+    <value>加载失败</value>
+  </data>
+  <data name="StringLoadingNow" xml:space="preserve">
+    <value>正在执行,请稍候...</value>
+  </data>
+  <data name="StringLogin" xml:space="preserve">
+    <value>登陆</value>
+  </data>
+  <data name="StringLogOut" xml:space="preserve">
+    <value>点击退出工具</value>
+  </data>
+  <data name="StringLogOutLoading" xml:space="preserve">
+    <value>退出工具准备中...</value>
+  </data>
+  <data name="StringNo" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="StringNoInfo" xml:space="preserve">
+    <value>没有信息可显示</value>
+  </data>
+  <data name="StringPressState" xml:space="preserve">
+    <value>战区压力状态</value>
+  </data>
+  <data name="StringPressState0" xml:space="preserve">
+    <value>轻松</value>
+  </data>
+  <data name="StringPressState1" xml:space="preserve">
+    <value>拥挤</value>
+  </data>
+  <data name="StringPressState2" xml:space="preserve">
+    <value>繁忙</value>
+  </data>
+  <data name="StringPressState3" xml:space="preserve">
+    <value>爆满</value>
+  </data>
+  <data name="StringRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="StringReset" xml:space="preserve">
+    <value>重填</value>
+  </data>
+  <data name="StringSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="StringSaveException" xml:space="preserve">
+    <value>保存失败</value>
+  </data>
+  <data name="StringSysTitle" xml:space="preserve">
+    <value>战区架设工具</value>
+  </data>
+  <data name="StringToolTipsN" xml:space="preserve">
+    <value>战区架设工具：双击单元格可进入编辑状态；如果输入有误会有红色边框或波浪线显示,鼠标移至上面会有原因提示；增删改后需点击保存才会生效（可批量保存）</value>
+  </data>
+  <data name="StringToolTipsT" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="StringUserAuthCode" xml:space="preserve">
+    <value>验证码</value>
+  </data>
+  <data name="StringUserAuthCodeN" xml:space="preserve">
+    <value>需要输入验证码</value>
+  </data>
+  <data name="StringUserAuthCodeTip" xml:space="preserve">
+    <value>鼠标移上来出现验证码</value>
+  </data>
+  <data name="StringUserLogin" xml:space="preserve">
+    <value>用户登录</value>
+  </data>
+  <data name="StringUserName" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="StringUserNameN" xml:space="preserve">
+    <value>需要输入用户名</value>
+  </data>
+  <data name="StringUserPSW" xml:space="preserve">
+    <value>密     码</value>
+  </data>
+  <data name="StringUserPSWN" xml:space="preserve">
+    <value>需要输入密码</value>
+  </data>
+  <data name="StringYes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="StringZoneAttrib0" xml:space="preserve">
+    <value>新开战区</value>
+  </data>
+  <data name="StringZoneAttrib1" xml:space="preserve">
+    <value>推荐战区</value>
+  </data>
+  <data name="StringZoneAttrib2" xml:space="preserve">
+    <value>战区经验</value>
+  </data>
+  <data name="StringZoneAttrib20" xml:space="preserve">
+    <value>正常经验</value>
+  </data>
+  <data name="StringZoneAttrib21" xml:space="preserve">
+    <value>2倍经验</value>
+  </data>
+  <data name="StringZoneAttrib22" xml:space="preserve">
+    <value>4倍经验</value>
+  </data>
+  <data name="StringZoneAttrib23" xml:space="preserve">
+    <value>8倍经验</value>
+  </data>
+  <data name="StringZoneAttrib4" xml:space="preserve">
+    <value>火爆战区</value>
+  </data>
+  <data name="StringZoneConfig" xml:space="preserve">
+    <value>ZoneConfig(多语言实现示例)</value>
+  </data>
+  <data name="StringZoneID" xml:space="preserve">
+    <value>ZoneID</value>
+  </data>
+  <data name="StringZoneLine" xml:space="preserve">
+    <value>网络线路</value>
+  </data>
+  <data name="StringZoneLine0" xml:space="preserve">
+    <value>网通</value>
+  </data>
+  <data name="StringZoneLine1" xml:space="preserve">
+    <value>电信</value>
+  </data>
+  <data name="StringZoneLine2" xml:space="preserve">
+    <value>双线</value>
+  </data>
+  <data name="StringZoneName" xml:space="preserve">
+    <value>ZoneName</value>
+  </data>
+  <data name="StringZoneState" xml:space="preserve">
+    <value>ZoneState</value>
+  </data>
+  <data name="StringZoneState0" xml:space="preserve">
+    <value>战区关闭</value>
+  </data>
+  <data name="StringZoneState1" xml:space="preserve">
+    <value>战区开放</value>
+  </data>
+  <data name="StringZoneState2" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="StringZoneTestState" xml:space="preserve">
+    <value>测试状态</value>
+  </data>
+  <data name="StringZoneTestState0" xml:space="preserve">
+    <value>正常状态</value>
+  </data>
+  <data name="ClientType" xml:space="preserve">
+    <value>Client Type</value>
+  </data>
+  <data name="FormulaVersionsCur" xml:space="preserve">
+    <value>Formula Versions Cur</value>
+  </data>
+  <data name="FormulaVersionsLow" xml:space="preserve">
+    <value>Formula Versions Low</value>
+  </data>
+  <data name="ResourceVersionsCur" xml:space="preserve">
+    <value>Resource Versions Cur</value>
+  </data>
+  <data name="ResourceVersions_Low" xml:space="preserve">
+    <value>Resource Versions Low</value>
+  </data>
+  <data name="BattleZoneInputLimit" xml:space="preserve">
+    <value>Name Allows you to enter 16 characters (8 Chinese characters)</value>
+  </data>
+  <data name="F_FaVersionsLow_And" xml:space="preserve">
+    <value>进入程序最低版本[Android]</value>
+  </data>
+  <data name="F_FaVersionsLow_Ios" xml:space="preserve">
+    <value>进入程序最低版本[IOS]</value>
+  </data>
+  <data name="F_ReVersionsLow_And" xml:space="preserve">
+    <value>能进入资源最低版本【Android】</value>
+  </data>
+  <data name="F_ReVersionsLow_Ios" xml:space="preserve">
+    <value>能进入资源最低版本【IOS】</value>
+  </data>
+  <data name="ServerType_Mixed" xml:space="preserve">
+    <value>함부로 웨어</value>
+  </data>
+</root>

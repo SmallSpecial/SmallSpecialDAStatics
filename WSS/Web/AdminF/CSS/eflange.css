@@ -1,0 +1,75 @@
+﻿/* 公用样式*/
+* { padding:0; margin:0; text-align:center; font-family:"宋体",Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#333;}
+
+html{height:100%; }
+body{height:100%; text-align:center; line-height:21px; background:#fff; }
+body,form,menu,dir,fieldset,blockquote,p,pre,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6 {padding:0;margin:0;}
+div,p {display:block;}
+ul,ol,dl {list-style:none;}
+img {border:0;}
+button {cursor:pointer;}/*所有按钮鼠标放上为手型*/
+.clear{ clear:both; line-height:1px}/*清除浮动*/
+
+
+/*默认的链接样式*/
+a {color:#333; text-decoration:none;}
+a:link{ color:#333; text-decoration:none;}
+a:visited{ color:#333; text-decoration:none;}
+a:hover{ color:#f51; text-decoration:underline;}
+
+
+/*模版文件页面 templates.html */
+
+.right h1{ width:90%; margin:10px auto 0px 10px;}
+#temp{ width:97%; margin:10px auto 0 10px; }
+#temp_title ul{ display:inline; height:100%;}
+#temp_title li.one{ padding:4px 6px 0 6px; float:left; display:block;}
+#temp_title li.two{ padding:1px 4px 0 6px; float:left; display:block; margin-top:4px; }
+#temp_title li.three{ border-bottom:1px solid #97989A; height:25px;}
+#temp_title li.oneE{ width:200px; float:left; display:block; height:23px; }
+
+.title01{ background: url(bgimages/titlebg_on.GIF) #fff repeat-x left top;}/*选择后的样式*/
+.title02{ background: url(bgimages/titlebg_off.GIF) #fff repeat-x left bottom; border-width:0px 1px 0 0px; border-style:solid; border-color:#97989A;}/*未选择的样式*/
+
+#temp_title ul:after {
+    content: "."; 
+    display: block;
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+#temp_title ul {display: inline-table;}
+/* Hides from IE-mac \*/
+* html #temp_title ul{height: 1%;}
+#temp_title ul {display: block;}
+/* End hide from IE-mac */
+
+.temp_con{ border-width:0 1px 0 1px; border-style:solid; border-color:#97989A; background:#fff; text-align:left;   height:390px; overflow-x:hidden;  overflow-y:auto;  }
+
+.temp_con ul{ padding:10px 25px;}
+.temp_con li{ background:url(bgimages/linebg.GIF) #fff no-repeat left top; padding-left:10px; height:20px; line-height:20px; text-align:left;}
+.temp_con li{color:#172532;}
+.temp_con label{ font-family:Verdana, Arial, Helvetica, sans-serif;}
+.temp_con li img{ vertical-align:middle; margin-right:5px;}
+.temp_con li input{ vertical-align:middle; margin-right:3px;}
+
+.temp_but{padding:10px 10px 10px 20px; text-align:left; background:#f7f7f7; border-width:0 1px 1px 1px; border-style:solid; border-color:#97989A; }
+
+.temp_button{ background:#fff; border:1px solid #9E9E9F; height:20px; line-height:20px; color:#000; margin-right:10px;}
+
+
+
+
+
+/*网店模板切换*/
+.temp_con2{ border-width:0 1px 0 1px; border-style:solid; border-color:#97989A; background:#fff; text-align:left;   height:405px; overflow-x:hidden;  overflow-y:auto;  }
+.temp_con2 ul{ padding:10px 25px;}
+.temp_con2 li{ width:33%; float:left; text-align:center;color:#172532;position:relative; }
+
+	.temp_con2 li a{padding:6px;display:block; border:1px solid #fff; cursor:pointer;}
+	.temp_con2 li a:hover{text-decoration: none; border:1px solid #A0D0E2; background-color:#DAE6F3;}
+	.temp_con2 li a span{display:none;}
+	.temp_con2 li a:hover span{color:#000; text-align:left; display:block; width:90%;background-color:#DAE6F3; padding:8px 0 8px 9%; position:absolute;top:0;left:0px; border:1px solid #A0D0E2; border-bottom:none; border-right:none;}
+	.temp_con2 li a img{height:200px; width:210px;}
+	.temp_con2 li div{ float:right; width:200px;}
+	.temp_con2 li div a{ display:inline;}

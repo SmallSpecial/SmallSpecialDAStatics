@@ -1,0 +1,2629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D4DF6DA-8C92-4CA0-AF14-543D0A44C9B5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebWSS</RootNamespace>
+    <AssemblyName>WebWSS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FusionCharts, Version=3.2.2.1, Culture=neutral, PublicKeyToken=58bb3098fe7f0ede, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBUtility\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin_IFrame.aspx" />
+    <Content Include="Admin_Login.aspx" />
+    <Content Include="Admin_Main.aspx" />
+    <Content Include="Admin_Manage.aspx" />
+    <Content Include="Admin_Menus.aspx" />
+    <None Include="App_Code\FusionCharts.dll" />
+    <None Include="App_Code\FusionCharts.xml" />
+    <None Include="App_Code\FusionMaps.dll" />
+    <Content Include="Admin_NoPage.htm" />
+    <Content Include="CDKey\CDKeyBatchList.aspx" />
+    <Content Include="CDKey\CDKeyList.aspx" />
+    <Content Include="CDKey\CDKeyCreate.aspx" />
+    <Content Include="CDKey\CDKeyBatchImport.aspx" />
+    <Content Include="CDKey\CDKeyImport.aspx" />
+    <Content Include="Common\ControlDateSelect.ascx" />
+    <Content Include="Common\ControlMonthSelect.ascx" />
+    <Content Include="Common\ControlChart.ascx" />
+    <Content Include="Common\ControlChartSelect.ascx" />
+    <Content Include="Common\ControlOutFile.ascx" />
+    <Content Include="Common\ProgressBar.htm" />
+    <Content Include="Default.aspx" />
+    <Content Include="img\+.gif" />
+    <Content Include="img\-.gif" />
+    <Content Include="img\admin.gif" />
+    <Content Include="img\Admin.Js" />
+    <Content Include="img\admin_login_01.gif" />
+    <Content Include="img\admin_login_02.gif" />
+    <Content Include="img\admin_login_03.gif" />
+    <Content Include="img\admin_login_04.gif" />
+    <Content Include="img\Back.gif" />
+    <Content Include="img\Bar.gif" />
+    <Content Include="img\btn1.gif" />
+    <Content Include="img\btn2.gif" />
+    <Content Include="img\btn_post.gif" />
+    <Content Include="img\btn_posto.gif" />
+    <Content Include="img\button\bt1.gif" />
+    <Content Include="img\button\bt2.gif" />
+    <Content Include="img\Calendar.gif" />
+    <Content Include="img\Charts\Area2D.swf" />
+    <Content Include="img\Charts\Bar2D.swf" />
+    <Content Include="img\Charts\Bubble.swf" />
+    <Content Include="img\Charts\Chinamap.swf" />
+    <Content Include="img\Charts\Column2D.swf" />
+    <Content Include="img\Charts\Column3D.swf" />
+    <Content Include="img\Charts\Data.xml" />
+    <Content Include="img\Charts\Doughnut2D.swf" />
+    <Content Include="img\Charts\Doughnut3D.swf" />
+    <Content Include="img\Charts\FCExporter.swf" />
+    <Content Include="img\Charts\FCMap_China2.swf" />
+    <Content Include="img\Charts\firebug-lite.js" />
+    <Content Include="img\Charts\FusionCharts.HC.Charts.js" />
+    <Content Include="img\Charts\FusionCharts.HC.js" />
+    <Content Include="img\Charts\FusionCharts.jqueryplugin.js" />
+    <Content Include="img\Charts\FusionCharts.js" />
+    <Content Include="img\Charts\FusionChartsExportComponent.js" />
+    <Content Include="img\Charts\FusionMaps.js" />
+    <Content Include="img\Charts\FusionMapsExportComponent.js" />
+    <Content Include="img\Charts\jquery.min.js" />
+    <Content Include="img\Charts\Line.swf" />
+    <Content Include="img\Charts\Marimekko.swf" />
+    <Content Include="img\Charts\MSArea.swf" />
+    <Content Include="img\Charts\MSBar2D.swf" />
+    <Content Include="img\Charts\MSBar3D.swf" />
+    <Content Include="img\Charts\MSColumn2D.swf" />
+    <Content Include="img\Charts\MSColumn3D.swf" />
+    <Content Include="img\Charts\MSColumn3DLineDY.swf" />
+    <Content Include="img\Charts\MSColumnLine3D.swf" />
+    <Content Include="img\Charts\MSCombi2D.swf" />
+    <Content Include="img\Charts\MSCombi3D.swf" />
+    <Content Include="img\Charts\MSCombiDY2D.swf" />
+    <Content Include="img\Charts\MSLine.swf" />
+    <Content Include="img\Charts\MSStackedColumn2D.swf" />
+    <Content Include="img\Charts\MSStackedColumn2DLineDY.swf" />
+    <Content Include="img\Charts\Pareto2D.swf" />
+    <Content Include="img\Charts\Pareto3D.swf" />
+    <Content Include="img\Charts\Pie2D.swf" />
+    <Content Include="img\Charts\Pie3D.swf" />
+    <Content Include="img\Charts\Scatter.swf" />
+    <Content Include="img\Charts\ScrollArea2D.swf" />
+    <Content Include="img\Charts\ScrollColumn2D.swf" />
+    <Content Include="img\Charts\ScrollCombi2D.swf" />
+    <Content Include="img\Charts\ScrollCombiDY2D.swf" />
+    <Content Include="img\Charts\ScrollLine2D.swf" />
+    <Content Include="img\Charts\ScrollStackedColumn2D.swf" />
+    <Content Include="img\Charts\SSGrid.swf" />
+    <Content Include="img\Charts\StackedArea2D.swf" />
+    <Content Include="img\Charts\StackedBar2D.swf" />
+    <Content Include="img\Charts\StackedBar3D.swf" />
+    <Content Include="img\Charts\StackedColumn2D.swf" />
+    <Content Include="img\Charts\StackedColumn2DLine.swf" />
+    <Content Include="img\Charts\StackedColumn3D.swf" />
+    <Content Include="img\Charts\StackedColumn3DLine.swf" />
+    <Content Include="img\Charts\StackedColumn3DLineDY.swf" />
+    <Content Include="img\Charts\ZoomLine.swf" />
+    <Content Include="img\Close.gif" />
+    <Content Include="img\code.gif" />
+    <Content Include="img\CoinJinPiao.gif" />
+    <Content Include="img\com.gif" />
+    <Content Include="img\Down.gif" />
+    <Content Include="img\GetDate.Js" />
+    <Content Include="img\help.gif" />
+    <Content Include="img\icon_qi.gif" />
+    <Content Include="img\Label.gif" />
+    <Content Include="img\Label_1.gif" />
+    <Content Include="img\left_bg.gif" />
+    <Content Include="img\Line.gif" />
+    <Content Include="img\Login.gif" />
+    <Content Include="img\login_bg.gif" />
+    <Content Include="img\Logo.gif" />
+    <Content Include="img\L_B.gif" />
+    <Content Include="img\L_T.gif" />
+    <Content Include="img\Menu_BG.gif" />
+    <Content Include="img\Menu_BG1.gif" />
+    <Content Include="img\Menu_BGc.gif" />
+    <Content Include="img\Menu_Line.gif" />
+    <Content Include="img\Menu_Tit.gif" />
+    <Content Include="img\Menu_Tit1.gif" />
+    <Content Include="img\nopage.gif" />
+    <Content Include="img\nopic.gif" />
+    <Content Include="img\Calendar\Calendar.gif" />
+    <Content Include="img\Calendar\Calendar_Close.gif" />
+    <Content Include="img\Calendar\Calendar_Closed.gif" />
+    <Content Include="img\Calendar\Calendar_Down.gif" />
+    <Content Include="img\Calendar\Calendar_Drop1.gif" />
+    <Content Include="img\Calendar\Calendar_Drop2.gif" />
+    <Content Include="img\Calendar\Calendar_Left1.gif" />
+    <Content Include="img\Calendar\Calendar_Left2.gif" />
+    <Content Include="img\Calendar\Calendar_Right1.gif" />
+    <Content Include="img\Calendar\Calendar_Right2.gif" />
+    <Content Include="img\Calendar\Calendar_Up.gif" />
+    <Content Include="img\pic.gif" />
+    <Content Include="img\ProgressBar.js" />
+    <Content Include="img\p_5.GIF" />
+    <Content Include="img\p_6.GIF" />
+    <Content Include="img\R_B.gif" />
+    <Content Include="img\R_T.gif" />
+    <Content Include="img\Style.css" />
+    <Content Include="img\tiperror.png" />
+    <Content Include="img\tipnorm.png" />
+    <Content Include="img\tipques.png" />
+    <Content Include="img\tipwarn.png" />
+    <Content Include="img\top_bg.gif" />
+    <Content Include="img\TxtRule.gif" />
+    <Content Include="img\UI_BTY_Loading_ZC_001.jpg" />
+    <Content Include="img\Up.gif" />
+    <Content Include="img\CoinJinBi.gif" />
+    <Content Include="ModelPage\GameInCome\FirstChargeAnalyze.aspx" />
+    <Content Include="ModelPage\GameOverView\Building.aspx" />
+    <Content Include="ModelPage\GameOverView\echarts\.DS_Store" />
+    <Content Include="ModelPage\GameOverView\Ajax.ashx" />
+    <None Include="Model\Readme.txt" />
+    <None Include="Model\SqlCmd\SP\1-SP_GatherMountData采集坐骑数据.sql" />
+    <Content Include="ModelPage\AuctionShop\PurchaseLog.aspx" />
+    <Content Include="ModelPage\AuctionShop\PutawayLog.aspx" />
+    <Content Include="ModelPage\AuctionShop\SearchLog.aspx" />
+    <Content Include="ModelPage\AuctionShop\SoldOutLog.aspx" />
+    <Content Include="ModelPage\GameInCome\RechargeData.aspx" />
+    <Content Include="ModelPage\GameInCome\RechargeFrequency.aspx" />
+    <Content Include="ModelPage\GameInCome\RechargeLevel.aspx" />
+    <Content Include="ModelPage\GameInCome\RechargeRankList.aspx" />
+    <Content Include="ModelPage\GameInCome\RechargeRecord.aspx" />
+    <Content Include="ModelPage\GameInCome\RechargeRegion.aspx" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\bar.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\chord.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\eventRiver.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\force.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\funnel.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\gauge.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\heatmap.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\k.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\line.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\map.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\pie.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\radar.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\scatter.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\tree.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\treemap.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\venn.js" />
+    <Content Include="ModelPage\GameOverView\echarts\chart\wordCloud.js" />
+    <Content Include="ModelPage\GameOverView\echarts\echarts-all.js" />
+    <Content Include="ModelPage\GameOverView\echarts\echarts.js" />
+    <Content Include="ModelPage\GameOverView\GamePandect.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeInCome.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeLogin.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeLoginNewPlayer.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeNew.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeNew_Channel.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeNew_Zone_Channel.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeRemain_Channel.aspx" />
+    <Content Include="ModelPage\GameOverView\RealTimeRemain_Zone_Channel.aspx" />
+    <Content Include="ModelPage\GiftConfig\DepositConfig.aspx" />
+    <Content Include="ModelPage\GiftConfig\DepositConfigLog.aspx" />
+    <Content Include="ModelPage\GiftConfig\DepositList.aspx" />
+    <Content Include="ModelPage\GiftConfig\GiftConfig.aspx" />
+    <Content Include="ModelPage\GiftConfig\GiftConfigLog.aspx" />
+    <Content Include="ModelPage\GiftConfig\GiftList.aspx" />
+    <Content Include="ModelPage\GMJurisdiction\GMJurisdictionSet.aspx" />
+    <Content Include="ModelPage\GssTool\GssFullServicesMail.aspx" />
+    <Content Include="ModelPage\GssTool\GssGameNotice.aspx" />
+    <Content Include="ModelPage\GssTool\GssGiftAward.aspx" />
+    <Content Include="ModelPage\GssTool\GssQuery.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHis.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisDeleteFullServicesMail.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisDeleteGiftAward.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisDisRoleChatAdd.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisDisRoleChatDel.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisFullServicesMail.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisGameNotice.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisLockRole.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisLockUser.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisRoleRecovery.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisUnLockRole.aspx" />
+    <Content Include="ModelPage\GssTool\GssViewHisUnLockUser.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\ActivityInfoLog.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\EquipmentInfoLog.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\FriendGiveGift.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\MountInfoLog.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\PetInfoLog.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\ShopInfoLog.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\ShoppingMallLog.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\TenEvenDraw.aspx" />
+    <Content Include="ModelPage\PlayerInfoLog\UserOnlineTimeAvg.aspx" />
+    <Content Include="ModelPage\Reimburse\Reimburse.aspx" />
+    <Content Include="ModelPage\Reimburse\ReimburseLog.aspx" />
+    <Content Include="ModelPage\Replenishment\Replenishment.aspx" />
+    <Content Include="ModelPage\Replenishment\ReplenishmentLog.aspx" />
+    <Content Include="ModelPage\ServiceState\QueryServiceState.aspx" />
+    <Content Include="ModelPage\ShoppingMallLog\GrowthFund.aspx" />
+    <Content Include="ModelPage\ShoppingMallLog\RedDiamondGiftShop.aspx" />
+    <Content Include="ModelPage\ShoppingMallLog\ShopLog.aspx" />
+    <Content Include="Model\SqlCmd\Create\8-DigGameDB.sql" />
+    <Content Include="NewMenu.aspx" />
+    <Content Include="Resources\GSSClient\setup.exe" />
+    <Content Include="Resources\GssService\setup.exe" />
+    <Content Include="Script\ace\css\ace-rtl.min.css" />
+    <Content Include="Script\ace\css\ace-skins.min.css" />
+    <Content Include="Script\ace\js\ace-extra.min.js" />
+    <Content Include="Script\ace\js\ace.min.js" />
+    <Content Include="Script\bootstrap-3.3.7\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Script\bootstrap-3.3.7\css\bootstrap.css" />
+    <Content Include="Script\bootstrap-3.3.7\css\bootstrap.min.css" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap-select.js" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap-tab.js" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap-table.js" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap.js" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap-paginator.js" />
+    <Content Include="Script\bootstrap-3.3.7\js\bootstrap.min.js" />
+    <Content Include="Script\Browser.js" />
+    <Content Include="Script\CommonCss\common.css" />
+    <Content Include="Script\font-awesome\css\font-awesome.css" />
+    <Content Include="Script\My97DatePicker\calendar.js" />
+    <Content Include="Script\My97DatePicker\lang\en.js" />
+    <Content Include="Script\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Script\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Script\My97DatePicker\skin\blueFresh\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\blueFresh\img.gif" />
+    <Content Include="Script\My97DatePicker\skin\blue\bg.jpg" />
+    <Content Include="Script\My97DatePicker\skin\blue\btnbg.jpg" />
+    <Content Include="Script\My97DatePicker\skin\blue\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\blue\down.jpg" />
+    <Content Include="Script\My97DatePicker\skin\blue\left.gif" />
+    <Content Include="Script\My97DatePicker\skin\blue\navLeft.gif" />
+    <Content Include="Script\My97DatePicker\skin\blue\navRight.gif" />
+    <Content Include="Script\My97DatePicker\skin\blue\qs.jpg" />
+    <Content Include="Script\My97DatePicker\skin\blue\right.gif" />
+    <Content Include="Script\My97DatePicker\skin\blue\up.jpg" />
+    <Content Include="Script\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Script\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\ext\dateselect.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\glass-bg.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\hd-sprite.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\img.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\left-btn.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\left-btn2.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\right-btn.gif" />
+    <Content Include="Script\My97DatePicker\skin\ext\right-btn2.gif" />
+    <Content Include="Script\My97DatePicker\skin\green\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\green\img.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\bg.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\bg_calendar.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\simple\down.jpg" />
+    <Content Include="Script\My97DatePicker\skin\simple\indexbg.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\left.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\navLeft.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\navRight.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\qs.jpg" />
+    <Content Include="Script\My97DatePicker\skin\simple\right.gif" />
+    <Content Include="Script\My97DatePicker\skin\simple\up.jpg" />
+    <Content Include="Script\My97DatePicker\skin\simple\ymbg.jpg" />
+    <Content Include="Script\My97DatePicker\skin\twoer\datepicker-dev.css" />
+    <Content Include="Script\My97DatePicker\skin\twoer\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\twoer\img.gif" />
+    <Content Include="Script\My97DatePicker\skin\twoer\img.png" />
+    <Content Include="Script\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Script\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Script\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Script\My97DatePicker\skin\YcloudRed\bg.gif" />
+    <Content Include="Script\My97DatePicker\skin\YcloudRed\datepicker.css" />
+    <Content Include="Script\My97DatePicker\skin\YcloudRed\qs.jpg" />
+    <Content Include="Script\My97DatePicker\WdatePicker.js" />
+    <Content Include="Script\Ui\GameConfig.ko-kr.js" />
+    <Content Include="Script\Ui\GameConfig.zh-CN.js" />
+    <Content Include="Script\Ui\GridConfig.js" />
+    <Content Include="Script\jquery-1.12.3.min.js" />
+    <Content Include="Script\sidebar-menu\sidebar-menu.js" />
+    <Content Include="Script\Ui\InitGrid.js" />
+    <Content Include="Script\Ui\Lang.ko-kr.js" />
+    <Content Include="Script\Ui\MoneyStatic.ko-kr.js" />
+    <Content Include="Script\Ui\MoneyStatic.zh-CN.js" />
+    <Content Include="Shop\ShopBaseItemQuery.aspx" />
+    <Content Include="Shop\ShopItemList.aspx" />
+    <Content Include="Shop\ShopItemAdd.aspx" />
+    <Content Include="Shop\ShopItemEdit.aspx" />
+    <Content Include="Shop\ShopBaseItemList.aspx" />
+    <Content Include="Shop\ShopItemImport.aspx" />
+    <Content Include="Shop\ShopBaseItemImport.aspx" />
+    <Content Include="StartNotice\StartNoticeList.aspx" />
+    <Content Include="Stats\AccountInterzoneShopSaleItems.aspx" />
+    <Content Include="Stats\AccountInterzoneShopSaleItemsB.aspx" />
+    <Content Include="Stats\CampExploitRank.aspx" />
+    <Content Include="Stats\CampLog.aspx" />
+    <Content Include="Stats\ChatQuery_Hours.aspx" />
+    <Content Include="Stats\ChatTypeNum.aspx" />
+    <Content Include="Stats\CorpsbattleRank.aspx" />
+    <Content Include="Stats\CorpsLog.aspx" />
+    <Content Include="Stats\DiamondLog.aspx" />
+    <Content Include="Stats\EmailLog.aspx" />
+    <Content Include="Stats\Fight\RoleRank.aspx" />
+    <Content Include="Stats\GodRank.aspx" />
+    <Content Include="Stats\GoldLog.aspx" />
+    <Content Include="Stats\Gold\RoleRank.aspx" />
+    <Content Include="Stats\ItemQueryRank.aspx" />
+    <Content Include="Stats\ItemQuery_01.aspx" />
+    <Content Include="Stats\Item\ItemBusinessRank.aspx" />
+    <Content Include="Stats\Item\PickUpItemRank.aspx" />
+    <Content Include="Stats\Item\RoleRank.aspx" />
+    <Content Include="Stats\Item\RoleRank_Trade_InCount.aspx" />
+    <Content Include="Stats\Item\TypeTotal.aspx" />
+    <Content Include="Stats\Item\RoleRank_In_TradeCount.aspx" />
+    <Content Include="Stats\ModelClothesLog.aspx" />
+    <Content Include="Stats\MoneyLog.aspx" />
+    <Content Include="Stats\Money\RoleRank.aspx" />
+    <Content Include="Stats\Money\TypeTotal.aspx" />
+    <Content Include="Stats\Money\RoleRank_Email_In_TradeCount.aspx" />
+    <Content Include="Stats\Money\RoleRank_MoneyCount.aspx" />
+    <Content Include="Stats\Money\RoleRank_TradeCount.aspx" />
+    <Content Include="Stats\Money\RoleRank_Email_MoneyCount.aspx" />
+    <Content Include="Stats\Money\RoleRank_Email_TradeCount.aspx" />
+    <Content Include="Stats\Money\RoleRank_Depository_TradeCount.aspx" />
+    <Content Include="Stats\Money\RoleRank_Depository_MoneyCount.aspx" />
+    <Content Include="Stats\Other\RoleRank_Proficiency.aspx" />
+    <Content Include="Stats\Other\TypeTotal.aspx" />
+    <Content Include="Stats\PhysicalPowerQuery.aspx" />
+    <Content Include="Stats\PlayerBattleRank.aspx" />
+    <Content Include="Stats\RechargeByTimeLog.aspx" />
+    <Content Include="Stats\RechargeLog.aspx" />
+    <Content Include="Stats\RechargeRoleSumLog.aspx" />
+    <Content Include="Stats\RechargeSumLog.aspx" />
+    <Content Include="Stats\RoleLoginZone.aspx" />
+    <Content Include="Stats\RoleLoseLevelCreate.aspx" />
+    <Content Include="Stats\RoleOnlineLoginOutRank_Two.aspx" />
+    <Content Include="Stats\RoleOnlineLoginRank_Two.aspx" />
+    <Content Include="Stats\RoleRemain.aspx" />
+    <Content Include="Stats\UserLoginSituation.aspx" />
+    <Content Include="Stats\UserManage\StaticTemplate.aspx" />
+    <Content Include="Stats\Trade\RoleRank.aspx" />
+    <Content Include="Stats\Trade\RoleRank_Money_01.aspx" />
+    <Content Include="Stats\UserManage\UserActiveMountStatics.aspx" />
+    <Content Include="Stats\UserManage\UserSocialContactStatics.aspx" />
+    <Content Include="Stats\UserManage\UserEmail.aspx" />
+    <Content Include="Stats\UserManage\UserMountLevelStatic.aspx" />
+    <Content Include="Stats\UserQuery.aspx" />
+    <Content Include="Stats\ItemDropDay.aspx" />
+    <Content Include="Stats\ItemDropDayNow.aspx" />
+    <Content Include="Stats\MoneyGoldOutIn.aspx" />
+    <Content Include="Stats\MoneyGoldRole.aspx" />
+    <Content Include="Stats\MoneyGoldRoleStream.aspx" />
+    <Content Include="Stats\MoneyGoldType.aspx" />
+    <Content Include="Stats\MoneyGoldTypeOut.aspx" />
+    <Content Include="Stats\MoneyRankTask.aspx" />
+    <Content Include="Stats\RoleOnlineDay.aspx" />
+    <Content Include="Stats\RoleOnlineFlow.aspx" />
+    <Content Include="Stats\RoleOnlineFlowM.aspx" />
+    <Content Include="Stats\RoleOnlineHour.aspx" />
+    <Content Include="Stats\RoleOnlineIPRank.aspx" />
+    <Content Include="Stats\RoleOnlineLoginRank.aspx" />
+    <Content Include="Stats\RoleVocation.aspx" />
+    <Content Include="Stats\RoleVocationGrow.aspx" />
+    <Content Include="Stats\RoleVocationLevel.aspx" />
+    <Content Include="Stats\RoleVocationLevelPara.aspx" />
+    <Content Include="Stats\RoleVocationLevelRank.aspx" />
+    <Content Include="Stats\StoneDropDay.aspx" />
+    <Content Include="Stats\UserActive.aspx" />
+    <Content Include="Stats\UserLoginHistory.aspx" />
+    <Content Include="Stats\UserLoginLose.aspx" />
+    <Content Include="Stats\UserLose.aspx" />
+    <Content Include="Stats\UserOnLine.aspx" />
+    <Content Include="Stats\UserOnLineHistory.aspx" />
+    <Content Include="Stats\QuestSex.aspx" />
+    <Content Include="Stats\RoleLoseLevelPara.aspx" />
+    <Content Include="Stats\RoleLoseTimeFirst.aspx" />
+    <Content Include="Stats\RoleLoseTimeAll.aspx" />
+    <Content Include="Stats\ChatQuery.aspx" />
+    <Content Include="Stats\ChatTypeNumD.aspx" />
+    <Content Include="Stats\UserLoginZone.aspx" />
+    <Content Include="Stats\TaskFinishRank.aspx" />
+    <Content Include="Stats\TaskFinishRankRT.aspx" />
+    <Content Include="Stats\UserLoginArea.aspx" />
+    <Content Include="Stats\UserLoginTimePara.aspx" />
+    <Content Include="Stats\TaskAcceptRank.aspx" />
+    <Content Include="Stats\TaskAcceptRankRT.aspx" />
+    <Content Include="Stats\TaskQuery.aspx" />
+    <Content Include="Stats\TaskBugList.aspx" />
+    <Content Include="Stats\RoleLoseLevel.aspx" />
+    <Content Include="Stats\ChatRoleRpeatRank.aspx" />
+    <Content Include="Stats\ChatRoleNumRank.aspx" />
+    <Content Include="Stats\TaskAcceptFinish.aspx" />
+    <Content Include="Stats\RoleLevelTime.aspx" />
+    <Content Include="Stats\ItemDropQuery.aspx" />
+    <Content Include="Stats\GMQuery.aspx" />
+    <Content Include="Stats\RoleVocationLevelGrow.aspx" />
+    <Content Include="Stats\RoleVocationLevelParaGrow.aspx" />
+    <Content Include="Stats\PublicSale.aspx" />
+    <Content Include="Stats\PublicSaleStar.aspx" />
+    <Content Include="Stats\PublicSaleLevel.aspx" />
+    <Content Include="Stats\PublicSaleJinglian.aspx" />
+    <Content Include="Stats\PublicSaleHuanhua.aspx" />
+    <Content Include="Stats\PublicSaleRankFight.aspx" />
+    <Content Include="Stats\HonorMoneySRoleRank.aspx" />
+    <Content Include="Stats\RoleVocationAttackRank.aspx" />
+    <Content Include="Stats\RoleVocationDefenceRank.aspx" />
+    <Content Include="Stats\RoleVocationPKHonorRank.aspx" />
+    <Content Include="Stats\CorpsRankHonor.aspx" />
+    <Content Include="Stats\Count.aspx" />
+    <Content Include="Stats\CountItem.aspx" />
+    <Content Include="Stats\SQLQuery.aspx" />
+    <Content Include="Stats\OtherQuery.aspx" />
+    <Content Include="Stats\ItemAttriAttack.aspx" />
+    <Content Include="Stats\ItemAttriDefence.aspx" />
+    <Content Include="Stats\Test.aspx" />
+    <Content Include="Stats\UserRemain.aspx" />
+    <Content Include="Stats\UserStateActive.aspx" />
+    <Content Include="Stats\UserStateLose.aspx" />
+    <Content Include="Stats\UserStateBack.aspx" />
+    <Content Include="Stats\MoneySilverOutIn.aspx" />
+    <Content Include="Stats\MoneySilverType.aspx" />
+    <Content Include="Stats\MoneySilverRankTask.aspx" />
+    <Content Include="Stats\CorpsRankLevel.aspx" />
+    <Content Include="Stats\CorpsRankUCount.aspx" />
+    <Content Include="Stats\MoneySilverExist.aspx" />
+    <Content Include="Stats\WeekExploitRank.aspx" />
+    <Content Include="Stats\WeekKillRank.aspx" />
+    <Content Include="Stats\WSSQueryRole.aspx" />
+    <Content Include="Stats\WSSQueryTask.aspx" />
+    <Content Include="Stats\WSSQueryTextName.aspx" />
+    <Content Include="Stats\MediaBaiduIndex.aspx" />
+    <Content Include="Stats\MediaWeiboZone.aspx" />
+    <Content Include="Stats\MediaWeiboQuery.aspx" />
+    <Content Include="Stats\ShopSale.aspx" />
+    <Content Include="Stats\ShopSaleRoleLevel.aspx" />
+    <Content Include="Stats\ShopSaleItem_Goods.aspx" />
+    <Content Include="Stats\ShopSaleItem_Items.aspx" />
+    <Content Include="Stats\ShopQuery.aspx" />
+    <Content Include="Stats\RoleOnlineFlow_Zone.aspx" />
+    <Content Include="Stats\RoleOnlineFlowM_Zone.aspx" />
+    <Content Include="Stats\ShopSaleB.aspx" />
+    <Content Include="Stats\ShopSaleItem_GoodsB.aspx" />
+    <Content Include="Stats\ShopSaleItem_ItemsB.aspx" />
+    <Content Include="Stats\ShopSaleRoleLevelB.aspx" />
+    <Content Include="Stats\GoldQuery.aspx" />
+    <Content Include="Stats\UserAccountQuery.aspx" />
+    <Content Include="Stats\UserAccountLogQuery.aspx" />
+    <Content Include="Stats\ItemQuery.aspx" />
+    <Content Include="Stats\UserAccountDepositRank_Money.aspx" />
+    <Content Include="Stats\UserAccountDepositRank_Time.aspx" />
+    <Content Include="Stats\UserAccountDepositRank_All.aspx" />
+    <Content Include="Stats\MoneyGoldRank_SumRole_Tiqu.aspx" />
+    <Content Include="Stats\MoneyGoldRank_SumRole_Xiaohao.aspx" />
+    <Content Include="Stats\MoneyGoldRank_SumRole_Shop.aspx" />
+    <Content Include="Stats\MoneyGoldBindRank_SumRole_Shop.aspx" />
+    <Content Include="Stats\MoneyGoldBindRank_SumRole_Tiqu.aspx" />
+    <Content Include="Stats\MoneyGoldBindRank_SumRole_Xiaohao.aspx" />
+    <Content Include="Stats\MoneyQuery.aspx" />
+    <Content Include="Stats\TradeQuery.aspx" />
+    <Content Include="Stats\UserAccountTradeAll.aspx" />
+    <Content Include="Stats\ShopSale_Day.aspx" />
+    <Content Include="Stats\ShopSaleB_Day.aspx" />
+    <Content Include="Stats\GSS_CustServ_Day.aspx" />
+    <Content Include="Stats\ShopSale_DayALL.aspx" />
+    <Content Include="Stats\ShopSaleB_DayALL.aspx" />
+    <Content Include="Stats\ShopSale_Day_01.aspx" />
+    <Content Include="Stats\ShopSale_Day_02.aspx" />
+    <Content Include="Stats\ShopSale_Day_03.aspx" />
+    <Content Include="Stats\ShopSaleCount.aspx" />
+    <Content Include="Stats\ShopSaleItem_RoleIDCount.aspx" />
+    <Content Include="Stats\ShopSaleItem_ExcelIDCount.aspx" />
+    <Content Include="Stats\ShopSaleItem_ExcelLevel.aspx" />
+    <Content Include="Stats\InTastCount.aspx" />
+    <Content Include="Stats\UserAccountInterzone.aspx" />
+    <Content Include="Stats\ShopSaleItem_Goods_Day_TradeCount.aspx" />
+    <Content Include="Stats\ShopSaleItem_Goods_Day_MoneyCount.aspx" />
+    <Content Include="Stats\ShopSaleItem_Goods_Day_GoodsCount.aspx" />
+    <Content Include="Stats\RoleOnlineFlow_All.aspx" />
+    <Content Include="Stats\RoleOnlineFlowM_All.aspx" />
+    <Content Include="Stats\ZoneInfo.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Admin_NoPage.aspx" />
+    <Content Include="Admin_Main_Data.aspx" />
+    <None Include="Model\Note\Wss和gss已完成功能列表.docx" />
+    <None Include="Model\Note\Wss和gss已完成功能列表.xlsx" />
+    <None Include="Model\Note\DevelopWord\数据含义.docx" />
+    <None Include="Model\Note\DevelopWord\rank_data.xlsm" />
+    <None Include="Model\Note\DevelopWord\【邮件相关日志】aGSLog统计.docx" />
+    <None Include="Model\Note\DevelopWord\Wss和Gss架设.docx" />
+    <None Include="Properties\PublishProfiles\PublishCDK.pubxml" />
+    <Content Include="Script\Ui\Lang.zh-CN.js" />
+    <Content Include="Resources\GssService\Debug.zip" />
+    <Content Include="Script\My97DatePicker\skin\blueFresh\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_IFrame.aspx.cs">
+      <DependentUpon>Admin_IFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_IFrame.aspx.designer.cs">
+      <DependentUpon>Admin_IFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Main.aspx.cs">
+      <DependentUpon>Admin_Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Main.aspx.designer.cs">
+      <DependentUpon>Admin_Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Manage.aspx.cs">
+      <DependentUpon>Admin_Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Manage.aspx.designer.cs">
+      <DependentUpon>Admin_Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Menus.aspx.cs">
+      <DependentUpon>Admin_Menus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Menus.aspx.designer.cs">
+      <DependentUpon>Admin_Menus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_GlobalResources\Language1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CDKey\CDKeyBatchList.aspx.cs">
+      <DependentUpon>CDKeyBatchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDKey\CDKeyBatchList.aspx.designer.cs">
+      <DependentUpon>CDKeyBatchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDKey\CDKeyList.aspx.cs">
+      <DependentUpon>CDKeyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDKey\CDKeyList.aspx.designer.cs">
+      <DependentUpon>CDKeyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDKey\CDKeyCreate.aspx.cs">
+      <DependentUpon>CDKeyCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDKey\CDKeyCreate.aspx.designer.cs">
+      <DependentUpon>CDKeyCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDKey\CDKeyBatchImport.aspx.cs">
+      <DependentUpon>CDKeyBatchImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDKey\CDKeyBatchImport.aspx.designer.cs">
+      <DependentUpon>CDKeyBatchImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDKey\CDKeyImport.aspx.cs">
+      <DependentUpon>CDKeyImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CDKey\CDKeyImport.aspx.designer.cs">
+      <DependentUpon>CDKeyImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodingTran.cs" />
+    <Compile Include="Common\ControlDateSelect.ascx.cs">
+      <DependentUpon>ControlDateSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ControlDateSelect.ascx.designer.cs">
+      <DependentUpon>ControlDateSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CPPUtil.cs" />
+    <Compile Include="Common\EnumWSS.cs" />
+    <Compile Include="Common\MsgBox.cs" />
+    <Compile Include="Common\Util.cs" />
+    <Compile Include="Common\Validate.cs" />
+    <Compile Include="Common\ControlMonthSelect.ascx.cs">
+      <DependentUpon>ControlMonthSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ControlMonthSelect.ascx.designer.cs">
+      <DependentUpon>ControlMonthSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ControlChart.ascx.cs">
+      <DependentUpon>ControlChart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ControlChart.ascx.designer.cs">
+      <DependentUpon>ControlChart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ControlChartSelect.ascx.cs">
+      <DependentUpon>ControlChartSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ControlChartSelect.ascx.designer.cs">
+      <DependentUpon>ControlChartSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ControlOutFile.ascx.cs">
+      <DependentUpon>ControlOutFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ControlOutFile.ascx.designer.cs">
+      <DependentUpon>ControlOutFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\PurchaseLog.aspx.cs">
+      <DependentUpon>PurchaseLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\PurchaseLog.aspx.designer.cs">
+      <DependentUpon>PurchaseLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\PutawayLog.aspx.cs">
+      <DependentUpon>PutawayLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\PutawayLog.aspx.designer.cs">
+      <DependentUpon>PutawayLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\SearchLog.aspx.cs">
+      <DependentUpon>SearchLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\SearchLog.aspx.designer.cs">
+      <DependentUpon>SearchLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\SoldOutLog.aspx.cs">
+      <DependentUpon>SoldOutLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\AuctionShop\SoldOutLog.aspx.designer.cs">
+      <DependentUpon>SoldOutLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\FirstChargeAnalyze.aspx.cs">
+      <DependentUpon>FirstChargeAnalyze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\FirstChargeAnalyze.aspx.designer.cs">
+      <DependentUpon>FirstChargeAnalyze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeData.aspx.cs">
+      <DependentUpon>RechargeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeData.aspx.designer.cs">
+      <DependentUpon>RechargeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeFrequency.aspx.cs">
+      <DependentUpon>RechargeFrequency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeFrequency.aspx.designer.cs">
+      <DependentUpon>RechargeFrequency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeLevel.aspx.cs">
+      <DependentUpon>RechargeLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeLevel.aspx.designer.cs">
+      <DependentUpon>RechargeLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeRankList.aspx.cs">
+      <DependentUpon>RechargeRankList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeRankList.aspx.designer.cs">
+      <DependentUpon>RechargeRankList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeRecord.aspx.cs">
+      <DependentUpon>RechargeRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeRecord.aspx.designer.cs">
+      <DependentUpon>RechargeRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeRegion.aspx.cs">
+      <DependentUpon>RechargeRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameInCome\RechargeRegion.aspx.designer.cs">
+      <DependentUpon>RechargeRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\Ajax.ashx.cs">
+      <DependentUpon>Ajax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\Building.aspx.cs">
+      <DependentUpon>Building.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\Building.aspx.designer.cs">
+      <DependentUpon>Building.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\GamePandect.aspx.cs">
+      <DependentUpon>GamePandect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\GamePandect.aspx.designer.cs">
+      <DependentUpon>GamePandect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeInCome.aspx.cs">
+      <DependentUpon>RealTimeInCome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeInCome.aspx.designer.cs">
+      <DependentUpon>RealTimeInCome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeLogin.aspx.cs">
+      <DependentUpon>RealTimeLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeLogin.aspx.designer.cs">
+      <DependentUpon>RealTimeLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeLoginNewPlayer.aspx.cs">
+      <DependentUpon>RealTimeLoginNewPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeLoginNewPlayer.aspx.designer.cs">
+      <DependentUpon>RealTimeLoginNewPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeNew.aspx.cs">
+      <DependentUpon>RealTimeNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeNew.aspx.designer.cs">
+      <DependentUpon>RealTimeNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeNew_Channel.aspx.cs">
+      <DependentUpon>RealTimeNew_Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeNew_Channel.aspx.designer.cs">
+      <DependentUpon>RealTimeNew_Channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeNew_Zone_Channel.aspx.cs">
+      <DependentUpon>RealTimeNew_Zone_Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeNew_Zone_Channel.aspx.designer.cs">
+      <DependentUpon>RealTimeNew_Zone_Channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeRemain_Channel.aspx.cs">
+      <DependentUpon>RealTimeRemain_Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeRemain_Channel.aspx.designer.cs">
+      <DependentUpon>RealTimeRemain_Channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeRemain_Zone_Channel.aspx.cs">
+      <DependentUpon>RealTimeRemain_Zone_Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GameOverView\RealTimeRemain_Zone_Channel.aspx.designer.cs">
+      <DependentUpon>RealTimeRemain_Zone_Channel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\DepositConfig.aspx.cs">
+      <DependentUpon>DepositConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\DepositConfig.aspx.designer.cs">
+      <DependentUpon>DepositConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\DepositConfigLog.aspx.cs">
+      <DependentUpon>DepositConfigLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\DepositConfigLog.aspx.designer.cs">
+      <DependentUpon>DepositConfigLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\DepositList.aspx.cs">
+      <DependentUpon>DepositList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\DepositList.aspx.designer.cs">
+      <DependentUpon>DepositList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\GiftConfig.aspx.cs">
+      <DependentUpon>GiftConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\GiftConfig.aspx.designer.cs">
+      <DependentUpon>GiftConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\GiftConfigLog.aspx.cs">
+      <DependentUpon>GiftConfigLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\GiftConfigLog.aspx.designer.cs">
+      <DependentUpon>GiftConfigLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\GiftList.aspx.cs">
+      <DependentUpon>GiftList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GiftConfig\GiftList.aspx.designer.cs">
+      <DependentUpon>GiftList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GMJurisdiction\GMJurisdictionSet.aspx.cs">
+      <DependentUpon>GMJurisdictionSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GMJurisdiction\GMJurisdictionSet.aspx.designer.cs">
+      <DependentUpon>GMJurisdictionSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssFullServicesMail.aspx.cs">
+      <DependentUpon>GssFullServicesMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssFullServicesMail.aspx.designer.cs">
+      <DependentUpon>GssFullServicesMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssGameNotice.aspx.cs">
+      <DependentUpon>GssGameNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssGameNotice.aspx.designer.cs">
+      <DependentUpon>GssGameNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssGiftAward.aspx.cs">
+      <DependentUpon>GssGiftAward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssGiftAward.aspx.designer.cs">
+      <DependentUpon>GssGiftAward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssQuery.aspx.cs">
+      <DependentUpon>GssQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssQuery.aspx.designer.cs">
+      <DependentUpon>GssQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHis.aspx.cs">
+      <DependentUpon>GssViewHis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHis.aspx.designer.cs">
+      <DependentUpon>GssViewHis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDeleteFullServicesMail.aspx.cs">
+      <DependentUpon>GssViewHisDeleteFullServicesMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDeleteFullServicesMail.aspx.designer.cs">
+      <DependentUpon>GssViewHisDeleteFullServicesMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDeleteGiftAward.aspx.cs">
+      <DependentUpon>GssViewHisDeleteGiftAward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDeleteGiftAward.aspx.designer.cs">
+      <DependentUpon>GssViewHisDeleteGiftAward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDisRoleChatAdd.aspx.cs">
+      <DependentUpon>GssViewHisDisRoleChatAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDisRoleChatAdd.aspx.designer.cs">
+      <DependentUpon>GssViewHisDisRoleChatAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDisRoleChatDel.aspx.cs">
+      <DependentUpon>GssViewHisDisRoleChatDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisDisRoleChatDel.aspx.designer.cs">
+      <DependentUpon>GssViewHisDisRoleChatDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisFullServicesMail.aspx.cs">
+      <DependentUpon>GssViewHisFullServicesMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisFullServicesMail.aspx.designer.cs">
+      <DependentUpon>GssViewHisFullServicesMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisGameNotice.aspx.cs">
+      <DependentUpon>GssViewHisGameNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisGameNotice.aspx.designer.cs">
+      <DependentUpon>GssViewHisGameNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisLockRole.aspx.cs">
+      <DependentUpon>GssViewHisLockRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisLockRole.aspx.designer.cs">
+      <DependentUpon>GssViewHisLockRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisLockUser.aspx.cs">
+      <DependentUpon>GssViewHisLockUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisLockUser.aspx.designer.cs">
+      <DependentUpon>GssViewHisLockUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisRoleRecovery.aspx.cs">
+      <DependentUpon>GssViewHisRoleRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisRoleRecovery.aspx.designer.cs">
+      <DependentUpon>GssViewHisRoleRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisUnLockRole.aspx.cs">
+      <DependentUpon>GssViewHisUnLockRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisUnLockRole.aspx.designer.cs">
+      <DependentUpon>GssViewHisUnLockRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisUnLockUser.aspx.cs">
+      <DependentUpon>GssViewHisUnLockUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\GssTool\GssViewHisUnLockUser.aspx.designer.cs">
+      <DependentUpon>GssViewHisUnLockUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\ActivityInfoLog.aspx.cs">
+      <DependentUpon>ActivityInfoLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\ActivityInfoLog.aspx.designer.cs">
+      <DependentUpon>ActivityInfoLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\EquipmentInfoLog.aspx.cs">
+      <DependentUpon>EquipmentInfoLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\EquipmentInfoLog.aspx.designer.cs">
+      <DependentUpon>EquipmentInfoLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\FriendGiveGift.aspx.cs">
+      <DependentUpon>FriendGiveGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\FriendGiveGift.aspx.designer.cs">
+      <DependentUpon>FriendGiveGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\MountInfoLog.aspx.cs">
+      <DependentUpon>MountInfoLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\MountInfoLog.aspx.designer.cs">
+      <DependentUpon>MountInfoLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\PetInfoLog.aspx.cs">
+      <DependentUpon>PetInfoLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\PetInfoLog.aspx.designer.cs">
+      <DependentUpon>PetInfoLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\ShopInfoLog.aspx.cs">
+      <DependentUpon>ShopInfoLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\ShopInfoLog.aspx.designer.cs">
+      <DependentUpon>ShopInfoLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\ShoppingMallLog.aspx.cs">
+      <DependentUpon>ShoppingMallLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\ShoppingMallLog.aspx.designer.cs">
+      <DependentUpon>ShoppingMallLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\TenEvenDraw.aspx.cs">
+      <DependentUpon>TenEvenDraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\TenEvenDraw.aspx.designer.cs">
+      <DependentUpon>TenEvenDraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\UserOnlineTimeAvg.aspx.cs">
+      <DependentUpon>UserOnlineTimeAvg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\PlayerInfoLog\UserOnlineTimeAvg.aspx.designer.cs">
+      <DependentUpon>UserOnlineTimeAvg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\Reimburse\Reimburse.aspx.cs">
+      <DependentUpon>Reimburse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\Reimburse\Reimburse.aspx.designer.cs">
+      <DependentUpon>Reimburse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\Reimburse\ReimburseLog.aspx.cs">
+      <DependentUpon>ReimburseLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\Reimburse\ReimburseLog.aspx.designer.cs">
+      <DependentUpon>ReimburseLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\Replenishment\Replenishment.aspx.cs">
+      <DependentUpon>Replenishment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\Replenishment\Replenishment.aspx.designer.cs">
+      <DependentUpon>Replenishment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\Replenishment\ReplenishmentLog.aspx.cs">
+      <DependentUpon>ReplenishmentLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\Replenishment\ReplenishmentLog.aspx.designer.cs">
+      <DependentUpon>ReplenishmentLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\ServiceState\QueryServiceState.aspx.cs">
+      <DependentUpon>QueryServiceState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\ServiceState\QueryServiceState.aspx.designer.cs">
+      <DependentUpon>QueryServiceState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\ShoppingMallLog\GrowthFund.aspx.cs">
+      <DependentUpon>GrowthFund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\ShoppingMallLog\GrowthFund.aspx.designer.cs">
+      <DependentUpon>GrowthFund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\ShoppingMallLog\RedDiamondGiftShop.aspx.cs">
+      <DependentUpon>RedDiamondGiftShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\ShoppingMallLog\RedDiamondGiftShop.aspx.designer.cs">
+      <DependentUpon>RedDiamondGiftShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelPage\ShoppingMallLog\ShopLog.aspx.cs">
+      <DependentUpon>ShopLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelPage\ShoppingMallLog\ShopLog.aspx.designer.cs">
+      <DependentUpon>ShopLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GMUser.cs" />
+    <Compile Include="Model\UseMount.cs" />
+    <Compile Include="NewMenu.aspx.cs">
+      <DependentUpon>NewMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewMenu.aspx.designer.cs">
+      <DependentUpon>NewMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shop\ShopBaseItemQuery.aspx.cs">
+      <DependentUpon>ShopBaseItemQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopBaseItemQuery.aspx.designer.cs">
+      <DependentUpon>ShopBaseItemQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ShopItemList.aspx.cs">
+      <DependentUpon>ShopItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopItemList.aspx.designer.cs">
+      <DependentUpon>ShopItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ShopItemAdd.aspx.cs">
+      <DependentUpon>ShopItemAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopItemAdd.aspx.designer.cs">
+      <DependentUpon>ShopItemAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ShopItemEdit.aspx.cs">
+      <DependentUpon>ShopItemEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopItemEdit.aspx.designer.cs">
+      <DependentUpon>ShopItemEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ShopBaseItemList.aspx.cs">
+      <DependentUpon>ShopBaseItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopBaseItemList.aspx.designer.cs">
+      <DependentUpon>ShopBaseItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ShopItemImport.aspx.cs">
+      <DependentUpon>ShopItemImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopItemImport.aspx.designer.cs">
+      <DependentUpon>ShopItemImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\ShopBaseItemImport.aspx.cs">
+      <DependentUpon>ShopBaseItemImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\ShopBaseItemImport.aspx.designer.cs">
+      <DependentUpon>ShopBaseItemImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StartNotice\StartNoticeList.aspx.cs">
+      <DependentUpon>StartNoticeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartNotice\StartNoticeList.aspx.designer.cs">
+      <DependentUpon>StartNoticeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\AccountInterzoneShopSaleItems.aspx.cs">
+      <DependentUpon>AccountInterzoneShopSaleItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\AccountInterzoneShopSaleItems.aspx.designer.cs">
+      <DependentUpon>AccountInterzoneShopSaleItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\AccountInterzoneShopSaleItemsB.aspx.cs">
+      <DependentUpon>AccountInterzoneShopSaleItemsB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\AccountInterzoneShopSaleItemsB.aspx.designer.cs">
+      <DependentUpon>AccountInterzoneShopSaleItemsB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CampExploitRank.aspx.cs">
+      <DependentUpon>CampExploitRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CampExploitRank.aspx.designer.cs">
+      <DependentUpon>CampExploitRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CampLog.aspx.cs">
+      <DependentUpon>CampLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CampLog.aspx.designer.cs">
+      <DependentUpon>CampLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ChatQuery_Hours.aspx.cs">
+      <DependentUpon>ChatQuery_Hours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ChatQuery_Hours.aspx.designer.cs">
+      <DependentUpon>ChatQuery_Hours.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ChatTypeNum.aspx.cs">
+      <DependentUpon>ChatTypeNum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ChatTypeNum.aspx.designer.cs">
+      <DependentUpon>ChatTypeNum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CorpsbattleRank.aspx.cs">
+      <DependentUpon>CorpsbattleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CorpsbattleRank.aspx.designer.cs">
+      <DependentUpon>CorpsbattleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CorpsLog.aspx.cs">
+      <DependentUpon>CorpsLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CorpsLog.aspx.designer.cs">
+      <DependentUpon>CorpsLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\DiamondLog.aspx.cs">
+      <DependentUpon>DiamondLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\DiamondLog.aspx.designer.cs">
+      <DependentUpon>DiamondLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\EmailLog.aspx.cs">
+      <DependentUpon>EmailLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\EmailLog.aspx.designer.cs">
+      <DependentUpon>EmailLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Fight\RoleRank.aspx.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Fight\RoleRank.aspx.designer.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\GodRank.aspx.cs">
+      <DependentUpon>GodRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\GodRank.aspx.designer.cs">
+      <DependentUpon>GodRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\GoldLog.aspx.cs">
+      <DependentUpon>GoldLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\GoldLog.aspx.designer.cs">
+      <DependentUpon>GoldLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Gold\RoleRank.aspx.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Gold\RoleRank.aspx.designer.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemQueryRank.aspx.cs">
+      <DependentUpon>ItemQueryRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemQueryRank.aspx.designer.cs">
+      <DependentUpon>ItemQueryRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemQuery_01.aspx.cs">
+      <DependentUpon>ItemQuery_01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemQuery_01.aspx.designer.cs">
+      <DependentUpon>ItemQuery_01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Item\ItemBusinessRank.aspx.cs">
+      <DependentUpon>ItemBusinessRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Item\ItemBusinessRank.aspx.designer.cs">
+      <DependentUpon>ItemBusinessRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Item\PickUpItemRank.aspx.cs">
+      <DependentUpon>PickUpItemRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Item\PickUpItemRank.aspx.designer.cs">
+      <DependentUpon>PickUpItemRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Item\RoleRank.aspx.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Item\RoleRank.aspx.designer.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Item\RoleRank_Trade_InCount.aspx.cs">
+      <DependentUpon>RoleRank_Trade_InCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Item\RoleRank_Trade_InCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_Trade_InCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Item\TypeTotal.aspx.cs">
+      <DependentUpon>TypeTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Item\TypeTotal.aspx.designer.cs">
+      <DependentUpon>TypeTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Item\RoleRank_In_TradeCount.aspx.cs">
+      <DependentUpon>RoleRank_In_TradeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Item\RoleRank_In_TradeCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_In_TradeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ModelClothesLog.aspx.cs">
+      <DependentUpon>ModelClothesLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ModelClothesLog.aspx.designer.cs">
+      <DependentUpon>ModelClothesLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyLog.aspx.cs">
+      <DependentUpon>MoneyLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyLog.aspx.designer.cs">
+      <DependentUpon>MoneyLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank.aspx.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank.aspx.designer.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\TypeTotal.aspx.cs">
+      <DependentUpon>TypeTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\TypeTotal.aspx.designer.cs">
+      <DependentUpon>TypeTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Email_In_TradeCount.aspx.cs">
+      <DependentUpon>RoleRank_Email_In_TradeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Email_In_TradeCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_Email_In_TradeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_MoneyCount.aspx.cs">
+      <DependentUpon>RoleRank_MoneyCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_MoneyCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_MoneyCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_TradeCount.aspx.cs">
+      <DependentUpon>RoleRank_TradeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_TradeCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_TradeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Email_MoneyCount.aspx.cs">
+      <DependentUpon>RoleRank_Email_MoneyCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Email_MoneyCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_Email_MoneyCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Email_TradeCount.aspx.cs">
+      <DependentUpon>RoleRank_Email_TradeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Email_TradeCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_Email_TradeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Depository_TradeCount.aspx.cs">
+      <DependentUpon>RoleRank_Depository_TradeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Depository_TradeCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_Depository_TradeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Depository_MoneyCount.aspx.cs">
+      <DependentUpon>RoleRank_Depository_MoneyCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Money\RoleRank_Depository_MoneyCount.aspx.designer.cs">
+      <DependentUpon>RoleRank_Depository_MoneyCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Other\RoleRank_Proficiency.aspx.cs">
+      <DependentUpon>RoleRank_Proficiency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Other\RoleRank_Proficiency.aspx.designer.cs">
+      <DependentUpon>RoleRank_Proficiency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Other\TypeTotal.aspx.cs">
+      <DependentUpon>TypeTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Other\TypeTotal.aspx.designer.cs">
+      <DependentUpon>TypeTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PhysicalPowerQuery.aspx.cs">
+      <DependentUpon>PhysicalPowerQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PhysicalPowerQuery.aspx.designer.cs">
+      <DependentUpon>PhysicalPowerQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PlayerBattleRank.aspx.cs">
+      <DependentUpon>PlayerBattleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PlayerBattleRank.aspx.designer.cs">
+      <DependentUpon>PlayerBattleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RechargeByTimeLog.aspx.cs">
+      <DependentUpon>RechargeByTimeLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RechargeByTimeLog.aspx.designer.cs">
+      <DependentUpon>RechargeByTimeLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RechargeLog.aspx.cs">
+      <DependentUpon>RechargeLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RechargeLog.aspx.designer.cs">
+      <DependentUpon>RechargeLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RechargeRoleSumLog.aspx.cs">
+      <DependentUpon>RechargeRoleSumLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RechargeRoleSumLog.aspx.designer.cs">
+      <DependentUpon>RechargeRoleSumLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RechargeSumLog.aspx.cs">
+      <DependentUpon>RechargeSumLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RechargeSumLog.aspx.designer.cs">
+      <DependentUpon>RechargeSumLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLoginZone.aspx.cs">
+      <DependentUpon>RoleLoginZone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLoginZone.aspx.designer.cs">
+      <DependentUpon>RoleLoginZone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLoseLevelCreate.aspx.cs">
+      <DependentUpon>RoleLoseLevelCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLoseLevelCreate.aspx.designer.cs">
+      <DependentUpon>RoleLoseLevelCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineLoginOutRank_Two.aspx.cs">
+      <DependentUpon>RoleOnlineLoginOutRank_Two.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineLoginOutRank_Two.aspx.designer.cs">
+      <DependentUpon>RoleOnlineLoginOutRank_Two.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineLoginRank_Two.aspx.cs">
+      <DependentUpon>RoleOnlineLoginRank_Two.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineLoginRank_Two.aspx.designer.cs">
+      <DependentUpon>RoleOnlineLoginRank_Two.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleRemain.aspx.cs">
+      <DependentUpon>RoleRemain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleRemain.aspx.designer.cs">
+      <DependentUpon>RoleRemain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLoginSituation.aspx.cs">
+      <DependentUpon>UserLoginSituation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLoginSituation.aspx.designer.cs">
+      <DependentUpon>UserLoginSituation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserManage\StaticTemplate.aspx.cs">
+      <DependentUpon>StaticTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserManage\StaticTemplate.aspx.designer.cs">
+      <DependentUpon>StaticTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Trade\RoleRank.aspx.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Trade\RoleRank.aspx.designer.cs">
+      <DependentUpon>RoleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Trade\RoleRank_Money_01.aspx.cs">
+      <DependentUpon>RoleRank_Money_01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Trade\RoleRank_Money_01.aspx.designer.cs">
+      <DependentUpon>RoleRank_Money_01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserActiveMountStatics.aspx.cs">
+      <DependentUpon>UserActiveMountStatics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserActiveMountStatics.aspx.designer.cs">
+      <DependentUpon>UserActiveMountStatics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserSocialContactStatics.aspx.cs">
+      <DependentUpon>UserSocialContactStatics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserSocialContactStatics.aspx.designer.cs">
+      <DependentUpon>UserSocialContactStatics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserMountLevelStatic.aspx.cs">
+      <DependentUpon>UserMountLevelStatic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserMountLevelStatic.aspx.designer.cs">
+      <DependentUpon>UserMountLevelStatic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserRelatedDataStatis.cs" />
+    <Compile Include="Stats\UserManage\UserEmail.aspx.cs">
+      <DependentUpon>UserEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserEmail.aspx.designer.cs">
+      <DependentUpon>UserEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserManage\UserEmailData.cs" />
+    <Compile Include="Stats\UserQuery.aspx.cs">
+      <DependentUpon>UserQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserQuery.aspx.designer.cs">
+      <DependentUpon>UserQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemDropDay.aspx.cs">
+      <DependentUpon>ItemDropDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemDropDay.aspx.designer.cs">
+      <DependentUpon>ItemDropDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemDropDayNow.aspx.cs">
+      <DependentUpon>ItemDropDayNow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemDropDayNow.aspx.designer.cs">
+      <DependentUpon>ItemDropDayNow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldOutIn.aspx.cs">
+      <DependentUpon>MoneyGoldOutIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldOutIn.aspx.designer.cs">
+      <DependentUpon>MoneyGoldOutIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRole.aspx.cs">
+      <DependentUpon>MoneyGoldRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRole.aspx.designer.cs">
+      <DependentUpon>MoneyGoldRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRoleStream.aspx.cs">
+      <DependentUpon>MoneyGoldRoleStream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRoleStream.aspx.designer.cs">
+      <DependentUpon>MoneyGoldRoleStream.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldType.aspx.cs">
+      <DependentUpon>MoneyGoldType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldType.aspx.designer.cs">
+      <DependentUpon>MoneyGoldType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldTypeOut.aspx.cs">
+      <DependentUpon>MoneyGoldTypeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldTypeOut.aspx.designer.cs">
+      <DependentUpon>MoneyGoldTypeOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyRankTask.aspx.cs">
+      <DependentUpon>MoneyRankTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyRankTask.aspx.designer.cs">
+      <DependentUpon>MoneyRankTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineDay.aspx.cs">
+      <DependentUpon>RoleOnlineDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineDay.aspx.designer.cs">
+      <DependentUpon>RoleOnlineDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlow.aspx.cs">
+      <DependentUpon>RoleOnlineFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlow.aspx.designer.cs">
+      <DependentUpon>RoleOnlineFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlowM.aspx.cs">
+      <DependentUpon>RoleOnlineFlowM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlowM.aspx.designer.cs">
+      <DependentUpon>RoleOnlineFlowM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineHour.aspx.cs">
+      <DependentUpon>RoleOnlineHour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineHour.aspx.designer.cs">
+      <DependentUpon>RoleOnlineHour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineIPRank.aspx.cs">
+      <DependentUpon>RoleOnlineIPRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineIPRank.aspx.designer.cs">
+      <DependentUpon>RoleOnlineIPRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineLoginRank.aspx.cs">
+      <DependentUpon>RoleOnlineLoginRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineLoginRank.aspx.designer.cs">
+      <DependentUpon>RoleOnlineLoginRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocation.aspx.cs">
+      <DependentUpon>RoleVocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocation.aspx.designer.cs">
+      <DependentUpon>RoleVocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationGrow.aspx.cs">
+      <DependentUpon>RoleVocationGrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationGrow.aspx.designer.cs">
+      <DependentUpon>RoleVocationGrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevel.aspx.cs">
+      <DependentUpon>RoleVocationLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevel.aspx.designer.cs">
+      <DependentUpon>RoleVocationLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelPara.aspx.cs">
+      <DependentUpon>RoleVocationLevelPara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelPara.aspx.designer.cs">
+      <DependentUpon>RoleVocationLevelPara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelRank.aspx.cs">
+      <DependentUpon>RoleVocationLevelRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelRank.aspx.designer.cs">
+      <DependentUpon>RoleVocationLevelRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\StatCommon.cs" />
+    <Compile Include="Stats\StoneDropDay.aspx.cs">
+      <DependentUpon>StoneDropDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\StoneDropDay.aspx.designer.cs">
+      <DependentUpon>StoneDropDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserActive.aspx.cs">
+      <DependentUpon>UserActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserActive.aspx.designer.cs">
+      <DependentUpon>UserActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLoginHistory.aspx.cs">
+      <DependentUpon>UserLoginHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLoginHistory.aspx.designer.cs">
+      <DependentUpon>UserLoginHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLoginLose.aspx.cs">
+      <DependentUpon>UserLoginLose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLoginLose.aspx.designer.cs">
+      <DependentUpon>UserLoginLose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLose.aspx.cs">
+      <DependentUpon>UserLose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLose.aspx.designer.cs">
+      <DependentUpon>UserLose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserOnLine.aspx.cs">
+      <DependentUpon>UserOnLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserOnLine.aspx.designer.cs">
+      <DependentUpon>UserOnLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserOnLineHistory.aspx.cs">
+      <DependentUpon>UserOnLineHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserOnLineHistory.aspx.designer.cs">
+      <DependentUpon>UserOnLineHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_NoPage.aspx.cs">
+      <DependentUpon>Admin_NoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_NoPage.aspx.designer.cs">
+      <DependentUpon>Admin_NoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\QuestSex.aspx.cs">
+      <DependentUpon>QuestSex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\QuestSex.aspx.designer.cs">
+      <DependentUpon>QuestSex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLoseLevelPara.aspx.cs">
+      <DependentUpon>RoleLoseLevelPara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLoseLevelPara.aspx.designer.cs">
+      <DependentUpon>RoleLoseLevelPara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLoseTimeFirst.aspx.cs">
+      <DependentUpon>RoleLoseTimeFirst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLoseTimeFirst.aspx.designer.cs">
+      <DependentUpon>RoleLoseTimeFirst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLoseTimeAll.aspx.cs">
+      <DependentUpon>RoleLoseTimeAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLoseTimeAll.aspx.designer.cs">
+      <DependentUpon>RoleLoseTimeAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ChatQuery.aspx.cs">
+      <DependentUpon>ChatQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ChatQuery.aspx.designer.cs">
+      <DependentUpon>ChatQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ChatTypeNumD.aspx.cs">
+      <DependentUpon>ChatTypeNumD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ChatTypeNumD.aspx.designer.cs">
+      <DependentUpon>ChatTypeNumD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLoginZone.aspx.cs">
+      <DependentUpon>UserLoginZone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLoginZone.aspx.designer.cs">
+      <DependentUpon>UserLoginZone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskFinishRank.aspx.cs">
+      <DependentUpon>TaskFinishRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskFinishRank.aspx.designer.cs">
+      <DependentUpon>TaskFinishRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskFinishRankRT.aspx.cs">
+      <DependentUpon>TaskFinishRankRT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskFinishRankRT.aspx.designer.cs">
+      <DependentUpon>TaskFinishRankRT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLoginArea.aspx.cs">
+      <DependentUpon>UserLoginArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLoginArea.aspx.designer.cs">
+      <DependentUpon>UserLoginArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserLoginTimePara.aspx.cs">
+      <DependentUpon>UserLoginTimePara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserLoginTimePara.aspx.designer.cs">
+      <DependentUpon>UserLoginTimePara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskAcceptRank.aspx.cs">
+      <DependentUpon>TaskAcceptRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskAcceptRank.aspx.designer.cs">
+      <DependentUpon>TaskAcceptRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskAcceptRankRT.aspx.cs">
+      <DependentUpon>TaskAcceptRankRT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskAcceptRankRT.aspx.designer.cs">
+      <DependentUpon>TaskAcceptRankRT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskQuery.aspx.cs">
+      <DependentUpon>TaskQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskQuery.aspx.designer.cs">
+      <DependentUpon>TaskQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskBugList.aspx.cs">
+      <DependentUpon>TaskBugList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskBugList.aspx.designer.cs">
+      <DependentUpon>TaskBugList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLoseLevel.aspx.cs">
+      <DependentUpon>RoleLoseLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLoseLevel.aspx.designer.cs">
+      <DependentUpon>RoleLoseLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ChatRoleRpeatRank.aspx.cs">
+      <DependentUpon>ChatRoleRpeatRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ChatRoleRpeatRank.aspx.designer.cs">
+      <DependentUpon>ChatRoleRpeatRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ChatRoleNumRank.aspx.cs">
+      <DependentUpon>ChatRoleNumRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ChatRoleNumRank.aspx.designer.cs">
+      <DependentUpon>ChatRoleNumRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Main_Data.aspx.cs">
+      <DependentUpon>Admin_Main_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Main_Data.aspx.designer.cs">
+      <DependentUpon>Admin_Main_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TaskAcceptFinish.aspx.cs">
+      <DependentUpon>TaskAcceptFinish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TaskAcceptFinish.aspx.designer.cs">
+      <DependentUpon>TaskAcceptFinish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleLevelTime.aspx.cs">
+      <DependentUpon>RoleLevelTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleLevelTime.aspx.designer.cs">
+      <DependentUpon>RoleLevelTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemDropQuery.aspx.cs">
+      <DependentUpon>ItemDropQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemDropQuery.aspx.designer.cs">
+      <DependentUpon>ItemDropQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\GMQuery.aspx.cs">
+      <DependentUpon>GMQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\GMQuery.aspx.designer.cs">
+      <DependentUpon>GMQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelGrow.aspx.cs">
+      <DependentUpon>RoleVocationLevelGrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelGrow.aspx.designer.cs">
+      <DependentUpon>RoleVocationLevelGrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelParaGrow.aspx.cs">
+      <DependentUpon>RoleVocationLevelParaGrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationLevelParaGrow.aspx.designer.cs">
+      <DependentUpon>RoleVocationLevelParaGrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PublicSale.aspx.cs">
+      <DependentUpon>PublicSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PublicSale.aspx.designer.cs">
+      <DependentUpon>PublicSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PublicSaleStar.aspx.cs">
+      <DependentUpon>PublicSaleStar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PublicSaleStar.aspx.designer.cs">
+      <DependentUpon>PublicSaleStar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PublicSaleLevel.aspx.cs">
+      <DependentUpon>PublicSaleLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PublicSaleLevel.aspx.designer.cs">
+      <DependentUpon>PublicSaleLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PublicSaleJinglian.aspx.cs">
+      <DependentUpon>PublicSaleJinglian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PublicSaleJinglian.aspx.designer.cs">
+      <DependentUpon>PublicSaleJinglian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PublicSaleHuanhua.aspx.cs">
+      <DependentUpon>PublicSaleHuanhua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PublicSaleHuanhua.aspx.designer.cs">
+      <DependentUpon>PublicSaleHuanhua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\PublicSaleRankFight.aspx.cs">
+      <DependentUpon>PublicSaleRankFight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\PublicSaleRankFight.aspx.designer.cs">
+      <DependentUpon>PublicSaleRankFight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\HonorMoneySRoleRank.aspx.cs">
+      <DependentUpon>HonorMoneySRoleRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\HonorMoneySRoleRank.aspx.designer.cs">
+      <DependentUpon>HonorMoneySRoleRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationAttackRank.aspx.cs">
+      <DependentUpon>RoleVocationAttackRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationAttackRank.aspx.designer.cs">
+      <DependentUpon>RoleVocationAttackRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationDefenceRank.aspx.cs">
+      <DependentUpon>RoleVocationDefenceRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationDefenceRank.aspx.designer.cs">
+      <DependentUpon>RoleVocationDefenceRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleVocationPKHonorRank.aspx.cs">
+      <DependentUpon>RoleVocationPKHonorRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleVocationPKHonorRank.aspx.designer.cs">
+      <DependentUpon>RoleVocationPKHonorRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CorpsRankHonor.aspx.cs">
+      <DependentUpon>CorpsRankHonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CorpsRankHonor.aspx.designer.cs">
+      <DependentUpon>CorpsRankHonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Count.aspx.cs">
+      <DependentUpon>Count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Count.aspx.designer.cs">
+      <DependentUpon>Count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CountItem.aspx.cs">
+      <DependentUpon>CountItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CountItem.aspx.designer.cs">
+      <DependentUpon>CountItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\SQLQuery.aspx.cs">
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\SQLQuery.aspx.designer.cs">
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\OtherQuery.aspx.cs">
+      <DependentUpon>OtherQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\OtherQuery.aspx.designer.cs">
+      <DependentUpon>OtherQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemAttriAttack.aspx.cs">
+      <DependentUpon>ItemAttriAttack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemAttriAttack.aspx.designer.cs">
+      <DependentUpon>ItemAttriAttack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemAttriDefence.aspx.cs">
+      <DependentUpon>ItemAttriDefence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemAttriDefence.aspx.designer.cs">
+      <DependentUpon>ItemAttriDefence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserRemain.aspx.cs">
+      <DependentUpon>UserRemain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserRemain.aspx.designer.cs">
+      <DependentUpon>UserRemain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserStateActive.aspx.cs">
+      <DependentUpon>UserStateActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserStateActive.aspx.designer.cs">
+      <DependentUpon>UserStateActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserStateLose.aspx.cs">
+      <DependentUpon>UserStateLose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserStateLose.aspx.designer.cs">
+      <DependentUpon>UserStateLose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserStateBack.aspx.cs">
+      <DependentUpon>UserStateBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserStateBack.aspx.designer.cs">
+      <DependentUpon>UserStateBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneySilverOutIn.aspx.cs">
+      <DependentUpon>MoneySilverOutIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneySilverOutIn.aspx.designer.cs">
+      <DependentUpon>MoneySilverOutIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneySilverType.aspx.cs">
+      <DependentUpon>MoneySilverType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneySilverType.aspx.designer.cs">
+      <DependentUpon>MoneySilverType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneySilverRankTask.aspx.cs">
+      <DependentUpon>MoneySilverRankTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneySilverRankTask.aspx.designer.cs">
+      <DependentUpon>MoneySilverRankTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CorpsRankLevel.aspx.cs">
+      <DependentUpon>CorpsRankLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CorpsRankLevel.aspx.designer.cs">
+      <DependentUpon>CorpsRankLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\CorpsRankUCount.aspx.cs">
+      <DependentUpon>CorpsRankUCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\CorpsRankUCount.aspx.designer.cs">
+      <DependentUpon>CorpsRankUCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneySilverExist.aspx.cs">
+      <DependentUpon>MoneySilverExist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneySilverExist.aspx.designer.cs">
+      <DependentUpon>MoneySilverExist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\WeekExploitRank.aspx.cs">
+      <DependentUpon>WeekExploitRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\WeekExploitRank.aspx.designer.cs">
+      <DependentUpon>WeekExploitRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\WeekKillRank.aspx.cs">
+      <DependentUpon>WeekKillRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\WeekKillRank.aspx.designer.cs">
+      <DependentUpon>WeekKillRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\WSSQueryRole.aspx.cs">
+      <DependentUpon>WSSQueryRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\WSSQueryRole.aspx.designer.cs">
+      <DependentUpon>WSSQueryRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\WSSQueryTask.aspx.cs">
+      <DependentUpon>WSSQueryTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\WSSQueryTask.aspx.designer.cs">
+      <DependentUpon>WSSQueryTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\WSSQueryTextName.aspx.cs">
+      <DependentUpon>WSSQueryTextName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\WSSQueryTextName.aspx.designer.cs">
+      <DependentUpon>WSSQueryTextName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MediaBaiduIndex.aspx.cs">
+      <DependentUpon>MediaBaiduIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MediaBaiduIndex.aspx.designer.cs">
+      <DependentUpon>MediaBaiduIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MediaWeiboZone.aspx.cs">
+      <DependentUpon>MediaWeiboZone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MediaWeiboZone.aspx.designer.cs">
+      <DependentUpon>MediaWeiboZone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MediaWeiboQuery.aspx.cs">
+      <DependentUpon>MediaWeiboQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MediaWeiboQuery.aspx.designer.cs">
+      <DependentUpon>MediaWeiboQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSale.aspx.cs">
+      <DependentUpon>ShopSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSale.aspx.designer.cs">
+      <DependentUpon>ShopSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleRoleLevel.aspx.cs">
+      <DependentUpon>ShopSaleRoleLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleRoleLevel.aspx.designer.cs">
+      <DependentUpon>ShopSaleRoleLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods.aspx.cs">
+      <DependentUpon>ShopSaleItem_Goods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_Goods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Items.aspx.cs">
+      <DependentUpon>ShopSaleItem_Items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Items.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_Items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopQuery.aspx.cs">
+      <DependentUpon>ShopQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopQuery.aspx.designer.cs">
+      <DependentUpon>ShopQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlow_Zone.aspx.cs">
+      <DependentUpon>RoleOnlineFlow_Zone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlow_Zone.aspx.designer.cs">
+      <DependentUpon>RoleOnlineFlow_Zone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlowM_Zone.aspx.cs">
+      <DependentUpon>RoleOnlineFlowM_Zone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlowM_Zone.aspx.designer.cs">
+      <DependentUpon>RoleOnlineFlowM_Zone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleB.aspx.cs">
+      <DependentUpon>ShopSaleB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleB.aspx.designer.cs">
+      <DependentUpon>ShopSaleB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_GoodsB.aspx.cs">
+      <DependentUpon>ShopSaleItem_GoodsB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_GoodsB.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_GoodsB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_ItemsB.aspx.cs">
+      <DependentUpon>ShopSaleItem_ItemsB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_ItemsB.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_ItemsB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleRoleLevelB.aspx.cs">
+      <DependentUpon>ShopSaleRoleLevelB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleRoleLevelB.aspx.designer.cs">
+      <DependentUpon>ShopSaleRoleLevelB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\GoldQuery.aspx.cs">
+      <DependentUpon>GoldQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\GoldQuery.aspx.designer.cs">
+      <DependentUpon>GoldQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountQuery.aspx.cs">
+      <DependentUpon>UserAccountQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountQuery.aspx.designer.cs">
+      <DependentUpon>UserAccountQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountLogQuery.aspx.cs">
+      <DependentUpon>UserAccountLogQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountLogQuery.aspx.designer.cs">
+      <DependentUpon>UserAccountLogQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ItemQuery.aspx.cs">
+      <DependentUpon>ItemQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ItemQuery.aspx.designer.cs">
+      <DependentUpon>ItemQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountDepositRank_Money.aspx.cs">
+      <DependentUpon>UserAccountDepositRank_Money.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountDepositRank_Money.aspx.designer.cs">
+      <DependentUpon>UserAccountDepositRank_Money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountDepositRank_Time.aspx.cs">
+      <DependentUpon>UserAccountDepositRank_Time.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountDepositRank_Time.aspx.designer.cs">
+      <DependentUpon>UserAccountDepositRank_Time.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountDepositRank_All.aspx.cs">
+      <DependentUpon>UserAccountDepositRank_All.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountDepositRank_All.aspx.designer.cs">
+      <DependentUpon>UserAccountDepositRank_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRank_SumRole_Tiqu.aspx.cs">
+      <DependentUpon>MoneyGoldRank_SumRole_Tiqu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRank_SumRole_Tiqu.aspx.designer.cs">
+      <DependentUpon>MoneyGoldRank_SumRole_Tiqu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRank_SumRole_Xiaohao.aspx.cs">
+      <DependentUpon>MoneyGoldRank_SumRole_Xiaohao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRank_SumRole_Xiaohao.aspx.designer.cs">
+      <DependentUpon>MoneyGoldRank_SumRole_Xiaohao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRank_SumRole_Shop.aspx.cs">
+      <DependentUpon>MoneyGoldRank_SumRole_Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldRank_SumRole_Shop.aspx.designer.cs">
+      <DependentUpon>MoneyGoldRank_SumRole_Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldBindRank_SumRole_Shop.aspx.cs">
+      <DependentUpon>MoneyGoldBindRank_SumRole_Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldBindRank_SumRole_Shop.aspx.designer.cs">
+      <DependentUpon>MoneyGoldBindRank_SumRole_Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldBindRank_SumRole_Tiqu.aspx.cs">
+      <DependentUpon>MoneyGoldBindRank_SumRole_Tiqu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldBindRank_SumRole_Tiqu.aspx.designer.cs">
+      <DependentUpon>MoneyGoldBindRank_SumRole_Tiqu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldBindRank_SumRole_Xiaohao.aspx.cs">
+      <DependentUpon>MoneyGoldBindRank_SumRole_Xiaohao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyGoldBindRank_SumRole_Xiaohao.aspx.designer.cs">
+      <DependentUpon>MoneyGoldBindRank_SumRole_Xiaohao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\MoneyQuery.aspx.cs">
+      <DependentUpon>MoneyQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\MoneyQuery.aspx.designer.cs">
+      <DependentUpon>MoneyQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\TradeQuery.aspx.cs">
+      <DependentUpon>TradeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\TradeQuery.aspx.designer.cs">
+      <DependentUpon>TradeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountTradeAll.aspx.cs">
+      <DependentUpon>UserAccountTradeAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountTradeAll.aspx.designer.cs">
+      <DependentUpon>UserAccountTradeAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day.aspx.cs">
+      <DependentUpon>ShopSale_Day.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day.aspx.designer.cs">
+      <DependentUpon>ShopSale_Day.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleB_Day.aspx.cs">
+      <DependentUpon>ShopSaleB_Day.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleB_Day.aspx.designer.cs">
+      <DependentUpon>ShopSaleB_Day.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\GSS_CustServ_Day.aspx.cs">
+      <DependentUpon>GSS_CustServ_Day.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\GSS_CustServ_Day.aspx.designer.cs">
+      <DependentUpon>GSS_CustServ_Day.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSale_DayALL.aspx.cs">
+      <DependentUpon>ShopSale_DayALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSale_DayALL.aspx.designer.cs">
+      <DependentUpon>ShopSale_DayALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleB_DayALL.aspx.cs">
+      <DependentUpon>ShopSaleB_DayALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleB_DayALL.aspx.designer.cs">
+      <DependentUpon>ShopSaleB_DayALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day_01.aspx.cs">
+      <DependentUpon>ShopSale_Day_01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day_01.aspx.designer.cs">
+      <DependentUpon>ShopSale_Day_01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day_02.aspx.cs">
+      <DependentUpon>ShopSale_Day_02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day_02.aspx.designer.cs">
+      <DependentUpon>ShopSale_Day_02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day_03.aspx.cs">
+      <DependentUpon>ShopSale_Day_03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSale_Day_03.aspx.designer.cs">
+      <DependentUpon>ShopSale_Day_03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleCount.aspx.cs">
+      <DependentUpon>ShopSaleCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleCount.aspx.designer.cs">
+      <DependentUpon>ShopSaleCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_RoleIDCount.aspx.cs">
+      <DependentUpon>ShopSaleItem_RoleIDCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_RoleIDCount.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_RoleIDCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_ExcelIDCount.aspx.cs">
+      <DependentUpon>ShopSaleItem_ExcelIDCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_ExcelIDCount.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_ExcelIDCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_ExcelLevel.aspx.cs">
+      <DependentUpon>ShopSaleItem_ExcelLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_ExcelLevel.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_ExcelLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\InTastCount.aspx.cs">
+      <DependentUpon>InTastCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\InTastCount.aspx.designer.cs">
+      <DependentUpon>InTastCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\UserAccountInterzone.aspx.cs">
+      <DependentUpon>UserAccountInterzone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\UserAccountInterzone.aspx.designer.cs">
+      <DependentUpon>UserAccountInterzone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods_Day_TradeCount.aspx.cs">
+      <DependentUpon>ShopSaleItem_Goods_Day_TradeCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods_Day_TradeCount.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_Goods_Day_TradeCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods_Day_MoneyCount.aspx.cs">
+      <DependentUpon>ShopSaleItem_Goods_Day_MoneyCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods_Day_MoneyCount.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_Goods_Day_MoneyCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods_Day_GoodsCount.aspx.cs">
+      <DependentUpon>ShopSaleItem_Goods_Day_GoodsCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ShopSaleItem_Goods_Day_GoodsCount.aspx.designer.cs">
+      <DependentUpon>ShopSaleItem_Goods_Day_GoodsCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlow_All.aspx.cs">
+      <DependentUpon>RoleOnlineFlow_All.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlow_All.aspx.designer.cs">
+      <DependentUpon>RoleOnlineFlow_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlowM_All.aspx.cs">
+      <DependentUpon>RoleOnlineFlowM_All.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\RoleOnlineFlowM_All.aspx.designer.cs">
+      <DependentUpon>RoleOnlineFlowM_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stats\ZoneInfo.aspx.cs">
+      <DependentUpon>ZoneInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stats\ZoneInfo.aspx.designer.cs">
+      <DependentUpon>ZoneInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Calendar\Thumbs.db" />
+    <None Include="img\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ModelPage\GameMoney\" />
+    <Folder Include="UpFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>Language1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Language.ko-kr.resx">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2191</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{474A9746-8B0A-4360-9330-5820E9F0422F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSSServer</RootNamespace>
+    <AssemblyName>GSSServer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>GSSserver.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>1AB981016BA21982F401C4251BD6F2C1E586DE71</ManifestCertificateThumbprint>
+    <ManifestKeyFile>GSSServer_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\Documents and Settings\huangchao\桌面\GSSServer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\GSSServer\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GSSCSFramework\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBUtility\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBUtility\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxGSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxGSS.Designer.cs">
+      <DependentUpon>AboutBoxGSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManage.Designer.cs">
+      <DependentUpon>FormManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServMain.Designer.cs">
+      <DependentUpon>FormServMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServConfig.Designer.cs">
+      <DependentUpon>FormServConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSDataSet\DataSetGSS.cs">
+      <DependentUpon>DataSetGSS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GSSDataSet\DataSetGSS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetGSS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormDBBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormDBBackUp.Designer.cs">
+      <DependentUpon>FormDBBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormDepartment.Designer.cs">
+      <DependentUpon>FormDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormDepartmentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormDepartmentAdd.Designer.cs">
+      <DependentUpon>FormDepartmentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormDictionary.Designer.cs">
+      <DependentUpon>FormDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormDictionaryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormDictionaryAdd.Designer.cs">
+      <DependentUpon>FormDictionaryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormGameConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormGameConfig.Designer.cs">
+      <DependentUpon>FormGameConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormGameConfigAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormGameConfigAdd.Designer.cs">
+      <DependentUpon>FormGameConfigAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormLog.Designer.cs">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormMenuAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormMenuAdd.Designer.cs">
+      <DependentUpon>FormMenuAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormMenus.Designer.cs">
+      <DependentUpon>FormMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormRoleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormRoleAdd.Designer.cs">
+      <DependentUpon>FormRoleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormRoles.Designer.cs">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormUserAdd.Designer.cs">
+      <DependentUpon>FormUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSSManage\FormUsersOnline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSSManage\FormUsersOnline.Designer.cs">
+      <DependentUpon>FormUsersOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMDIParent.Designer.cs">
+      <DependentUpon>ManageMDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBoxGSS.resx">
+      <DependentUpon>AboutBoxGSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManage.resx">
+      <DependentUpon>FormManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServMain.resx">
+      <DependentUpon>FormServMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServConfig.resx">
+      <DependentUpon>FormServConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormDBBackUp.resx">
+      <DependentUpon>FormDBBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormDepartment.resx">
+      <DependentUpon>FormDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormDepartmentAdd.resx">
+      <DependentUpon>FormDepartmentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormDictionary.resx">
+      <DependentUpon>FormDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormDictionaryAdd.resx">
+      <DependentUpon>FormDictionaryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormGameConfig.resx">
+      <DependentUpon>FormGameConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormGameConfigAdd.resx">
+      <DependentUpon>FormGameConfigAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormLog.resx">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormMenuAdd.resx">
+      <DependentUpon>FormMenuAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormMenus.resx">
+      <DependentUpon>FormMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormRoleAdd.resx">
+      <DependentUpon>FormRoleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormRoles.resx">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormUserAdd.resx">
+      <DependentUpon>FormUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSSManage\FormUsersOnline.resx">
+      <DependentUpon>FormUsersOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMDIParent.resx">
+      <DependentUpon>ManageMDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="LanguageResource\Language.ko-kr.resx" />
+    <EmbeddedResource Include="LanguageResource\Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="LanguageResource\Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServHandle.cs" />
+    <Compile Include="ShareData.cs" />
+    <Compile Include="Web References\WebServiceGame\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebServiceZone\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebServiceLib.cs" />
+    <Compile Include="ServerRemoting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GSSserver.ico" />
+    <Content Include="Model\Create\7-GSSDB.sql" />
+    <Content Include="Model\Create\GSSDB-LogicData.sql" />
+    <Content Include="Model\SP\2-GSSDB-登录奖励活动Mysql.sql" />
+    <Content Include="Model\SP\2-SP_VerifyRoleRecovery.sql" />
+    <Content Include="Model\SP\GSSDB.LogicData.sql" />
+    <Content Include="Model\SP\SP_QueryGameDBConnString.sql" />
+    <Content Include="Note\ClientGuid.txt" />
+    <Content Include="Note\Readme.txt" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\Template\ko-kr\Award.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Template\ko-kr\FormSendEmail.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Template\zh-cn\Award.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Template\zh-cn\FormSendEmail.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\WebServiceZone\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebServiceZone\WebServiceZone.disco" />
+    <None Include="GSSDATA\GSSLog.gss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\wallpaper_view_04.jpg" />
+    <None Include="Resources\People.png" />
+    <None Include="Resources\OK.png" />
+    <None Include="Resources\NO.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\DEL.png" />
+    <None Include="Resources\Serch.png" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSSDataSet\DataSetGSS.xsc">
+      <DependentUpon>DataSetGSS.xsd</DependentUpon>
+    </None>
+    <None Include="GSSDataSet\DataSetGSS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetGSS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GSSDataSet\DataSetGSS.xss">
+      <DependentUpon>DataSetGSS.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\WebServiceGame\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebServiceGame\ServiceXLJ.disco" />
+    <None Include="Resources\Exitserver.png" />
+    <None Include="Resources\quit_aplli.bmp" />
+    <None Include="Resources\AboutLong.png" />
+    <None Include="GSSDATA\GSSConfig.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\GSSserver_Nstart.ico" />
+    <None Include="Resources\GSSserver_Nover.ico" />
+    <None Include="Resources\GSSserver_Nstop.ico" />
+    <None Include="Resources\GSSserver_over.ico" />
+    <None Include="Resources\GSSserver_stop.ico" />
+    <None Include="Resources\GSSserver_start.ico" />
+    <None Include="Web References\WebServiceGame\ServiceXLJ.wsdl" />
+    <None Include="Web References\WebServiceZone\WebServiceZone.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSBLL\GSSBLL.csproj">
+      <Project>{C1751BCE-2F2D-4683-964D-C565940C2F07}</Project>
+      <Name>GSSBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSCSFramework\GSSCSFrameWork.csproj">
+      <Project>{61995A22-E310-4813-8512-684413BB034B}</Project>
+      <Name>GSSCSFrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSModel\GSSModel.csproj">
+      <Project>{2142592C-BE38-4E28-AD44-959B504246D7}</Project>
+      <Name>GSSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSServerLibrary\GSSServerLibrary.csproj">
+      <Project>{83109AB9-B46E-4D91-B16A-BA8210EC50BE}</Project>
+      <Name>GSSServerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSUI\GSSUI.csproj">
+      <Project>{08D1EE90-F327-4E3A-8A0C-68CE6E9F4169}</Project>
+      <Name>GSSUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSUpdateLib\GSSUpdateLib.csproj">
+      <Project>{D14AEA88-0899-4A71-984C-5BB489A8B128}</Project>
+      <Name>GSSUpdateLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LanguageItems\LanguageItems.csproj">
+      <Project>{55e21c1b-b02b-4511-8664-96dfd6fc9cc7}</Project>
+      <Name>LanguageItems</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://127.0.0.1/GSSWebServiceZone/WebServiceZone.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebServiceZone\</RelPath>
+      <UpdateFromURL>http://127.0.0.1/GSSWebServiceZone/WebServiceZone.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>GSSServer_WebServiceZone_WebServiceZone</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://127.0.0.1/GSSWebService/ServiceXLJ.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebServiceGame\</RelPath>
+      <UpdateFromURL>http://127.0.0.1/GSSWebService/ServiceXLJ.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>GSSServer_WebServiceGame_ServiceXLJ</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

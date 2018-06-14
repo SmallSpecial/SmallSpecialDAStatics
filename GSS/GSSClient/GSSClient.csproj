@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4813A536-8245-4320-A243-78D153258D15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSSClient</RootNamespace>
+    <AssemblyName>GSSClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>GSSClient.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ManifestCertificateThumbprint>F99F5AFDC2D86E57FF04A3A4E85A821A2FE0727E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>GSSClient_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>\\192.168.7.100\gssclient\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.7.100:100/</InstallUrl>
+    <TargetCulture>zh-CHS</TargetCulture>
+    <ProductName>GSS游戏服务系统</ProductName>
+    <PublisherName>北京神龙游</PublisherName>
+    <MinimumRequiredVersion>1.0.0.48</MinimumRequiredVersion>
+    <ApplicationRevision>50</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\GSSClient\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GSSCSFramework\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientCache.cs" />
+    <Compile Include="ClientHandles.cs" />
+    <Compile Include="DataConfig.cs" />
+    <Compile Include="ExceUtil.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendEmail.Designer.cs">
+      <DependentUpon>FormSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHisView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHisView.Designer.cs">
+      <DependentUpon>FormHisView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddFullServiceEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddLoginAward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskFlow.Designer.cs">
+      <DependentUpon>FormTaskFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToExcel.Designer.cs">
+      <DependentUpon>FormToExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClose.Designer.cs">
+      <DependentUpon>FormClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginEx.Designer.cs">
+      <DependentUpon>FormLoginEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTask.Designer.cs">
+      <DependentUpon>FormTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAdd.Designer.cs">
+      <DependentUpon>FormTaskAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskEdit.Designer.cs">
+      <DependentUpon>FormTaskEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolFDBISqlAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolFDBISqlAdd.Designer.cs">
+      <DependentUpon>FormToolFDBISqlAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolFDBISqlList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolFDBISqlList.Designer.cs">
+      <DependentUpon>FormToolFDBISqlList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGuserLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGuserLock.Designer.cs">
+      <DependentUpon>FormToolGuserLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGuserUnLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGuserUnLock.Designer.cs">
+      <DependentUpon>FormToolGuserUnLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolNotice.Designer.cs">
+      <DependentUpon>FormToolNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoWorkOrder\FromTaskActiveFallEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoWorkOrder\FromTaskActiveFallEquip.Designer.cs">
+      <DependentUpon>FromTaskActiveFallEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageResource\Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageResource\MapLanguage\UserDataMapLanguage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkOrderStatueEnum.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChat.resx">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendEmail.resx">
+      <DependentUpon>FormSendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHisView.resx">
+      <DependentUpon>FormHisView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddFullServiceEmail.resx">
+      <DependentUpon>FormTaskAddFullServiceEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddLoginAward.resx">
+      <DependentUpon>FormTaskAddLoginAward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskFlow.resx">
+      <DependentUpon>FormTaskFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToExcel.resx">
+      <DependentUpon>FormToExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClose.resx">
+      <DependentUpon>FormClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginEx.resx">
+      <DependentUpon>FormLoginEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTask.resx">
+      <DependentUpon>FormTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAdd.resx">
+      <DependentUpon>FormTaskAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskEdit.resx">
+      <DependentUpon>FormTaskEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolFDBISqlAdd.resx">
+      <DependentUpon>FormToolFDBISqlAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolFDBISqlList.resx">
+      <DependentUpon>FormToolFDBISqlList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGuserLock.resx">
+      <DependentUpon>FormToolGuserLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGuserUnLock.resx">
+      <DependentUpon>FormToolGuserUnLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolNotice.resx">
+      <DependentUpon>FormToolNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageResource\Language.ko-kr.resx" />
+    <EmbeddedResource Include="LanguageResource\Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoWorkOrder\FromTaskActiveFallEquip.resx">
+      <DependentUpon>FromTaskActiveFallEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddNoUR.resx">
+      <DependentUpon>FormTaskAddNoUR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGUserUse.resx">
+      <DependentUpon>FormToolGUserUse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGUserNoUse.resx">
+      <DependentUpon>FormToolGUserNoUse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGResetChildInfo.resx">
+      <DependentUpon>FormToolGResetChildInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddGameNotice.resx">
+      <DependentUpon>FormTaskAddGameNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddGameNotice1.resx">
+      <DependentUpon>FormTaskAddGameNotice1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddGameNotice2.resx">
+      <DependentUpon>FormTaskAddGameNotice2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskEditGN.resx">
+      <DependentUpon>FormTaskEditGN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddGameGiftAward.resx">
+      <DependentUpon>FormTaskAddGameGiftAward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskEditGA.resx">
+      <DependentUpon>FormTaskEditGA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolFDBI.resx">
+      <DependentUpon>FormToolFDBI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGRoleRecover.resx">
+      <DependentUpon>FormToolGRoleRecover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskState.resx">
+      <DependentUpon>FormTaskState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGRoleNameChange.resx">
+      <DependentUpon>FormToolGRoleNameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGRoleZoneChange.resx">
+      <DependentUpon>FormToolGRoleZoneChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGUROnlineClear.resx">
+      <DependentUpon>FormToolGUROnlineClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolGRoleDepotPSW.resx">
+      <DependentUpon>FormToolGRoleDepotPSW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddUserLock.resx">
+      <DependentUpon>FormTaskAddUserLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskAddUserUnLock.resx">
+      <DependentUpon>FormTaskAddUserUnLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WebServeDBDataSet.xsc">
+      <DependentUpon>WebServeDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WebServeDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WebServeDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WebServeDBDataSet.xss">
+      <DependentUpon>WebServeDBDataSet.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ClientRemoting.cs" />
+    <Compile Include="ShareData.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WebServeDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebServeDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddNoUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddNoUR.Designer.cs">
+      <DependentUpon>FormTaskAddNoUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGUserUse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGUserUse.Designer.cs">
+      <DependentUpon>FormToolGUserUse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGUserNoUse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGUserNoUse.Designer.cs">
+      <DependentUpon>FormToolGUserNoUse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGResetChildInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGResetChildInfo.Designer.cs">
+      <DependentUpon>FormToolGResetChildInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddGameNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddGameNotice.Designer.cs">
+      <DependentUpon>FormTaskAddGameNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddGameNotice1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddGameNotice1.Designer.cs">
+      <DependentUpon>FormTaskAddGameNotice1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddGameNotice2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddGameNotice2.Designer.cs">
+      <DependentUpon>FormTaskAddGameNotice2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskEditGN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskEditGN.Designer.cs">
+      <DependentUpon>FormTaskEditGN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddGameGiftAward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddGameGiftAward.Designer.cs">
+      <DependentUpon>FormTaskAddGameGiftAward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskEditGA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskEditGA.Designer.cs">
+      <DependentUpon>FormTaskEditGA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolFDBI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolFDBI.Designer.cs">
+      <DependentUpon>FormToolFDBI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGRoleRecover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGRoleRecover.Designer.cs">
+      <DependentUpon>FormToolGRoleRecover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskState.Designer.cs">
+      <DependentUpon>FormTaskState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGRoleNameChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGRoleNameChange.Designer.cs">
+      <DependentUpon>FormToolGRoleNameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGRoleZoneChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGRoleZoneChange.Designer.cs">
+      <DependentUpon>FormToolGRoleZoneChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGUROnlineClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGUROnlineClear.Designer.cs">
+      <DependentUpon>FormToolGUROnlineClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolGRoleDepotPSW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolGRoleDepotPSW.Designer.cs">
+      <DependentUpon>FormToolGRoleDepotPSW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddUserLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddUserLock.Designer.cs">
+      <DependentUpon>FormTaskAddUserLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskAddUserUnLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskAddUserUnLock.Designer.cs">
+      <DependentUpon>FormTaskAddUserUnLock.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSSItems.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSClient.ico" />
+    <Content Include="GSSData\Images\New.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\numerbg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\numerbgClear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\picerror.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Images\vip7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Sounds\Chimes.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Sounds\Msg.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Sounds\Start.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\GSSLog.gss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReadMe.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\ErrorCode.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\OpacityBack.png" />
+    <None Include="Resources\colorslider_dragbackground.png" />
+    <None Include="Resources\colour.png" />
+    <None Include="Resources\time_red.png" />
+    <None Include="Resources\工单项名称.png" />
+    <None Include="Resources\状态选择2.png" />
+    <None Include="GSSData\GSSCache\dbcache.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="GSSData\GSSConfig.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GSSData\Version.DAT">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ChatOver.png" />
+    <None Include="Resources\Chat.png" />
+    <None Include="Resources\logoXlJ.png" />
+    <None Include="Resources\Edit1.png" />
+    <None Include="Resources\People.png" />
+    <None Include="Resources\OK.png" />
+    <None Include="Resources\NO.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\DEL.png" />
+    <None Include="Resources\Serch.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\user11.png" />
+    <None Include="Resources\3_user.jpg" />
+    <None Include="Resources\bg3.bmp" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\login_bg.jpg" />
+    <None Include="Resources\loginbanner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSBLL\GSSBLL.csproj">
+      <Project>{C1751BCE-2F2D-4683-964D-C565940C2F07}</Project>
+      <Name>GSSBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSCSFramework\GSSCSFrameWork.csproj">
+      <Project>{61995A22-E310-4813-8512-684413BB034B}</Project>
+      <Name>GSSCSFrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSModel\GSSModel.csproj">
+      <Project>{2142592C-BE38-4E28-AD44-959B504246D7}</Project>
+      <Name>GSSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSServerLibrary\GSSServerLibrary.csproj">
+      <Project>{83109ab9-b46e-4d91-b16a-ba8210ec50be}</Project>
+      <Name>GSSServerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSSUI\GSSUI.csproj">
+      <Project>{08D1EE90-F327-4E3A-8A0C-68CE6E9F4169}</Project>
+      <Name>GSSUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LanguageItems\LanguageItems.csproj">
+      <Project>{55e21c1b-b02b-4511-8664-96dfd6fc9cc7}</Project>
+      <Name>LanguageItems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserControlDLL\UserControlDLL.csproj">
+      <Project>{7DC41A39-06EB-42B1-8399-9900F3650C5E}</Project>
+      <Name>UserControlDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>cd $(TargetDir)
+del GSSDAL.dll
+del GSSServer1.exe
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

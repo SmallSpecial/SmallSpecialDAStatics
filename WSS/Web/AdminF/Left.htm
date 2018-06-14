@@ -1,0 +1,303 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>统计系统</title>
+
+    <script language="javascript" type="text/javascript" src="/common/js/base.js"></script>
+
+    <script src="javascript/common.js" type="text/javascript" language="javascript"></script>
+
+    <script src="javascript/shrink.js" type="text/javascript" language="javascript"></script>
+
+</head>
+<body scroll="no">
+    <!-- content  -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <!-- left -->
+            <td class="left">
+                <!-- 游戏统计 -->
+                <div id="basic1" style="display: none;">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(1);" href="#">
+                                    <img id="menuimg_1" src="images/menu_reduce.gif" alt=" " border="0" />当前在线人数</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_1">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/UserOnLine.aspx?isnow=1" target="main">所有大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserOnLine.aspx?area1=100000,0&isnow=1" target="main">第一大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserOnLine.aspx?area1=100001,1&isnow=1" target="main">第二大区</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(2);" href="#">
+                                    <img id="menuimg_2" src="images/menu_reduce.gif" alt=" " border="0" />历史在线人数</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_2">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/UserOnLineHistory.aspx" target="main">所有大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserOnLineHistory.aspx?area1=100000,0" target="main">第一大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserOnLineHistory.aspx?area1=100001,1" target="main">第二大区</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(3);" href="#">
+                                    <img id="menuimg_3" src="images/menu_reduce.gif" alt=" " border="0" />同时用户登录统计</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_3">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/UserLoginHistory.aspx" target="main">所有大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserLoginHistory.aspx?area1=100000,0" target="main">第一大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserLoginHistory.aspx?area1=100001,1" target="main">第二大区</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(4);" href="#">
+                                    <img id="menuimg_4" src="images/menu_reduce.gif" alt=" " border="0" />流失用户统计</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_4">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/UserLoginLose.aspx" target="main">所有大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserLoginLose.aspx?area1=100000,0" target="main">第一大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserLoginLose.aspx?area1=100001,1" target="main">第二大区</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(8);" href="#">
+                                    <img id="Img1" src="images/menu_reduce.gif" alt=" " border="0" />历史在线人数</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_8">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/UserActive.aspx" target="main">所有大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserActive.aspx" target="main">第一大区</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">第二大区</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(8);" href="#">
+                                    <img id="Img3" src="images/menu_reduce.gif" alt=" " border="0" />流失用户统计</a>
+                            </td>
+                        </tr>
+                        <tr id="Tr2">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/UserLose.aspx" target="main">所有大区</a></dd>
+                                    <dd>
+                                        <a href="Stats/UserLose.aspx" target="main">第一大区</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">第二大区</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>-->
+                </div>
+                <div id="basic2">
+                    <!-- 其他统计 -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(5);" href="#">
+                                    <img id="menuimg_5" src="images/menu_reduce.gif" alt=" " border="0" />贵重物品掉落统计</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_5">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/ItemDropDayNow.aspx?isnow=1" target="main">当天掉落统计(装备)</a></dd>
+                                    <dd>
+                                        <a href="Stats/ItemDropDay.aspx" target="main">历史掉落统计(装备)</a></dd>
+                                    <dd>
+                                        <a href="Stats/StoneDropDay.aspx" target="main">精炼石(宝石)</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">坐骑</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">商城道具</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(6);" href="#">
+                                    <img id="menuimg_6" src="images/menu_reduce.gif" alt=" " border="0" />贵重物品消耗&冗余统计</a>
+                            </td>
+                        </tr>
+                        <tr id="menu_6">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">按职业统计(装备)</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">按星级统计(装备)</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">精炼石(宝石)</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">坐骑</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">商城道具</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="basic3" style="display: none;">
+                    <!-- 其他统计 -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(7);" href="#">
+                                    <img id="menuimg_7" src="images/menu_reduce.gif" alt=" " border="0" />金币统计</a>
+                            </td>
+                        </tr>
+                        <tr id="Tr3">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/MoneyGoldOutIn.aspx" target="main">金币产出消耗</a></dd>
+                                    <dd>
+                                        <a href="Stats/MoneyGoldType.aspx" target="main">金币分类消耗</a></dd>
+                                    <dd>
+                                        <a href="Stats/MoneyGoldTypeOut.aspx" target="main">金币分类产出</a></dd>
+                                    <dd>
+                                        <a href="Stats/MoneyGoldRole.aspx" target="main">玩家产消排行</a></dd>
+                                    <dd>
+                                        <a href="Stats/MoneyGoldRoleStream.aspx" target="main">玩家流通排行</a></dd>
+                                    <dd>
+                                        <a href="Stats/MoneyRankTask.aspx" target="main">任务产出排行</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="basic4" style="display: none;">
+                    <!-- 其他统计 -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(8);" href="#">
+                                    <img id="menuimg_8" src="images/menu_reduce.gif" alt=" " border="0" />其他统计3</a>
+                            </td>
+                        </tr>
+                        <tr id="Tr4">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">细节1</a></dd>
+                                    <dd>
+                                        <a href="NoPage.htm" target="main">细节2</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="basic5" style="display: none;">
+                    <!-- 其他统计 -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(9);" href="#">
+                                    <img id="Img1" src="images/menu_reduce.gif" alt=" " border="0" />在线统计</a>
+                            </td>
+                        </tr>
+                        <tr id="Tr1">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/RoleOnlineFlow.aspx" target="main">角色在线(每小时)</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleOnlineFlowM.aspx" target="main">角色在线(每15分钟)</a></dd>
+                                    <dd>
+                                        <!--onclick="this.style.fontSize = '19px';this.style.fontWeight = 'bold';"-->
+                                        <a href="Stats/RoleOnlineHour.aspx" target="main">用户在线(每小时)</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleOnlineDay.aspx" target="main">用户在线(每天)</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleOnlineLoginRank.aspx" target="main">用户登录次数排行</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleOnlineIPRank.aspx" target="main">IP登录次数排行</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nav_title">
+                                <a onclick="collapse_change(9);" href="#">
+                                    <img id="menuimg_9" src="images/menu_reduce.gif" alt=" " border="0" />角色统计</a>
+                            </td>
+                        </tr>
+                        <tr id="Tr5">
+                            <td class="nav_list">
+                                <dl>
+                                    <dd>
+                                        <a href="Stats/RoleVocation.aspx" target="main">角色总量统计</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleVocationGrow.aspx" target="main">角色增量统计</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleVocationLevel.aspx" target="main">职业等级统计</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleVocationLevelPara.aspx" target="main">等级分段统计</a></dd>
+                                    <dd>
+                                        <a href="Stats/RoleVocationLevelRank.aspx" target="main">等级排行统计</a></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="copyright">
+        统计系统
+    </div>
+</body>
+</html>

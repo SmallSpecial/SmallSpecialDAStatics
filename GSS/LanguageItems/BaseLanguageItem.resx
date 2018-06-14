@@ -1,0 +1,1683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account_btnCloseDown" xml:space="preserve">
+    <value>封停</value>
+  </data>
+  <data name="Account_btnGag" xml:space="preserve">
+    <value>禁言</value>
+  </data>
+  <data name="Account_btnPlayNo" xml:space="preserve">
+    <value>踢号</value>
+  </data>
+  <data name="Account_BtnRechargeException" xml:space="preserve">
+    <value>充值异常</value>
+  </data>
+  <data name="Account_BtnResetAntiIndulgence" xml:space="preserve">
+    <value>清空防沉迷</value>
+  </data>
+  <data name="Account_BtnResetBindEmail" xml:space="preserve">
+    <value>清空绑定邮箱</value>
+  </data>
+  <data name="Account_BtnResetIDCard" xml:space="preserve">
+    <value>清空身份证</value>
+  </data>
+  <data name="Account_BtnResetLevelPsw" xml:space="preserve">
+    <value>清空二级密码</value>
+  </data>
+  <data name="Account_BtnResetSecurity" xml:space="preserve">
+    <value>清空密保</value>
+  </data>
+  <data name="Account_btnUnlock" xml:space="preserve">
+    <value>解封</value>
+  </data>
+  <data name="BtnAcceptWorkOrder" xml:space="preserve">
+    <value>接收所选工单</value>
+  </data>
+  <data name="BtnAntiIndulgenceInfo" xml:space="preserve">
+    <value>防沉迷信息</value>
+  </data>
+  <data name="BtnAwardOrQuery" xml:space="preserve">
+    <value>发奖/查询</value>
+  </data>
+  <data name="BtnAwardWorkOrder" xml:space="preserve">
+    <value>发奖工单</value>
+  </data>
+  <data name="BtnAwardWorkOrderList" xml:space="preserve">
+    <value>发奖工单列表</value>
+  </data>
+  <data name="BtnAwardWorkOrderPool" xml:space="preserve">
+    <value>发奖工单池</value>
+  </data>
+  <data name="BtnAwardWorkOrderRecord" xml:space="preserve">
+    <value>发奖工单记录</value>
+  </data>
+  <data name="btnBatchIDSealed" xml:space="preserve">
+    <value>批量封号</value>
+  </data>
+  <data name="BtnBatchUnlock" xml:space="preserve">
+    <value>批量解封</value>
+  </data>
+  <data name="BtnBorrowAccount" xml:space="preserve">
+    <value>借用帐号</value>
+  </data>
+  <data name="BtnBugSubmit" xml:space="preserve">
+    <value>Bug提交</value>
+  </data>
+  <data name="BtnCallTank" xml:space="preserve">
+    <value>游戏喊话池</value>
+  </data>
+  <data name="BtnCallWorkOrder" xml:space="preserve">
+    <value>喊话工单</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnClear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="BtnClearOnlineRecord" xml:space="preserve">
+    <value>帐号/角色清除在线状态</value>
+  </data>
+  <data name="BtnCloseDown" xml:space="preserve">
+    <value>封停</value>
+  </data>
+  <data name="BtnCloseDownAccount" xml:space="preserve">
+    <value>封停帐号</value>
+  </data>
+  <data name="BtnCloseDownRole" xml:space="preserve">
+    <value>封停角色</value>
+  </data>
+  <data name="BtnCloseForm" xml:space="preserve">
+    <value>关闭窗口</value>
+  </data>
+  <data name="BtnCloseSelectWorkOrder" xml:space="preserve">
+    <value>关闭所选工单</value>
+  </data>
+  <data name="BtnCloseWorkOrder" xml:space="preserve">
+    <value>关闭工单</value>
+  </data>
+  <data name="BtnCommonSentences" xml:space="preserve">
+    <value>常用语句</value>
+  </data>
+  <data name="BtnConsuleWorkOrder" xml:space="preserve">
+    <value>咨询工单池</value>
+  </data>
+  <data name="BtnConsult" xml:space="preserve">
+    <value>咨询</value>
+  </data>
+  <data name="BtnConsultList" xml:space="preserve">
+    <value>咨询列表</value>
+  </data>
+  <data name="BtnDealWithingWorkOrder" xml:space="preserve">
+    <value>处理中工单池</value>
+  </data>
+  <data name="BtnDealWithTroublemakers" xml:space="preserve">
+    <value>处理捣乱的人</value>
+  </data>
+  <data name="BtnDealWithWorkOrder" xml:space="preserve">
+    <value>处理该工单</value>
+  </data>
+  <data name="BtnEndChat" xml:space="preserve">
+    <value>结束对话</value>
+  </data>
+  <data name="BtnEquipGetbackTool" xml:space="preserve">
+    <value>装备找回工具</value>
+  </data>
+  <data name="BtnFileQueryTool" xml:space="preserve">
+    <value>物品档查询工具</value>
+  </data>
+  <data name="BtnfinishChatWithGenerateWorkOrder" xml:space="preserve">
+    <value>完成聊天并生成工单</value>
+  </data>
+  <data name="BtnFinshAndFeedback" xml:space="preserve">
+    <value>完成需反馈</value>
+  </data>
+  <data name="BtnFinshChatWithSave" xml:space="preserve">
+    <value>完成聊天并存档</value>
+  </data>
+  <data name="BtnFinshNeedScore" xml:space="preserve">
+    <value>完成需评分</value>
+  </data>
+  <data name="BtnFinshWorkOrder" xml:space="preserve">
+    <value>完成工单</value>
+  </data>
+  <data name="BtnGag" xml:space="preserve">
+    <value>禁言</value>
+  </data>
+  <data name="BtnGagTool" xml:space="preserve">
+    <value>禁言工具</value>
+  </data>
+  <data name="BtnGamerInforQuery" xml:space="preserve">
+    <value>玩家信息查询</value>
+  </data>
+  <data name="BtnGameUserQuery" xml:space="preserve">
+    <value>玩家信息查询</value>
+  </data>
+  <data name="BtnHackedProcess" xml:space="preserve">
+    <value>盗号处理</value>
+  </data>
+  <data name="BtnHistoryRecord" xml:space="preserve">
+    <value>历史记录</value>
+  </data>
+  <data name="BtnHistoryWorkOrder" xml:space="preserve">
+    <value>历史工单池</value>
+  </data>
+  <data name="BtnLeaderAuditWorkOrderPool" xml:space="preserve">
+    <value>领导审核工单池</value>
+  </data>
+  <data name="BtnLoad" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="BtnMergeServiceGangRenamed" xml:space="preserve">
+    <value>帮派改名(合服)</value>
+  </data>
+  <data name="BtnMyDealWithWorkingOrder" xml:space="preserve">
+    <value>我处理中的工单</value>
+  </data>
+  <data name="BtnMyWorkOrderPool" xml:space="preserve">
+    <value>我的工单池</value>
+  </data>
+  <data name="BtnNewReceiverWorkOrder" xml:space="preserve">
+    <value>新收工单池</value>
+  </data>
+  <data name="BtnOnlineConsume" xml:space="preserve">
+    <value>在线咨询</value>
+  </data>
+  <data name="BtnPressReleases" xml:space="preserve">
+    <value>新闻发布</value>
+  </data>
+  <data name="BtnPropException" xml:space="preserve">
+    <value>道具异常</value>
+  </data>
+  <data name="BtnPropLose" xml:space="preserve">
+    <value>道具丢失</value>
+  </data>
+  <data name="BtnQuery" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="BtnQueryAccount" xml:space="preserve">
+    <value>查询帐号</value>
+  </data>
+  <data name="BtnQueryAwardTool" xml:space="preserve">
+    <value>发奖\查询工具</value>
+  </data>
+  <data name="BtnQueryFDBILog" xml:space="preserve">
+    <value>FDBI日志查询</value>
+  </data>
+  <data name="BtnQueryRole" xml:space="preserve">
+    <value>查询角色</value>
+  </data>
+  <data name="BtnQueryWorkOrderInAccount" xml:space="preserve">
+    <value>查询此帐号下工单</value>
+  </data>
+  <data name="BtnReceive" xml:space="preserve">
+    <value>接收</value>
+  </data>
+  <data name="BtnReceivedException" xml:space="preserve">
+    <value>领奖异常</value>
+  </data>
+  <data name="BtnRechargeException" xml:space="preserve">
+    <value>充值异常</value>
+  </data>
+  <data name="BtnRefreshConsumeList" xml:space="preserve">
+    <value>刷新咨询列表</value>
+  </data>
+  <data name="BtnRemark" xml:space="preserve">
+    <value>仅备注</value>
+  </data>
+  <data name="BtnRenamed" xml:space="preserve">
+    <value>改名</value>
+  </data>
+  <data name="BtnReportFalseInfo" xml:space="preserve">
+    <value>举报虚假信息</value>
+  </data>
+  <data name="BtnReportOther" xml:space="preserve">
+    <value>举报其他</value>
+  </data>
+  <data name="BtnReportPlugin" xml:space="preserve">
+    <value>举报外挂</value>
+  </data>
+  <data name="BtnReportPW" xml:space="preserve">
+    <value>举报私服</value>
+  </data>
+  <data name="BtnResetAntiIndulgence" xml:space="preserve">
+    <value>清空防沉迷</value>
+  </data>
+  <data name="BtnResetBindEmail" xml:space="preserve">
+    <value>清空绑定邮箱</value>
+  </data>
+  <data name="BtnResetIDCard" xml:space="preserve">
+    <value>清空身份证</value>
+  </data>
+  <data name="BtnResetLevelPsw" xml:space="preserve">
+    <value>清空二级密码</value>
+  </data>
+  <data name="BtnResetRoleLevelPsw" xml:space="preserve">
+    <value>清空角色二级密码</value>
+  </data>
+  <data name="BtnResetSecurity" xml:space="preserve">
+    <value>清空密保</value>
+  </data>
+  <data name="BtnResetWirehousePsw" xml:space="preserve">
+    <value>清空仓库密码</value>
+  </data>
+  <data name="BtnReturnAccount" xml:space="preserve">
+    <value>归还帐号</value>
+  </data>
+  <data name="BtnRole" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="BtnRoleChangeZone" xml:space="preserve">
+    <value>角色改服</value>
+  </data>
+  <data name="BtnRoleChangeZoneTool" xml:space="preserve">
+    <value>角色改服工具</value>
+  </data>
+  <data name="BtnRoleInfoException" xml:space="preserve">
+    <value>角色信息异常</value>
+  </data>
+  <data name="BtnRoleOperateRecord" xml:space="preserve">
+    <value>角色操作记录</value>
+  </data>
+  <data name="BtnRoleRecovery" xml:space="preserve">
+    <value>角色恢复</value>
+  </data>
+  <data name="BtnRoleRename" xml:space="preserve">
+    <value>角色改名</value>
+  </data>
+  <data name="BtnRoleRenameTool" xml:space="preserve">
+    <value>角色改名工具</value>
+  </data>
+  <data name="BtnRoleWorkOrder" xml:space="preserve">
+    <value>角色工单</value>
+  </data>
+  <data name="BtnRunNotice" xml:space="preserve">
+    <value>运行公告</value>
+  </data>
+  <data name="BtnSaveWorkOrderAndSyncConfig" xml:space="preserve">
+    <value>创建并配置</value>
+  </data>
+  <data name="BtnSelectUserListWithImport" xml:space="preserve">
+    <value>选择并导入用户列表</value>
+  </data>
+  <data name="BtnSend" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="BtnSendEmail" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="BtnSendText" xml:space="preserve">
+    <value>发送内容</value>
+  </data>
+  <data name="BtnStartDealwith" xml:space="preserve">
+    <value>开始处理</value>
+  </data>
+  <data name="BtnStopNotice" xml:space="preserve">
+    <value>停止公告</value>
+  </data>
+  <data name="BtnSubmitAndRun" xml:space="preserve">
+    <value>确认提交并立即执行</value>
+  </data>
+  <data name="BtnSubmitWithExecute" xml:space="preserve">
+    <value>确认提交并立即执行</value>
+  </data>
+  <data name="BtnSuggestion" xml:space="preserve">
+    <value>意见建议</value>
+  </data>
+  <data name="BtnSure" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="BtnTurnOut" xml:space="preserve">
+    <value>转向</value>
+  </data>
+  <data name="BtnTurnOutWorkOrderPool" xml:space="preserve">
+    <value>转出工单池</value>
+  </data>
+  <data name="BtnTurnService" xml:space="preserve">
+    <value>转服</value>
+  </data>
+  <data name="BtnUnlock" xml:space="preserve">
+    <value>解封</value>
+  </data>
+  <data name="BtnUnlockAccount" xml:space="preserve">
+    <value>解封帐号</value>
+  </data>
+  <data name="BtnUnlockRole" xml:space="preserve">
+    <value>解封角色</value>
+  </data>
+  <data name="BtnWaitFeedBackWorkOrder" xml:space="preserve">
+    <value>待反馈工单池</value>
+  </data>
+  <data name="BtnWaitLeaderAudit" xml:space="preserve">
+    <value>请领导审核</value>
+  </data>
+  <data name="BtnWaitScoreWorkOrder" xml:space="preserve">
+    <value>待评分工单池</value>
+  </data>
+  <data name="BtnWorkOrderClose" xml:space="preserve">
+    <value>工单关闭</value>
+  </data>
+  <data name="BtnWorkorderDealwithNo" xml:space="preserve">
+    <value>工单处理信息保存失败</value>
+  </data>
+  <data name="BtnWorkorderDealwithOK" xml:space="preserve">
+    <value>工单处理信息保存成功</value>
+  </data>
+  <data name="BtnWorkOrderExecTank" xml:space="preserve">
+    <value>工单执行池</value>
+  </data>
+  <data name="BtnWorkOrderFileClickEvent" xml:space="preserve">
+    <value>工单附件</value>
+  </data>
+  <data name="BtnWorkOrderHomePage" xml:space="preserve">
+    <value>工单主页</value>
+  </data>
+  <data name="BtnWorkOrderRecoveryTank" xml:space="preserve">
+    <value>工单回收池</value>
+  </data>
+  <data name="EBugbearType_All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="EBugbearType_Boss" xml:space="preserve">
+    <value>BOSS</value>
+  </data>
+  <data name="EBugbearType_Eliten" xml:space="preserve">
+    <value>精英怪物</value>
+  </data>
+  <data name="EBugbearType_Normal" xml:space="preserve">
+    <value>一般怪物</value>
+  </data>
+  <data name="GbAccountBaseInfo" xml:space="preserve">
+    <value>帐号基本信息</value>
+  </data>
+  <data name="GbAccountBaseInfoWithShortcutKey" xml:space="preserve">
+    <value>帐号基本信息(右键可查询相关工单)</value>
+  </data>
+  <data name="gbAccountWorkOrder" xml:space="preserve">
+    <value>账号工单</value>
+  </data>
+  <data name="GbCallWorkOrderDetail" xml:space="preserve">
+    <value>喊话工单记录</value>
+  </data>
+  <data name="GbNeedKnowItems" xml:space="preserve">
+    <value>需要了解的信息项</value>
+  </data>
+  <data name="GBOperateList" xml:space="preserve">
+    <value>操作类</value>
+  </data>
+  <data name="gbOtherWorkOrder" xml:space="preserve">
+    <value>其它工单</value>
+  </data>
+  <data name="GBQuestionAswerInfo" xml:space="preserve">
+    <value>问题描述【了解到的信息】</value>
+  </data>
+  <data name="GBRemarkRecord" xml:space="preserve">
+    <value>备注记录</value>
+  </data>
+  <data name="GbRoleBaseInfo" xml:space="preserve">
+    <value>角色基本信息</value>
+  </data>
+  <data name="GbRoleBaseInfoWithShortcutKey" xml:space="preserve">
+    <value>角色基本信息(右键可查询相关工单)</value>
+  </data>
+  <data name="gbRoleWorkOrder" xml:space="preserve">
+    <value>角色工单</value>
+  </data>
+  <data name="GBToolList" xml:space="preserve">
+    <value>工具类</value>
+  </data>
+  <data name="GbVerifyItems" xml:space="preserve">
+    <value>验证项</value>
+  </data>
+  <data name="GBWorkOrderDealwith" xml:space="preserve">
+    <value>工单处理</value>
+  </data>
+  <data name="GbWorkOrderList" xml:space="preserve">
+    <value>工单列表</value>
+  </data>
+  <data name="GbWorkOrderListShortcukey" xml:space="preserve">
+    <value>工单列表(含右键菜单)</value>
+  </data>
+  <data name="GpCallWorkOrderwithShortcutkey" xml:space="preserve">
+    <value>喊话工单列表(含右键菜单)</value>
+  </data>
+  <data name="GPWorkOrderInfo" xml:space="preserve">
+    <value>工单信息</value>
+  </data>
+  <data name="LblAccount" xml:space="preserve">
+    <value>账号</value>
+  </data>
+  <data name="LblAccountName" xml:space="preserve">
+    <value>账号名称</value>
+  </data>
+  <data name="LblAccountNo" xml:space="preserve">
+    <value>账号编号</value>
+  </data>
+  <data name="LblAccountRetureFailure" xml:space="preserve">
+    <value>帐号归还失败</value>
+  </data>
+  <data name="LblAccountRetureSucc" xml:space="preserve">
+    <value>帐号归还成功</value>
+  </data>
+  <data name="LblActiveName" xml:space="preserve">
+    <value>活动名称</value>
+  </data>
+  <data name="LblAllBigZone" xml:space="preserve">
+    <value>全部大区</value>
+  </data>
+  <data name="LblallType" xml:space="preserve">
+    <value>全部类型</value>
+  </data>
+  <data name="LblAllZone" xml:space="preserve">
+    <value>全部战区</value>
+  </data>
+  <data name="LblAllZoneLine" xml:space="preserve">
+    <value>全部战线</value>
+  </data>
+  <data name="LblAwardBigZone" xml:space="preserve">
+    <value>发奖大区</value>
+  </data>
+  <data name="LblAwardID" xml:space="preserve">
+    <value>附加道具设定</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAwardNo" xml:space="preserve">
+    <value>奖品编号</value>
+  </data>
+  <data name="LblBaseInfo" xml:space="preserve">
+    <value>基本信息</value>
+  </data>
+  <data name="LblBelongBigZone" xml:space="preserve">
+    <value>所属大区</value>
+  </data>
+  <data name="LblBelongZone" xml:space="preserve">
+    <value>所属战区</value>
+  </data>
+  <data name="LblBelongZoneWithBigZone" xml:space="preserve">
+    <value>所属战区(大区)</value>
+  </data>
+  <data name="LblBigZone" xml:space="preserve">
+    <value>大区</value>
+  </data>
+  <data name="LblBigZoneNo" xml:space="preserve">
+    <value>大区编号</value>
+  </data>
+  <data name="LblBody" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="LblCanResetData" xml:space="preserve">
+    <value>可否重置数据</value>
+  </data>
+  <data name="LblCardNumber" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="LblClipBoard" xml:space="preserve">
+    <value>注:单击此处可复制基本信息内容</value>
+  </data>
+  <data name="LblCloseDownStatue" xml:space="preserve">
+    <value>封停状态</value>
+  </data>
+  <data name="LblConsume" xml:space="preserve">
+    <value>咨询</value>
+  </data>
+  <data name="LblConsumeList" xml:space="preserve">
+    <value>咨询列表</value>
+  </data>
+  <data name="LblConsumeNo" xml:space="preserve">
+    <value>咨询编号</value>
+  </data>
+  <data name="LblConsumeObject" xml:space="preserve">
+    <value>咨询对象</value>
+  </data>
+  <data name="LblConsumeText" xml:space="preserve">
+    <value>咨询内容</value>
+  </data>
+  <data name="LblContacter" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="LblContacterCall" xml:space="preserve">
+    <value>联系人称呼</value>
+  </data>
+  <data name="LblCountDown" xml:space="preserve">
+    <value>倒计时</value>
+  </data>
+  <data name="LblCreater" xml:space="preserve">
+    <value>创建者</value>
+  </data>
+  <data name="LblCreateTime" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="LblCurrentPersonInCharge" xml:space="preserve">
+    <value>当前职责人</value>
+  </data>
+  <data name="LblData" xml:space="preserve">
+    <value>数据</value>
+  </data>
+  <data name="LblDataChange" xml:space="preserve">
+    <value>数据变更</value>
+  </data>
+  <data name="LblDetail" xml:space="preserve">
+    <value>详情</value>
+  </data>
+  <data name="LblDocumentNumber" xml:space="preserve">
+    <value>证件号码</value>
+  </data>
+  <data name="LblDownloadTemplate" xml:space="preserve">
+    <value>下载模板</value>
+  </data>
+  <data name="LblEdit" xml:space="preserve">
+    <value>编 辑</value>
+  </data>
+  <data name="LblEditor" xml:space="preserve">
+    <value>编辑者</value>
+  </data>
+  <data name="LblEmailInfo" xml:space="preserve">
+    <value>邮件信息</value>
+  </data>
+  <data name="LblEndRunning" xml:space="preserve">
+    <value>停止运行</value>
+  </data>
+  <data name="LblEndTime" xml:space="preserve">
+    <value>结束时间</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblEquipNo" xml:space="preserve">
+    <value>道具编号</value>
+  </data>
+  <data name="LblExcel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LblFailureStopPlacard" xml:space="preserve">
+    <value>停止公告操作失败</value>
+  </data>
+  <data name="LblFallPer" xml:space="preserve">
+    <value>比例</value>
+  </data>
+  <data name="LblFallType" xml:space="preserve">
+    <value>掉落活动类型</value>
+  </data>
+  <data name="LblFrom" xml:space="preserve">
+    <value>来自</value>
+  </data>
+  <data name="LblGame" xml:space="preserve">
+    <value>游戏</value>
+  </data>
+  <data name="LblGameBigZone" xml:space="preserve">
+    <value>游戏大区</value>
+  </data>
+  <data name="LblGameName" xml:space="preserve">
+    <value>游戏名称</value>
+  </data>
+  <data name="LblGameZone" xml:space="preserve">
+    <value>游戏战区</value>
+  </data>
+  <data name="LblGiftName" xml:space="preserve">
+    <value>礼品名称</value>
+  </data>
+  <data name="LblGiftNo" xml:space="preserve">
+    <value>礼品编号</value>
+  </data>
+  <data name="LblGiftNumber" xml:space="preserve">
+    <value>礼品数量</value>
+  </data>
+  <data name="LblGiftType" xml:space="preserve">
+    <value>礼品类型</value>
+  </data>
+  <data name="LblGssNetSet" xml:space="preserve">
+    <value>Gss网络设置</value>
+  </data>
+  <data name="LblImportUserList" xml:space="preserve">
+    <value>导入的用户列表</value>
+  </data>
+  <data name="LblInitiatorName" xml:space="preserve">
+    <value>发起人称呼</value>
+  </data>
+  <data name="LblInitiatorNameIsRequire" xml:space="preserve">
+    <value>发起人称呼不能为空</value>
+  </data>
+  <data name="LblIsAdult" xml:space="preserve">
+    <value>是否成年</value>
+  </data>
+  <data name="LblIsSecurity" xml:space="preserve">
+    <value>是否密保</value>
+  </data>
+  <data name="LblLastLoginTime" xml:space="preserve">
+    <value>最后一次登录时间</value>
+  </data>
+  <data name="LblLastOnlineIP" xml:space="preserve">
+    <value>最后上线IP</value>
+  </data>
+  <data name="LblLastOnlineTime" xml:space="preserve">
+    <value>最后上线时间</value>
+  </data>
+  <data name="LblLevel" xml:space="preserve">
+    <value>级别</value>
+  </data>
+  <data name="LblLevelLimit" xml:space="preserve">
+    <value>等级限制</value>
+  </data>
+  <data name="LblLimitTimeNoun" xml:space="preserve">
+    <value>时限</value>
+  </data>
+  <data name="LblLoding" xml:space="preserve">
+    <value>数据加载中....</value>
+  </data>
+  <data name="LblLogin" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LblMaxLevel" xml:space="preserve">
+    <value>最高等级</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblMinLevel" xml:space="preserve">
+    <value>最低等级</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblMyAcceptWorkOrder" xml:space="preserve">
+    <value>我接收的工单</value>
+  </data>
+  <data name="LblMyAllWorkOrder" xml:space="preserve">
+    <value>我的所有工单</value>
+  </data>
+  <data name="LblMyCloseWorkOrder" xml:space="preserve">
+    <value>我的关闭工单</value>
+  </data>
+  <data name="LblMyFinishWorkOrderForWaitFeedbook" xml:space="preserve">
+    <value>我完成待反馈的工单</value>
+  </data>
+  <data name="LblMyHistoryWorkOrder" xml:space="preserve">
+    <value>我的历史工单</value>
+  </data>
+  <data name="LblMyTurnOutWorkOrder" xml:space="preserve">
+    <value>我转出的工单</value>
+  </data>
+  <data name="LblMyWaitScoreWorkOrder" xml:space="preserve">
+    <value>我的待评分工单</value>
+  </data>
+  <data name="LblNextPage" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="LblNode" xml:space="preserve">
+    <value>节点</value>
+  </data>
+  <data name="LblNoticeList" xml:space="preserve">
+    <value>公告列表</value>
+  </data>
+  <data name="LblNoticeRange" xml:space="preserve">
+    <value>公告范围</value>
+  </data>
+  <data name="LblNoticeState" xml:space="preserve">
+    <value>公告状态</value>
+  </data>
+  <data name="LblNoticeText" xml:space="preserve">
+    <value>公告内容</value>
+  </data>
+  <data name="LblNowUser" xml:space="preserve">
+    <value>当前用户</value>
+  </data>
+  <data name="LblOftenGameLocation" xml:space="preserve">
+    <value>经常游戏地点</value>
+  </data>
+  <data name="LblOnlineStatue" xml:space="preserve">
+    <value>在线状态</value>
+  </data>
+  <data name="LblOperate" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="LblOther" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="LblOtherInfoWriteRemark" xml:space="preserve">
+    <value>注:其他信息项请写入备注</value>
+  </data>
+  <data name="LblOtherWorkOrder" xml:space="preserve">
+    <value>其它工单</value>
+  </data>
+  <data name="LblPackage" xml:space="preserve">
+    <value>包</value>
+  </data>
+  <data name="LblPackUp" xml:space="preserve">
+    <value>收 起</value>
+  </data>
+  <data name="LblPassword" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="LblPlayNO" xml:space="preserve">
+    <value>踢号</value>
+  </data>
+  <data name="LblPlayNOTool" xml:space="preserve">
+    <value>踢号工具</value>
+  </data>
+  <data name="LblPreview" xml:space="preserve">
+    <value>预 览</value>
+  </data>
+  <data name="LblPrevious" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="LblPreviousPersonInCharge" xml:space="preserve">
+    <value>前一职责人</value>
+  </data>
+  <data name="LblProp" xml:space="preserve">
+    <value>道具</value>
+  </data>
+  <data name="LblProvideFullName" xml:space="preserve">
+    <value>提供完整用户名</value>
+  </data>
+  <data name="LblProviderFullDocumentNo" xml:space="preserve">
+    <value>提供完整证件号</value>
+  </data>
+  <data name="LblQueryOnlineState" xml:space="preserve">
+    <value>查询在线状态</value>
+  </data>
+  <data name="LblQueryWhereArea" xml:space="preserve">
+    <value>查询条件区</value>
+  </data>
+  <data name="LblReady" xml:space="preserve">
+    <value>就绪</value>
+  </data>
+  <data name="LblReadyWorkOrderPool" xml:space="preserve">
+    <value>准备工单池</value>
+  </data>
+  <data name="LblReceiveData" xml:space="preserve">
+    <value>接收数据</value>
+  </data>
+  <data name="LblReceiveRange" xml:space="preserve">
+    <value>接收范围</value>
+  </data>
+  <data name="LblRegisterTime" xml:space="preserve">
+    <value>注册时间</value>
+  </data>
+  <data name="LblRelatedInfoItem" xml:space="preserve">
+    <value>相关信息项</value>
+  </data>
+  <data name="LblRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="LblRepairFailure" xml:space="preserve">
+    <value>无法修复可恢复到最近档</value>
+  </data>
+  <data name="LblReset" xml:space="preserve">
+    <value>重填</value>
+  </data>
+  <data name="LblRole" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="LblRoleName" xml:space="preserve">
+    <value>角色名称</value>
+  </data>
+  <data name="LblRoleNo" xml:space="preserve">
+    <value>角色编号</value>
+  </data>
+  <data name="LblRoleStatue" xml:space="preserve">
+    <value>角色状态</value>
+  </data>
+  <data name="LblRunning" xml:space="preserve">
+    <value>正在运行</value>
+  </data>
+  <data name="LblRunStatue" xml:space="preserve">
+    <value>运行状态</value>
+  </data>
+  <data name="LblSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="LblSecurityVerify" xml:space="preserve">
+    <value>密保问题验证</value>
+  </data>
+  <data name="LblSenceNo" xml:space="preserve">
+    <value>场景ID</value>
+  </data>
+  <data name="LblServiceIP" xml:space="preserve">
+    <value>服务器ｉｐ</value>
+  </data>
+  <data name="LblServicePort" xml:space="preserve">
+    <value>服务端口号</value>
+  </data>
+  <data name="LblSource" xml:space="preserve">
+    <value>来源</value>
+  </data>
+  <data name="LblStartRunning" xml:space="preserve">
+    <value>开始运行</value>
+  </data>
+  <data name="LblStartTime" xml:space="preserve">
+    <value>开始时间</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblSuccStopPlacard" xml:space="preserve">
+    <value>停止公告操作成功</value>
+  </data>
+  <data name="LblSureAccount" xml:space="preserve">
+    <value>确认帐号</value>
+  </data>
+  <data name="LblSureOther" xml:space="preserve">
+    <value>确认其它</value>
+  </data>
+  <data name="LblSureSecurity" xml:space="preserve">
+    <value>确认密保</value>
+  </data>
+  <data name="LblSystemName" xml:space="preserve">
+    <value>GSS游戏服务系统</value>
+  </data>
+  <data name="LblTel" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="LblTelFormIsError" xml:space="preserve">
+    <value>联系电话格式不正确</value>
+  </data>
+  <data name="LblTelNotAllowBlank" xml:space="preserve">
+    <value>联系电话不能为空</value>
+  </data>
+  <data name="LblTime" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="LblTimeLimit" xml:space="preserve">
+    <value>时限时间</value>
+  </data>
+  <data name="LblTitle" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="LblTitleCannotBlank" xml:space="preserve">
+    <value>标题不能为空</value>
+  </data>
+  <data name="LblToolRecord" xml:space="preserve">
+    <value>工具记录</value>
+  </data>
+  <data name="LblToolUse" xml:space="preserve">
+    <value>工具使用</value>
+  </data>
+  <data name="LblType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="LblUnitDay" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="LblUnitMonth" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="LblUnitYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="LblUnit_Number" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="LblUnknowBigZone" xml:space="preserve">
+    <value>未知大区</value>
+  </data>
+  <data name="LblUnknowZone" xml:space="preserve">
+    <value>未知战区</value>
+  </data>
+  <data name="LblUnknowZoneLine" xml:space="preserve">
+    <value>未知战线</value>
+  </data>
+  <data name="LblUpdateTime" xml:space="preserve">
+    <value>更新时间</value>
+  </data>
+  <data name="LblUser" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="LblUserList" xml:space="preserve">
+    <value>用户列表</value>
+  </data>
+  <data name="LblVipLevel" xml:space="preserve">
+    <value>Vip级别</value>
+  </data>
+  <data name="LblWaitLeaderAuditOfWorkOrder" xml:space="preserve">
+    <value>待领导审核的工单</value>
+  </data>
+  <data name="LblWorkOrderFlow" xml:space="preserve">
+    <value>工单流程</value>
+  </data>
+  <data name="LblWorkOrderLimit" xml:space="preserve">
+    <value>工单时限</value>
+  </data>
+  <data name="LblWorkOrderNo" xml:space="preserve">
+    <value>工单编号</value>
+  </data>
+  <data name="LblWorkOrderRecord" xml:space="preserve">
+    <value>工单记录</value>
+  </data>
+  <data name="LblWorkOrderRemark" xml:space="preserve">
+    <value>工单备注</value>
+  </data>
+  <data name="LblWorkOrderSatue" xml:space="preserve">
+    <value>工单状态</value>
+  </data>
+  <data name="LblWorkOrderSource" xml:space="preserve">
+    <value>工单来源</value>
+  </data>
+  <data name="LblWorkOrderStatueChange" xml:space="preserve">
+    <value>工单状态变更</value>
+  </data>
+  <data name="LblWorkOrderTitle" xml:space="preserve">
+    <value>工单标题</value>
+  </data>
+  <data name="LblWorkOrderType" xml:space="preserve">
+    <value>工单类型</value>
+  </data>
+  <data name="LblZone" xml:space="preserve">
+    <value>战区</value>
+  </data>
+  <data name="LblZoneNo" xml:space="preserve">
+    <value>战区编号</value>
+  </data>
+  <data name="Map_AwardUserSheetName" xml:space="preserve">
+    <value>发奖用户</value>
+  </data>
+  <data name="Map_RoleName" xml:space="preserve">
+    <value>角色名</value>
+  </data>
+  <data name="Map_RoleNo" xml:space="preserve">
+    <value>角色编号</value>
+  </data>
+  <data name="Map_UserNo" xml:space="preserve">
+    <value>用户编号</value>
+  </data>
+  <data name="Map_ZoneNo" xml:space="preserve">
+    <value>战区编号</value>
+  </data>
+  <data name="NoWorkOrderOfMenu_EquipFallForm" xml:space="preserve">
+    <value>装备掉落</value>
+  </data>
+  <data name="NoWorkOrderOfMenu_ExchangeForm" xml:space="preserve">
+    <value>兑换活动</value>
+  </data>
+  <data name="NoWorkOrderOfMenu_ExpMoneyActiveForm" xml:space="preserve">
+    <value>exp / gold 翻倍活动</value>
+  </data>
+  <data name="Other_BtnAwardOrQuery" xml:space="preserve">
+    <value>发奖/查询</value>
+  </data>
+  <data name="Other_BtnAwardWorkOrder" xml:space="preserve">
+    <value>发奖工单</value>
+  </data>
+  <data name="Other_btnBatchIDSealed" xml:space="preserve">
+    <value>批量封号</value>
+  </data>
+  <data name="Other_BtnBatchUnlock" xml:space="preserve">
+    <value>批量解封</value>
+  </data>
+  <data name="Other_BtnBugSubmit" xml:space="preserve">
+    <value>Bug提交</value>
+  </data>
+  <data name="Other_BtnCallWorkOrder" xml:space="preserve">
+    <value>喊话工单</value>
+  </data>
+  <data name="Other_BtnDealWithTroublemakers" xml:space="preserve">
+    <value>处理捣乱的人</value>
+  </data>
+  <data name="Other_BtnGamerInforQuery" xml:space="preserve">
+    <value>玩家信息查询</value>
+  </data>
+  <data name="Other_BtnHackedProcess" xml:space="preserve">
+    <value>盗号处理</value>
+  </data>
+  <data name="Other_BtnLoginAward" xml:space="preserve">
+    <value>登录奖励</value>
+  </data>
+  <data name="Other_BtnMergeServiceGangRenamed" xml:space="preserve">
+    <value>帮派改名(合服)</value>
+  </data>
+  <data name="Other_BtnPressReleases" xml:space="preserve">
+    <value>新闻发布</value>
+  </data>
+  <data name="Other_BtnReportFalseInfo" xml:space="preserve">
+    <value>고발 거짓 정보</value>
+  </data>
+  <data name="Other_BtnReportOther" xml:space="preserve">
+    <value>举报其他</value>
+  </data>
+  <data name="Other_BtnReportPlugin" xml:space="preserve">
+    <value>举报外挂</value>
+  </data>
+  <data name="Other_BtnReportPW" xml:space="preserve">
+    <value>举报私服</value>
+  </data>
+  <data name="Other_BtnSuggestion" xml:space="preserve">
+    <value>意见建议</value>
+  </data>
+  <data name="Role_BtnCardNumber" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="Role_btnCloseDown" xml:space="preserve">
+    <value>封停</value>
+  </data>
+  <data name="Role_btnGag" xml:space="preserve">
+    <value>禁言</value>
+  </data>
+  <data name="Role_BtnPropException" xml:space="preserve">
+    <value>道具异常</value>
+  </data>
+  <data name="Role_BtnPropLose" xml:space="preserve">
+    <value>道具丢失</value>
+  </data>
+  <data name="Role_BtnReceivedException" xml:space="preserve">
+    <value>领奖异常</value>
+  </data>
+  <data name="Role_BtnRenamed" xml:space="preserve">
+    <value>改名</value>
+  </data>
+  <data name="Role_BtnResetWirehousePsw" xml:space="preserve">
+    <value>清空仓库密码</value>
+  </data>
+  <data name="Role_BtnRoleInfoException" xml:space="preserve">
+    <value>角色信息异常</value>
+  </data>
+  <data name="Role_BtnRoleRecovery" xml:space="preserve">
+    <value>角色恢复</value>
+  </data>
+  <data name="Role_BtnTurnService" xml:space="preserve">
+    <value>转服</value>
+  </data>
+  <data name="Role_btnUnlock" xml:space="preserve">
+    <value>解封</value>
+  </data>
+  <data name="Tip_AcceptSelectWorkOrder" xml:space="preserve">
+    <value>确定要接收所选工单吗?</value>
+  </data>
+  <data name="Tip_AccountHasBeenCloseDown" xml:space="preserve">
+    <value>该账户之前已被封停</value>
+  </data>
+  <data name="Tip_AccountLeastInputTopThree" xml:space="preserve">
+    <value>帐号至少需要输入前三位</value>
+  </data>
+  <data name="Tip_ActiveNameIsRequire" xml:space="preserve">
+    <value>活动名称不能为空</value>
+  </data>
+  <data name="Tip_AutidPassAndTurnout" xml:space="preserve">
+    <value>审核通过并转向</value>
+  </data>
+  <data name="Tip_AwardUserListExcel" xml:space="preserve">
+    <value>提示:用户表需要包含三列,用户编号\角色编号\战区编号,角色编号和战区编号为-1,
+则不对奖品的使用有限制</value>
+  </data>
+  <data name="Tip_ChatDetail" xml:space="preserve">
+    <value>聊天内容</value>
+  </data>
+  <data name="Tip_CheckSureSubmitWithExecute" xml:space="preserve">
+    <value>选中\"确认提交并立即执行\"时\n不需要点击\"确定\"提交,\n执行游戏工具会自动提交</value>
+  </data>
+  <data name="Tip_Client" xml:space="preserve">
+    <value>客户端</value>
+  </data>
+  <data name="Tip_CloseDownAccountWithRole" xml:space="preserve">
+    <value>封停帐号\角色</value>
+  </data>
+  <data name="Tip_CloseDownFailure" xml:space="preserve">
+    <value>封停失败</value>
+  </data>
+  <data name="Tip_CloseDownFailureFormat" xml:space="preserve">
+    <value>封停[{0}]失败</value>
+  </data>
+  <data name="Tip_CloseDownSucc" xml:space="preserve">
+    <value>封停成功</value>
+  </data>
+  <data name="Tip_CloseDownSuccFormat" xml:space="preserve">
+    <value>封停[{0}]成功</value>
+  </data>
+  <data name="Tip_CloseDownTimeSpan" xml:space="preserve">
+    <value>封停时间</value>
+  </data>
+  <data name="Tip_CloseDownTool" xml:space="preserve">
+    <value>封停工具</value>
+  </data>
+  <data name="Tip_ConfigNoExists" xml:space="preserve">
+    <value>配置文件不存在</value>
+  </data>
+  <data name="Tip_ConnectionService" xml:space="preserve">
+    <value>连接到服务端</value>
+  </data>
+  <data name="Tip_ConnectionServiceError" xml:space="preserve">
+    <value>无法连接到服务器</value>
+  </data>
+  <data name="Tip_CopyWorkOrderToClipBoard" xml:space="preserve">
+    <value>工单基本信息已经复制到剪切板</value>
+  </data>
+  <data name="Tip_CreateWorkNeedUserAndRoleInfo" xml:space="preserve">
+    <value>建立工单时玩家和角色信息快照不能为空</value>
+  </data>
+  <data name="Tip_CreateWorkOrderSnap" xml:space="preserve">
+    <value>建立工单时游戏信息快照</value>
+  </data>
+  <data name="Tip_CustomerServiceCounter" xml:space="preserve">
+    <value>客服已阅</value>
+  </data>
+  <data name="Tip_CustomerServiceNotRead" xml:space="preserve">
+    <value>客服未阅</value>
+  </data>
+  <data name="Tip_DoubleLogoForChangeNetConfig" xml:space="preserve">
+    <value>双击登录窗体LOGO\r\n可修改GSS网络配置</value>
+  </data>
+  <data name="Tip_EmailInfoIsRequired" xml:space="preserve">
+    <value>请输入邮件标题和邮件内容</value>
+  </data>
+  <data name="Tip_ErrorAccountOrPassword" xml:space="preserve">
+    <value>帐号或密码错误</value>
+  </data>
+  <data name="Tip_ErrorGetWorkOrderHistory" xml:space="preserve">
+    <value>工单历史数据提取数据出错</value>
+  </data>
+  <data name="Tip_ErrorLoginNetError" xml:space="preserve">
+    <value>登录系统时网络错误</value>
+  </data>
+  <data name="Tip_ErrorSaveNetConfig" xml:space="preserve">
+    <value>网络配置保存失败</value>
+  </data>
+  <data name="Tip_ErrorSaveNetConfigTip" xml:space="preserve">
+    <value>保存网络配置出错,可能配置文件不存在或版本不统一！</value>
+  </data>
+  <data name="Tip_ErrorServiceIPFormat" xml:space="preserve">
+    <value>服务器IP地址格式不正确</value>
+  </data>
+  <data name="Tip_ExcelDefaultSheetNameFormat" xml:space="preserve">
+    <value>导入数据时，请确保存在默认的数据页签【{0}】</value>
+  </data>
+  <data name="Tip_ExcelTemplateError" xml:space="preserve">
+    <value>数据模本错误,请重新下载模本</value>
+  </data>
+  <data name="Tip_FeedbackNeedScore" xml:space="preserve">
+    <value>已反馈并需评分</value>
+  </data>
+  <data name="Tip_GameDataPullError" xml:space="preserve">
+    <value>游戏数据拉取错误</value>
+  </data>
+  <data name="Tip_GameTool" xml:space="preserve">
+    <value>游戏工具</value>
+  </data>
+  <data name="Tip_GameUseNotIsRequire" xml:space="preserve">
+    <value>游戏用户列表不能为空</value>
+  </data>
+  <data name="Tip_GetError" xml:space="preserve">
+    <value>获取错误</value>
+  </data>
+  <data name="Tip_Info" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Tip_InfoInGame" xml:space="preserve">
+    <value>游戏内信息</value>
+  </data>
+  <data name="Tip_InitErrorLoginAgain" xml:space="preserve">
+    <value>初始化未成功,请重新登录</value>
+  </data>
+  <data name="Tip_InputInWorkword" xml:space="preserve">
+    <value>请在工单备注中填入</value>
+  </data>
+  <data name="Tip_ItemIsRequiredFormat" xml:space="preserve">
+    <value>[{0}]是必须输入项。</value>
+  </data>
+  <data name="Tip_LeftLiDisplayHistoryWorkOrder" xml:space="preserve">
+    <value>提示:点击左侧工单列表,可显示选中工单的历史记录</value>
+  </data>
+  <data name="Tip_LimitNoticeMsgLength" xml:space="preserve">
+    <value>限制公告内容长度为300</value>
+  </data>
+  <data name="Tip_LoseCacheRefuseComing" xml:space="preserve">
+    <value>缓存加载失败，拒绝进入系统。</value>
+  </data>
+  <data name="Tip_LoseWorkOrderStatueFormat" xml:space="preserve">
+    <value>请联系GSS服务管理员。基础数据不完善，缺少项【{0}】</value>
+  </data>
+  <data name="Tip_LossLogicData" xml:space="preserve">
+    <value>系统基础数据丢失，请完善系统基础数据。</value>
+  </data>
+  <data name="Tip_MinLevelShouldLessMaxLevel" xml:space="preserve">
+    <value>最低等级应该小于最高等级。</value>
+  </data>
+  <data name="Tip_NotcieIsRequire" xml:space="preserve">
+    <value>消息内容不能为空</value>
+  </data>
+  <data name="Tip_NoticeMessgaeIsRequired" xml:space="preserve">
+    <value>请输入公告内容.</value>
+  </data>
+  <data name="Tip_NumberIsRequire" xml:space="preserve">
+    <value>数量是必填项</value>
+  </data>
+  <data name="Tip_OnlyMark_SetRequireOrInfo" xml:space="preserve">
+    <value>仅备注(要求或信息)</value>
+  </data>
+  <data name="Tip_OnlyRunSignleApp" xml:space="preserve">
+    <value>GSS游戏服务系统已经运行\n(仅允许同时运行一个实例)</value>
+  </data>
+  <data name="Tip_OperateRemark" xml:space="preserve">
+    <value>(请写入工单操作的相关内容)</value>
+  </data>
+  <data name="Tip_OtherInfoNoEmpty" xml:space="preserve">
+    <value>其它: 内容不能为空</value>
+  </data>
+  <data name="Tip_PleaseInputAccountOrPassword" xml:space="preserve">
+    <value>请输入用户名或密码</value>
+  </data>
+  <data name="Tip_PleaseInputQueryWhere" xml:space="preserve">
+    <value>需要输入查询条件</value>
+  </data>
+  <data name="Tip_PleaseInspectNetOrService" xml:space="preserve">
+    <value>请检查网络或服务器</value>
+  </data>
+  <data name="Tip_PleaseSelect" xml:space="preserve">
+    <value>请选择</value>
+  </data>
+  <data name="Tip_PleaseSelectBigZoneAndZone" xml:space="preserve">
+    <value>请选择游戏大区以及战区。</value>
+  </data>
+  <data name="Tip_PleaseSelectDataFile" xml:space="preserve">
+    <value>请选择数据文件</value>
+  </data>
+  <data name="Tip_PleaseSelectFallType" xml:space="preserve">
+    <value>请选择掉落活动类型</value>
+  </data>
+  <data name="Tip_PleaseSetEmailReceiver" xml:space="preserve">
+    <value>请设置邮件接收人</value>
+  </data>
+  <data name="Tip_PleaseSetEquip" xml:space="preserve">
+    <value>请设定道具信息</value>
+  </data>
+  <data name="Tip_PortShouldNumber" xml:space="preserve">
+    <value>端口号应该为数字</value>
+  </data>
+  <data name="Tip_Position" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="Tip_PRIsRequire" xml:space="preserve">
+    <value>概率的分子分母不能为空。</value>
+  </data>
+  <data name="Tip_QueryRoleNameInputLimit" xml:space="preserve">
+    <value>角色名称至少需要输入前2位！</value>
+  </data>
+  <data name="Tip_RealtimeQueryGameUserInfoTool" xml:space="preserve">
+    <value>实时游戏信息:玩家信息查询工具</value>
+  </data>
+  <data name="Tip_ReasonOrText" xml:space="preserve">
+    <value>原因或内容</value>
+  </data>
+  <data name="Tip_ReceiveDataError" xml:space="preserve">
+    <value>接收数据出错</value>
+  </data>
+  <data name="Tip_ReceiverOnlineConsumeError" xml:space="preserve">
+    <value>接收此在线咨询工单失败,如确认要接收,可稍候重试!</value>
+  </data>
+  <data name="Tip_RefuseDealwithWordorder" xml:space="preserve">
+    <value>【注:您不是此工单当前职责人,权限有限~】</value>
+  </data>
+  <data name="Tip_RemarkNoEmpty" xml:space="preserve">
+    <value>备注内容不能为空</value>
+  </data>
+  <data name="Tip_RoleLevelIsReqire" xml:space="preserve">
+    <value>等级不能为空</value>
+  </data>
+  <data name="Tip_RunNoticeFailure" xml:space="preserve">
+    <value>运行公告操作失败!</value>
+  </data>
+  <data name="Tip_SceneInputLimit" xml:space="preserve">
+    <value>场景ID不能为空。【如果输入多个场景请以逗号分隔 如： 23,94】</value>
+  </data>
+  <data name="Tip_ScoreAndFinshWorkorder" xml:space="preserve">
+    <value>评分并完成工单</value>
+  </data>
+  <data name="Tip_SelectDepart" xml:space="preserve">
+    <value>请选择部门</value>
+  </data>
+  <data name="Tip_SelectResponsiblePerson" xml:space="preserve">
+    <value>请选择职责人</value>
+  </data>
+  <data name="Tip_SelectTurnToResponsible" xml:space="preserve">
+    <value>请选择转向的责任人</value>
+  </data>
+  <data name="Tip_Service" xml:space="preserve">
+    <value>服务端</value>
+  </data>
+  <data name="Tip_StartSystem" xml:space="preserve">
+    <value>启动系统</value>
+  </data>
+  <data name="Tip_StartTimeShouldLessEndTime" xml:space="preserve">
+    <value>开始时间应该小于结束时间。</value>
+  </data>
+  <data name="Tip_SuccessSaveNetConfig" xml:space="preserve">
+    <value>网络配置保存成功</value>
+  </data>
+  <data name="Tip_SuccRunPlacard" xml:space="preserve">
+    <value>运行公告操作成功</value>
+  </data>
+  <data name="Tip_SureExitApp" xml:space="preserve">
+    <value>确定要退出本系统吗?</value>
+  </data>
+  <data name="Tip_SureRunSelectNotcie" xml:space="preserve">
+    <value>确定要运行所选工单的公告吗?</value>
+  </data>
+  <data name="Tip_SureStopSelectNotcie" xml:space="preserve">
+    <value>确定要停止所选工单的公告吗?</value>
+  </data>
+  <data name="Tip_SystemChatReplyPhrase" xml:space="preserve">
+    <value>您好|好的|还有什么需要帮助的吗？|谢谢您的宝贵意见|再见|我们会尽快处理|感谢您的支持！|非常抱歉,我们会尽快处理</value>
+  </data>
+  <data name="Tip_TCPError" xml:space="preserve">
+    <value>查询网络数据失败</value>
+  </data>
+  <data name="Tip_TheWorkOrderNeedGameUserIfno" xml:space="preserve">
+    <value>此类型工单需要游戏帐号信息,请查询后再试</value>
+  </data>
+  <data name="Tip_TimeoutTip" xml:space="preserve">
+    <value>注:红底白色表示超时</value>
+  </data>
+  <data name="Tip_Tip" xml:space="preserve">
+    <value>提示信息</value>
+  </data>
+  <data name="Tip_ToDo" xml:space="preserve">
+    <value>要进行的操作</value>
+  </data>
+  <data name="Tip_UnlockFailureFormat" xml:space="preserve">
+    <value>解封[{0}]失败</value>
+  </data>
+  <data name="Tip_UnlockSuccFormat" xml:space="preserve">
+    <value>解封[{0}]成功</value>
+  </data>
+  <data name="Tip_USerRead" xml:space="preserve">
+    <value>玩家已阅</value>
+  </data>
+  <data name="Tip_UserToolInputRemark" xml:space="preserve">
+    <value>工具使用备注不能为空</value>
+  </data>
+  <data name="Tip_WorkOrderCompleted" xml:space="preserve">
+    <value>工单完成</value>
+  </data>
+  <data name="Tip_WorkOrderCreateFailure" xml:space="preserve">
+    <value>工单建立失败</value>
+  </data>
+  <data name="Tip_WorkOrderCreateFailureWithTool" xml:space="preserve">
+    <value>工单建立失败!不能使用工具</value>
+  </data>
+  <data name="Tip_WorkOrderCreateSucc" xml:space="preserve">
+    <value>工单建立成功</value>
+  </data>
+  <data name="Tip_WorkOrderCreateSuccWithExecute" xml:space="preserve">
+    <value>工单建立成功并已经立即执行</value>
+  </data>
+  <data name="Tip_WorkOrderLoseAccountOrRoleWithInvalid" xml:space="preserve">
+    <value>工单中不存在游戏帐号或角色,无法使用</value>
+  </data>
+  <data name="Tip_WorkOrderLoseAccountWithInvalid" xml:space="preserve">
+    <value>工单中不存在游戏帐号,无法使用</value>
+  </data>
+  <data name="Tip_WorkorderLoseGameAccount" xml:space="preserve">
+    <value>工单中不存在游戏帐户,无法使用！</value>
+  </data>
+  <data name="Tip_WorkOrderMarkFormat" xml:space="preserve">
+    <value>工单得分为 {0}</value>
+  </data>
+  <data name="Tip_WorkOrderTiltleIsRequire" xml:space="preserve">
+    <value>工单标题不能为空</value>
+  </data>
+  <data name="WorkOrderStatueEnum_Dealwithing" xml:space="preserve">
+    <value>处理中</value>
+  </data>
+  <data name="WorkOrderStatueEnum_History" xml:space="preserve">
+    <value>工单完成</value>
+  </data>
+  <data name="WorkOrderStatueEnum_LeaderAudit" xml:space="preserve">
+    <value>需领导审核</value>
+  </data>
+  <data name="WorkOrderStatueEnum_NewReceive" xml:space="preserve">
+    <value>已经接收</value>
+  </data>
+  <data name="WorkOrderStatueEnum_Prepare" xml:space="preserve">
+    <value>等待处理</value>
+  </data>
+  <data name="WorkOrderStatueEnum_Recovery" xml:space="preserve">
+    <value>工单关闭</value>
+  </data>
+  <data name="WorkOrderStatueEnum_TurnOut" xml:space="preserve">
+    <value>已经转向</value>
+  </data>
+  <data name="WorkOrderStatueEnum_WaitFeedbook" xml:space="preserve">
+    <value>等待反馈</value>
+  </data>
+  <data name="WorkOrderStatueEnum_WaitScore" xml:space="preserve">
+    <value>等待评分</value>
+  </data>
+  <data name="PrepareWorkOrderPool" xml:space="preserve">
+    <value>准备工单池</value>
+  </data>
+  <data name="AppID" xml:space="preserve">
+    <value>GSS游戏服务系统</value>
+    <comment>true</comment>
+  </data>
+  <data name="ConsuleWorkOrder" xml:space="preserve">
+    <value>咨询工单池</value>
+    <comment>true</comment>
+  </data>
+  <data name="LeaderAuditWorkOrderPool" xml:space="preserve">
+    <value>领导审核工单池</value>
+    <comment>true</comment>
+  </data>
+  <data name="NewReceiveWorkOrderPool" xml:space="preserve">
+    <value>新收工单池</value>
+    <comment>true</comment>
+  </data>
+  <data name="TurnOutWorkOrderPool" xml:space="preserve">
+    <value>转出工单池</value>
+    <comment>true</comment>
+  </data>
+  <data name="WaitFeedBackWorkOrder" xml:space="preserve">
+    <value>待反馈工单池</value>
+    <comment>true</comment>
+  </data>
+  <data name="WaitScoreWorkOrder" xml:space="preserve">
+    <value>待评分工单池</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderRecoveryTank" xml:space="preserve">
+    <value>工单回收池</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSendBy" xml:space="preserve">
+    <value>发送人</value>
+  </data>
+  <data name="Tip_ClientRequestLack" xml:space="preserve">
+    <value>请求接收失败。</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CreateWorkOrderFailure" xml:space="preserve">
+    <value>工单创建失败!</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_IDShouldGatherThan0" xml:space="preserve">
+    <value>编号应该大于0</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LinkServerStatue_4041" xml:space="preserve">
+    <value>系统缺少远程数据库【{0}】连接实例名</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LinkServerStatue_4043" xml:space="preserve">
+    <value>系统建立的远程数据库MySQL【{0}】连接没有保留连接串</value>
+  </data>
+  <data name="Tip_RecoverRoleStatue_4042" xml:space="preserve">
+    <value>系统缺少远程连接ZoneRoleDataDB实例名</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RecoveryRoleStatue_1" xml:space="preserve">
+    <value>待恢复角色位置在角色栏已被其他角色使用。</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RecoveryRoleStatue_2" xml:space="preserve">
+    <value>该角色状态正常，本次不需要进行恢复，或者刷新数据查看状态。</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RecoveryRoleStatue_4041" xml:space="preserve">
+    <value>系统缺少远程数据库GameCoreDB连接实例名</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RequestSuccess" xml:space="preserve">
+    <value>请求成功</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ServiceLackTemplateFormat" xml:space="preserve">
+    <value>服务器缺少模板文件【{0}】</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SyncGameDbError" xml:space="preserve">
+    <value>数据同步至游戏库失败</value>
+  </data>
+  <data name="LblBlueDiamond" xml:space="preserve">
+    <value>蓝钻</value>
+  </data>
+  <data name="LblMoney" xml:space="preserve">
+    <value>金钱</value>
+  </data>
+  <data name="Tip_OnlyStaueIsLockCanDo" xml:space="preserve">
+    <value>只有锁定状态的数据才需要解锁</value>
+  </data>
+  <data name="Lbl_AwardProp1" xml:space="preserve">
+    <value>附加道具1</value>
+  </data>
+  <data name="Lbl_AwardProp2" xml:space="preserve">
+    <value>附加道具2</value>
+  </data>
+  <data name="Lbl_AwardProp3" xml:space="preserve">
+    <value>附加道具3</value>
+  </data>
+  <data name="Lbl_AwardProp4" xml:space="preserve">
+    <value>附加道具4</value>
+  </data>
+  <data name="Lbl_AwardProp5" xml:space="preserve">
+    <value>附加道具5</value>
+  </data>
+  <data name="Lbl_AwardPropNum1" xml:space="preserve">
+    <value>道具1数量</value>
+  </data>
+  <data name="Lbl_AwardPropNum2" xml:space="preserve">
+    <value>道具2数量</value>
+  </data>
+  <data name="Lbl_AwardPropNum3" xml:space="preserve">
+    <value>道具3数量</value>
+  </data>
+  <data name="Lbl_AwardPropNum4" xml:space="preserve">
+    <value>道具4数量</value>
+  </data>
+  <data name="Lbl_AwardPropNum5" xml:space="preserve">
+    <value>道具5数量</value>
+  </data>
+  <data name="LblRedDiamond" xml:space="preserve">
+    <value>红钻</value>
+  </data>
+  <data name="Other_BtnFullServiceEmail" xml:space="preserve">
+    <value>全服邮件</value>
+  </data>
+  <data name="Role_BtnDisChatRecover" xml:space="preserve">
+    <value>禁言恢复</value>
+  </data>
+</root>

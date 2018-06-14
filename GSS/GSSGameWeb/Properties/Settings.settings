@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GSSGameWeb.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GSSGameWeb_UpLoad_OverTime" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="GSSGameWeb_UpLoad_MaxLength" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1.5</Value>
+    </Setting>
+    <Setting Name="GSSGameWeb_CountStatRealm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost,www.a.com</Value>
+    </Setting>
+    <Setting Name="GSSGameWeb_WebServiceGSS_WebServiceGSS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2207/WebServiceGSS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

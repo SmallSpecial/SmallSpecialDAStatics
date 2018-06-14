@@ -1,0 +1,1918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="BtnCloudChart" xml:space="preserve">
+    <value>원형 그래프</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="BtnData" xml:space="preserve">
+    <value>데이터</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="BtnLineChart" xml:space="preserve">
+    <value>꺾인선 그래프</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="BtnPieChart" xml:space="preserve">
+    <value>파이 차트</value>
+  </data>
+  <data name="BtnQuery" xml:space="preserve">
+    <value>조회</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="BtnRectangularChart" xml:space="preserve">
+    <value>막대 그래프</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="BtnRefresh" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="BtnReset" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+  <data name="Btn_AccountQuery" xml:space="preserve">
+    <value>계정 검색</value>
+    <comment>true(TRUE为已安装提供的翻译进行替换)</comment>
+  </data>
+  <data name="Btn_CRM" xml:space="preserve">
+    <value>고객 센터</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Btn_CustormQuery" xml:space="preserve">
+    <value>사용자 정의 검색</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Btn_ExitSystem" xml:space="preserve">
+    <value>나가기</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Btn_HideMenu" xml:space="preserve">
+    <value>메뉴 숨기기</value>
+  </data>
+  <data name="Btn_Mark" xml:space="preserve">
+    <value>상가</value>
+  </data>
+  <data name="Btn_PageRefresh" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="Btn_RoleQuery" xml:space="preserve">
+    <value>캐릭터 검색</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Btn_RunStatue" xml:space="preserve">
+    <value>실행 상태</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Btn_StartNotice" xml:space="preserve">
+    <value>공지시작</value>
+  </data>
+  <data name="Btn_TaskQuery" xml:space="preserve">
+    <value>퀘스트 검색</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Btn_TextQuery" xml:space="preserve">
+    <value>텍스트 검색</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="CDKey_ErrorOccurred" xml:space="preserve">
+    <value>나타난 오류</value>
+  </data>
+  <data name="CDK_AwardNo" xml:space="preserve">
+    <value>상품 번호</value>
+  </data>
+  <data name="CDK_AwardNumber" xml:space="preserve">
+    <value>상품 수량이</value>
+  </data>
+  <data name="CDK_BatchImport" xml:space="preserve">
+    <value>일괄 가져오기</value>
+  </data>
+  <data name="CDK_BatchManage" xml:space="preserve">
+    <value>일괄 관리</value>
+  </data>
+  <data name="CDK_BatchNo" xml:space="preserve">
+    <value>일괄 번호</value>
+  </data>
+  <data name="CDK_CardType" xml:space="preserve">
+    <value>카드 종류</value>
+  </data>
+  <data name="CDK_CDKeyCreate" xml:space="preserve">
+    <value>CDKey 생성</value>
+  </data>
+  <data name="CDK_CDKImport" xml:space="preserve">
+    <value>CDKEY 가져오기</value>
+  </data>
+  <data name="CDK_CDKList" xml:space="preserve">
+    <value>CDKey 목록</value>
+  </data>
+  <data name="CDK_DataStatue" xml:space="preserve">
+    <value>데이터 상태</value>
+  </data>
+  <data name="CDK_FileFormatIs" xml:space="preserve">
+    <value>형식 위해</value>
+  </data>
+  <data name="CDK_Generate" xml:space="preserve">
+    <value>생성</value>
+  </data>
+  <data name="CDK_GenerateNumber" xml:space="preserve">
+    <value>생성 수량</value>
+  </data>
+  <data name="CDK_GenerateTime" xml:space="preserve">
+    <value>생성 시간을</value>
+  </data>
+  <data name="CDK_Import" xml:space="preserve">
+    <value>가져오기</value>
+  </data>
+  <data name="CDK_ImportExcel" xml:space="preserve">
+    <value>내보낼 EXCEL 파일</value>
+  </data>
+  <data name="CDK_ImportFile" xml:space="preserve">
+    <value>가져올 파일</value>
+  </data>
+  <data name="CDK_IsPublish" xml:space="preserve">
+    <value>사용 여부</value>
+  </data>
+  <data name="CDK_IsResetOriginData" xml:space="preserve">
+    <value>혹시 기존 자료를 비우기</value>
+  </data>
+  <data name="CDK_IsUsed" xml:space="preserve">
+    <value>이미 사용</value>
+  </data>
+  <data name="CDK_MsgGenerateCardType" xml:space="preserve">
+    <value>생성 카드 종류 필요하다.</value>
+  </data>
+  <data name="CDK_NoUsed" xml:space="preserve">
+    <value>사용하지 않음</value>
+  </data>
+  <data name="CDK_PleaseWaitImportFile" xml:space="preserve">
+    <value>좀 가져올 파일 선택</value>
+  </data>
+  <data name="CDK_Publish" xml:space="preserve">
+    <value>게시</value>
+  </data>
+  <data name="CDK_PublishToService" xml:space="preserve">
+    <value>서버에 발표</value>
+  </data>
+  <data name="CDK_Ready" xml:space="preserve">
+    <value>준비</value>
+  </data>
+  <data name="CDK_Remark" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="CDK_RemarkText" xml:space="preserve">
+    <value>비고 내용</value>
+  </data>
+  <data name="CDK_SurePublishDatas" xml:space="preserve">
+    <value>확인 할 데이터 이 서버 출시?</value>
+  </data>
+  <data name="CDK_TipCDKNo" xml:space="preserve">
+    <value>힌트: CDKEY 전 4 분 위해 명</value>
+  </data>
+  <data name="CDK_TipImportCDKExcelLimitCDKNo" xml:space="preserve">
+    <value>CDKEY 전 4 분 위해 명, 내보내기 EXCEL 파일 되도록 통해 후에 다시 내보내기 필터</value>
+  </data>
+  <data name="CDK_TipImportExcelCSV" xml:space="preserve">
+    <value>가져올 파일 1. 필요하다 EXCEL 중 CSV로 파일로 내보내기 파일 형식 참조. 2. 만약 발표 있다 실패를 보려면 목록에서 데이터 상태 지는 데이터, 수정 후 정한 가져오기 발표</value>
+  </data>
+  <data name="CDK_Used" xml:space="preserve">
+    <value>이미 사용</value>
+  </data>
+  <data name="CDK_WatchCDKList" xml:space="preserve">
+    <value>CDKEY 목록 보기</value>
+  </data>
+  <data name="LbCorpsInteriorLv" xml:space="preserve">
+    <value>길드 성채</value>
+  </data>
+  <data name="LbCorpsLevel" xml:space="preserve">
+    <value>길드 주둔지</value>
+  </data>
+  <data name="LbCorpsName" xml:space="preserve">
+    <value>길드명</value>
+  </data>
+  <data name="LbCorpsNickName" xml:space="preserve">
+    <value>길드 휘장</value>
+  </data>
+  <data name="LbCorpsShopLv" xml:space="preserve">
+    <value>길드 상점</value>
+  </data>
+  <data name="LbCorpsSkillLv" xml:space="preserve">
+    <value>길드 스킬</value>
+  </data>
+  <data name="LbCorpsWoodlv" xml:space="preserve">
+    <value>길드 목재</value>
+  </data>
+  <data name="LbCorpsWoodStorageLv" xml:space="preserve">
+    <value>길드 목재창고</value>
+  </data>
+  <data name="LbCurActivity" xml:space="preserve">
+    <value>길드 공헌도</value>
+  </data>
+  <data name="LbkLegion" xml:space="preserve">
+    <value>군단</value>
+  </data>
+  <data name="LblAboveThreeDayNoLogin" xml:space="preserve">
+    <value>3일 이상 미접속 유저</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAboveWeekNoLoginOfUser" xml:space="preserve">
+    <value>초과 일곱 날 아직 로그인 사용자</value>
+  </data>
+  <data name="LblActivate" xml:space="preserve">
+    <value>활성화</value>
+  </data>
+  <data name="LblActiveName" xml:space="preserve">
+    <value>이벤트 이름</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAll" xml:space="preserve">
+    <value>전부</value>
+  </data>
+  <data name="LblAllBigZone" xml:space="preserve">
+    <value>모든 채널</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAllChannels" xml:space="preserve">
+    <value>전체 채널</value>
+  </data>
+  <data name="LblAllSelect" xml:space="preserve">
+    <value>모든 옵션</value>
+  </data>
+  <data name="LblAllType" xml:space="preserve">
+    <value>모든 종류</value>
+  </data>
+  <data name="LblAllVocation" xml:space="preserve">
+    <value>모든 직업</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAllZone" xml:space="preserve">
+    <value>모든 전투 지역</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAllZoneLine" xml:space="preserve">
+    <value>모든 전선이</value>
+  </data>
+  <data name="LblAmount" xml:space="preserve">
+    <value>금액</value>
+  </data>
+  <data name="LblArea" xml:space="preserve">
+    <value>구역</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAreaName" xml:space="preserve">
+    <value>구역 이름</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAttack" xml:space="preserve">
+    <value>전투력</value>
+  </data>
+  <data name="LblAttackRankStatis" xml:space="preserve">
+    <value>공격력 랭킹 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAvg" xml:space="preserve">
+    <value>평균</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblAwardWorkOrder" xml:space="preserve">
+    <value>보상 오더</value>
+  </data>
+  <data name="LblBackAfterFiveDay" xml:space="preserve">
+    <value>5일 뒤 복귀</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblBackAfterFourDay" xml:space="preserve">
+    <value>4일 뒤 복귀</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblBackAfterSixDay" xml:space="preserve">
+    <value>6일 뒤 복귀</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblBackAfterThreeDay" xml:space="preserve">
+    <value>3일 뒤 복귀</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblBackAfterWeekOrAbove" xml:space="preserve">
+    <value>7일 이상 뒤 복귀</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblBattle" xml:space="preserve">
+    <value>전투력</value>
+  </data>
+  <data name="LblBigZone" xml:space="preserve">
+    <value>메인 채널</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblBindMoney" xml:space="preserve">
+    <value>실버</value>
+  </data>
+  <data name="LblBlueDiamond" xml:space="preserve">
+    <value>블루다이아</value>
+  </data>
+  <data name="LblBreakThrough" xml:space="preserve">
+    <value>돌파 층 수</value>
+  </data>
+  <data name="LblCamp" xml:space="preserve">
+    <value>진영</value>
+  </data>
+  <data name="LblCampExploitRank" xml:space="preserve">
+    <value>진영 공훈 랭킹</value>
+  </data>
+  <data name="LblCampLog" xml:space="preserve">
+    <value>진영 정보 조회</value>
+  </data>
+  <data name="LblCancle" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="LblCDRName" xml:space="preserve">
+    <value>길드장</value>
+  </data>
+  <data name="LblChange" xml:space="preserve">
+    <value>변화값</value>
+  </data>
+  <data name="LblChannelName" xml:space="preserve">
+    <value>채널 이름</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblChatChannel" xml:space="preserve">
+    <value>채팅 채널</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblChatDetail" xml:space="preserve">
+    <value>채팅 내용</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblChatDetailQuery" xml:space="preserve">
+    <value>채팅 내용 조회</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblChatNum" xml:space="preserve">
+    <value>채팅 수량 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblChatNumStatis" xml:space="preserve">
+    <value>채팅 수량 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblChatStatis" xml:space="preserve">
+    <value>대화 통계</value>
+  </data>
+  <data name="LblCloseDownStatue" xml:space="preserve">
+    <value>차단상태</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCodeOpen" xml:space="preserve">
+    <value>코드 편집 오픈</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblConfirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="LblContinueLoginAboveThreedDaySum" xml:space="preserve">
+    <value>연속 3일 이상 접속 유저</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinueLoginAboveTwoDaySum" xml:space="preserve">
+    <value>연속 2일 이상 접속 유저</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinueThreedDaySumNoLogin" xml:space="preserve">
+    <value>3일 내에 아직 로그인 사용자</value>
+  </data>
+  <data name="LblContinuteLoginAboveWeek" xml:space="preserve">
+    <value>연속 7일 이상 접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteLoginFiveDay" xml:space="preserve">
+    <value>연속 5일 접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteLoginFourDay" xml:space="preserve">
+    <value>연속 4일 접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteLoginSevenDay" xml:space="preserve">
+    <value>연속 7일 접속</value>
+  </data>
+  <data name="LblContinuteLoginSixDay" xml:space="preserve">
+    <value>연속 6일 접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteLoginThreeDay" xml:space="preserve">
+    <value>연속 3일 접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteLoginTwoDay" xml:space="preserve">
+    <value>연속 2일 접속</value>
+  </data>
+  <data name="LblContinuteNoLoginAboveWeek" xml:space="preserve">
+    <value>연속 7일 이상 미접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteNoLoginFiveDay" xml:space="preserve">
+    <value>연속 5일 미접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteNoLoginFourDay" xml:space="preserve">
+    <value>연속 4일 미접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteNoLoginSixeDay" xml:space="preserve">
+    <value>연속 6일 미접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblContinuteNoLoginThreeDay" xml:space="preserve">
+    <value>연속 3일 미접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCorps" xml:space="preserve">
+    <value>길드</value>
+  </data>
+  <data name="LblCorpsbattleRank" xml:space="preserve">
+    <value>길드 전투력 랭킹</value>
+  </data>
+  <data name="LblCorpsHonor" xml:space="preserve">
+    <value>길드 번영도</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCorpsL" xml:space="preserve">
+    <value>길드 레벨</value>
+  </data>
+  <data name="LblCorpsLeader" xml:space="preserve">
+    <value>길드장</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCorpsLevel" xml:space="preserve">
+    <value>길드 레벨</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCorpsLog" xml:space="preserve">
+    <value>길드 정보 조회</value>
+  </data>
+  <data name="LblCorpsN" xml:space="preserve">
+    <value>길드명</value>
+  </data>
+  <data name="LblCorpsName" xml:space="preserve">
+    <value>길드 이름</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCorpsNo" xml:space="preserve">
+    <value>길드 번호</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCorpsNum" xml:space="preserve">
+    <value>길드 ID</value>
+  </data>
+  <data name="LblCorpsRankHonorStatis" xml:space="preserve">
+    <value>길드 번영도 랭킹 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCumulativeTimeLostStatis" xml:space="preserve">
+    <value>누적 시간별 이탈 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblCurrencyType" xml:space="preserve">
+    <value>재화 유형</value>
+  </data>
+  <data name="LblDate" xml:space="preserve">
+    <value>날짜</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblDecodeOpen" xml:space="preserve">
+    <value>코드 해독 오픈</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblDefence" xml:space="preserve">
+    <value>방어력</value>
+  </data>
+  <data name="LblDefenceRankStatis" xml:space="preserve">
+    <value>방어력 랭킹 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblDiamondInfoLog" xml:space="preserve">
+    <value>다이아 히스토리</value>
+  </data>
+  <data name="LblDiamondLog" xml:space="preserve">
+    <value>다이아 히스토리</value>
+  </data>
+  <data name="LblDieTimes" xml:space="preserve">
+    <value>사망 횟수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblEmailTitle" xml:space="preserve">
+    <value>메시지 제목</value>
+  </data>
+  <data name="LblEndPage" xml:space="preserve">
+    <value>마지막 페이지</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblEndTime" xml:space="preserve">
+    <value>종료 시간</value>
+  </data>
+  <data name="LblError" xml:space="preserve">
+    <value>오류 :</value>
+  </data>
+  <data name="LblEventInfo" xml:space="preserve">
+    <value>사건 정보</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblEventType" xml:space="preserve">
+    <value>사건 유형</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblExp" xml:space="preserve">
+    <value>경험치</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblExploit" xml:space="preserve">
+    <value>공훈</value>
+  </data>
+  <data name="LblFounder" xml:space="preserve">
+    <value>길드 설립자</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblFrequency" xml:space="preserve">
+    <value>횟수</value>
+  </data>
+  <data name="LblFullServicesMail" xml:space="preserve">
+    <value>풀 드레스 메일</value>
+  </data>
+  <data name="LblGameInfoPickup" xml:space="preserve">
+    <value>게임 정보 (줍다)</value>
+  </data>
+  <data name="LblGM" xml:space="preserve">
+    <value>GM권한</value>
+  </data>
+  <data name="LblGMLogQuery" xml:space="preserve">
+    <value>GM로그 조회</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblGmStatis" xml:space="preserve">
+    <value>GM 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblGMTheaterDeclaration" xml:space="preserve">
+    <value>GM전역 선언</value>
+  </data>
+  <data name="LblGodRank" xml:space="preserve">
+    <value>신의 시련 랭킹</value>
+  </data>
+  <data name="LblGoldenHorn" xml:space="preserve">
+    <value>김 혼</value>
+  </data>
+  <data name="LblGoldLog" xml:space="preserve">
+    <value>골드/실버 정보 통계</value>
+  </data>
+  <data name="LblGoto" xml:space="preserve">
+    <value>넘기기</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblGssQuery" xml:space="preserve">
+    <value>유저 조회</value>
+  </data>
+  <data name="LblHD" xml:space="preserve">
+    <value>혼돈 진영</value>
+  </data>
+  <data name="LblHidden" xml:space="preserve">
+    <value>숨김</value>
+  </data>
+  <data name="LblHomePage" xml:space="preserve">
+    <value>첫 페이지</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblHourUnit" xml:space="preserve">
+    <value>시</value>
+  </data>
+  <data name="LblInvalidChannel" xml:space="preserve">
+    <value>잘못된 채널</value>
+  </data>
+  <data name="LblIPNum" xml:space="preserve">
+    <value>IP 수량</value>
+  </data>
+  <data name="LblIpSum" xml:space="preserve">
+    <value>IP 총 수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblIsUseEmail" xml:space="preserve">
+    <value>우편 발송여부</value>
+  </data>
+  <data name="LblItemLog" xml:space="preserve">
+    <value>아이템 정보 통계</value>
+  </data>
+  <data name="LblJoinerNum" xml:space="preserve">
+    <value>참여 인원</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblJoinSum" xml:space="preserve">
+    <value>참여 자꾸 횟수</value>
+  </data>
+  <data name="LblLastOnlineTime" xml:space="preserve">
+    <value>최후 온라인 시간</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLevel" xml:space="preserve">
+    <value>레벨</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLevelBetweenStais" xml:space="preserve">
+    <value>레벨 구간 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLevelRankStatis" xml:space="preserve">
+    <value>등급 순위</value>
+  </data>
+  <data name="LblLeveTimeConsumingStatis" xml:space="preserve">
+    <value>레벨별 소모 시간 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLgoinTimeParamStatis" xml:space="preserve">
+    <value>접속 시간 분포 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLimitRoleLevel" xml:space="preserve">
+    <value>적용 캐릭터 레벨</value>
+  </data>
+  <data name="LblLM" xml:space="preserve">
+    <value>질서 진영</value>
+  </data>
+  <data name="LblLoginAddress" xml:space="preserve">
+    <value>로그인 주소</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoginAreaStatis" xml:space="preserve">
+    <value>접속 구간 분포 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoginerNum" xml:space="preserve">
+    <value>접속 인원</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoginIp" xml:space="preserve">
+    <value>로그인 IP</value>
+  </data>
+  <data name="LblLoginIpNum" xml:space="preserve">
+    <value>접속 IP 수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoginNumber" xml:space="preserve">
+    <value>로그인 횟수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoginTime" xml:space="preserve">
+    <value>#NAME?</value>
+  </data>
+  <data name="LblLoginTimeWithHourUnit" xml:space="preserve">
+    <value>#NAME?</value>
+  </data>
+  <data name="LblLogoutNumber" xml:space="preserve">
+    <value>로그아웃 횟수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoseLevelParamStatis" xml:space="preserve">
+    <value>레벨 구간별 이탈 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblLoseLevelStatis" xml:space="preserve">
+    <value>등급 유실 통계</value>
+  </data>
+  <data name="LblMailContent" xml:space="preserve">
+    <value>메일 내용</value>
+  </data>
+  <data name="LblMailSendName" xml:space="preserve">
+    <value>시스템</value>
+  </data>
+  <data name="LblManageHomePage" xml:space="preserve">
+    <value>관리 홈페이지</value>
+  </data>
+  <data name="LblMaxLevel" xml:space="preserve">
+    <value>최고레벨</value>
+  </data>
+  <data name="LblMaxOnline" xml:space="preserve">
+    <value>최대 -</value>
+  </data>
+  <data name="LblMessageBall" xml:space="preserve">
+    <value>메시지 볼</value>
+  </data>
+  <data name="LblMinLevel" xml:space="preserve">
+    <value>최저레벨</value>
+  </data>
+  <data name="LblModelClothesLog" xml:space="preserve">
+    <value>코스튬 정보 통계</value>
+  </data>
+  <data name="LblModelClothesParams" xml:space="preserve">
+    <value>코스튬 부위</value>
+  </data>
+  <data name="LblModelClothesType" xml:space="preserve">
+    <value>코스튬 유형</value>
+  </data>
+  <data name="LblMoney" xml:space="preserve">
+    <value>골드</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblNew" xml:space="preserve">
+    <value>신규</value>
+  </data>
+  <data name="LblNewLoginUser" xml:space="preserve">
+    <value>신규 접속 유저</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblNextPage" xml:space="preserve">
+    <value>다음</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblNo" xml:space="preserve">
+    <value>번호</value>
+  </data>
+  <data name="LblNormal" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="LblNow" xml:space="preserve">
+    <value>현재</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblNumber" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="LblOfflineInfo" xml:space="preserve">
+    <value>오프라인 정보</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOnlinePopulation" xml:space="preserve">
+    <value>E122</value>
+  </data>
+  <data name="LblOnlineStatic" xml:space="preserve">
+    <value>접속 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOnlineStatis" xml:space="preserve">
+    <value>접속 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOnlineStatue" xml:space="preserve">
+    <value>온라인 상태</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOnlineTimeLoseStatis" xml:space="preserve">
+    <value>접속 시간별 이탈 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOper" xml:space="preserve">
+    <value>작업 기록</value>
+  </data>
+  <data name="LblOperate" xml:space="preserve">
+    <value>조작</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOperateDetail" xml:space="preserve">
+    <value>조작 내용</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOperateNo" xml:space="preserve">
+    <value>조작 번호</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOperateType" xml:space="preserve">
+    <value>조작 유형</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblOpTime" xml:space="preserve">
+    <value>작업 시간</value>
+  </data>
+  <data name="LblOptions" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="LblOPType" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="LblOrderNum" xml:space="preserve">
+    <value>결제 수</value>
+  </data>
+  <data name="LblOrderNumber" xml:space="preserve">
+    <value>결제 번호</value>
+  </data>
+  <data name="LblPathWay" xml:space="preserve">
+    <value>획득 경로</value>
+  </data>
+  <data name="LblPayNum" xml:space="preserve">
+    <value>결제 금액</value>
+  </data>
+  <data name="LblPayState" xml:space="preserve">
+    <value>결제 상태</value>
+  </data>
+  <data name="LblPaySum" xml:space="preserve">
+    <value>결제 총 금액</value>
+  </data>
+  <data name="LblPaySumAmount" xml:space="preserve">
+    <value>총 금액</value>
+  </data>
+  <data name="LblPayTime" xml:space="preserve">
+    <value>결제 시간</value>
+  </data>
+  <data name="LblPeopleNum" xml:space="preserve">
+    <value>인원 수</value>
+  </data>
+  <data name="LblPkHonor" xml:space="preserve">
+    <value>PK명예</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblPkHonorRankStatis" xml:space="preserve">
+    <value>PK명예 랭킹 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblPrivateChat" xml:space="preserve">
+    <value>귓속말</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblProductID" xml:space="preserve">
+    <value>상품 번호</value>
+  </data>
+  <data name="LblProportion" xml:space="preserve">
+    <value>비율</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblPrviousPage" xml:space="preserve">
+    <value>이전</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblQueryTime" xml:space="preserve">
+    <value>조회 시간</value>
+  </data>
+  <data name="LblRank" xml:space="preserve">
+    <value>랭킹</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblReceiverID" xml:space="preserve">
+    <value>수신인 ID</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRechargeByTimeLog" xml:space="preserve">
+    <value>결제 정보 시간별 통계</value>
+  </data>
+  <data name="LblRechargeLog" xml:space="preserve">
+    <value>결제 정보 통계</value>
+  </data>
+  <data name="LblRechargeRoleSumLog" xml:space="preserve">
+    <value>캐릭터 결제 정보 조회</value>
+  </data>
+  <data name="LblRechargeSumLog" xml:space="preserve">
+    <value>결제 정보 종합 통계</value>
+  </data>
+  <data name="LblRecommend" xml:space="preserve">
+    <value>추천</value>
+  </data>
+  <data name="LblRecommendZone" xml:space="preserve">
+    <value>추천 서버 설정</value>
+  </data>
+  <data name="LblRedDiamond" xml:space="preserve">
+    <value>레드다이아</value>
+  </data>
+  <data name="LblRegisterTime" xml:space="preserve">
+    <value>가입시간</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblReimburse" xml:space="preserve">
+    <value>환불</value>
+  </data>
+  <data name="LblRemainAboveWeek" xml:space="preserve">
+    <value>D-6이상 잔존율</value>
+  </data>
+  <data name="LblRemainFiveDay" xml:space="preserve">
+    <value>D-4잔존율</value>
+  </data>
+  <data name="LblRemainSevenDay" xml:space="preserve">
+    <value>D+7 리텐션</value>
+  </data>
+  <data name="LblRemainThreeDay" xml:space="preserve">
+    <value>D-2잔존율</value>
+  </data>
+  <data name="LblRemainTwoDay" xml:space="preserve">
+    <value>D-1잔존율</value>
+  </data>
+  <data name="LblRepeactNum" xml:space="preserve">
+    <value>중복 횟수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblReplenishment" xml:space="preserve">
+    <value>수동 지급</value>
+  </data>
+  <data name="LblReplenishmentLog" xml:space="preserve">
+    <value>히스토리</value>
+  </data>
+  <data name="LblRoleAddStatic" xml:space="preserve">
+    <value>캐릭터 증가 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleChatNumRank" xml:space="preserve">
+    <value>캐릭터 대화 수량 순위</value>
+  </data>
+  <data name="LblRoleGrowStatic" xml:space="preserve">
+    <value>직업 증분 통계</value>
+  </data>
+  <data name="LblRoleInfo" xml:space="preserve">
+    <value>캐릭터 기본 정보</value>
+  </data>
+  <data name="LblRoleJob" xml:space="preserve">
+    <value>캐릭터 직업</value>
+  </data>
+  <data name="LblRoleLevel" xml:space="preserve">
+    <value>캐릭터 레벨</value>
+  </data>
+  <data name="LblRoleLoginNumberStatis" xml:space="preserve">
+    <value>캐릭터 로그인 횟수 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleLoginSum" xml:space="preserve">
+    <value>캐릭터 로그인 수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleLoginSumStatis" xml:space="preserve">
+    <value>캐릭터 총 로그인수 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleName" xml:space="preserve">
+    <value>캐릭터 이름</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleNo" xml:space="preserve">
+    <value>캐릭터 번호</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleOnline" xml:space="preserve">
+    <value>캐릭터 접속</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleOnlineIpRank" xml:space="preserve">
+    <value>IP 로그인 횟수 랭킹</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleOnlineLoginRank" xml:space="preserve">
+    <value>유저 로그인 횟수 랭킹</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleRepeactAcceptTaskRank" xml:space="preserve">
+    <value>순위 역할 반복 임무를 받다</value>
+  </data>
+  <data name="LblRoleRepeactFinshTaskRank" xml:space="preserve">
+    <value>캐릭터 반복 임무를 순위</value>
+  </data>
+  <data name="LblRoleStatic" xml:space="preserve">
+    <value>캐릭터 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblRoleStatue" xml:space="preserve">
+    <value>캐릭터 상태</value>
+  </data>
+  <data name="LblScene" xml:space="preserve">
+    <value>장면</value>
+  </data>
+  <data name="LblSearchLog" xml:space="preserve">
+    <value>거래소 조회 로그</value>
+  </data>
+  <data name="LblSelectOpenBattleZone" xml:space="preserve">
+    <value>종료된 서버는 선택하지 마세요!</value>
+  </data>
+  <data name="LblSelectServices" xml:space="preserve">
+    <value>서버 선택</value>
+  </data>
+  <data name="LblSelfDefineChannel" xml:space="preserve">
+    <value>사용자 정의 채널</value>
+  </data>
+  <data name="LblSendMail" xml:space="preserve">
+    <value>우편 발송</value>
+  </data>
+  <data name="LblSendPeople" xml:space="preserve">
+    <value>발송인</value>
+  </data>
+  <data name="LblService" xml:space="preserve">
+    <value>서버</value>
+  </data>
+  <data name="LblServiceCall" xml:space="preserve">
+    <value>서버 함화</value>
+  </data>
+  <data name="LblServidesSet" xml:space="preserve">
+    <value>추천서버/신규서버</value>
+  </data>
+  <data name="LblSet" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="LblShout" xml:space="preserve">
+    <value>외치기</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblSilverHorn" xml:space="preserve">
+    <value>은 혼</value>
+  </data>
+  <data name="LblStartTime" xml:space="preserve">
+    <value>시작 시간</value>
+  </data>
+  <data name="LblStaticTime" xml:space="preserve">
+    <value>통계 시간</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblStickUp" xml:space="preserve">
+    <value>점검</value>
+  </data>
+  <data name="LblStore" xml:space="preserve">
+    <value>마켓명</value>
+  </data>
+  <data name="LblSum" xml:space="preserve">
+    <value>합계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblSumOfMax" xml:space="preserve">
+    <value>최대 합계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblSuperDeclaration" xml:space="preserve">
+    <value>슈퍼 선언</value>
+  </data>
+  <data name="LblSwitchLanguage" xml:space="preserve">
+    <value>전환 언어</value>
+  </data>
+  <data name="LblSystemUser" xml:space="preserve">
+    <value>시스템 사용자</value>
+  </data>
+  <data name="LblTaskAcceptNum" xml:space="preserve">
+    <value>횟수 임무를 맡다</value>
+  </data>
+  <data name="LblTaskAcceptRank" xml:space="preserve">
+    <value>퀘스트 수락 랭킹</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskAccept_FinshProportion" xml:space="preserve">
+    <value>마치다 / 받는 것보다▼▲</value>
+  </data>
+  <data name="LblTaskFinshNum" xml:space="preserve">
+    <value>퀘스트 완료 횟수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskFinshProportion" xml:space="preserve">
+    <value>퀘스트 완료 비율 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskFinshRank" xml:space="preserve">
+    <value>퀘스트 완료 랭킹</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskName" xml:space="preserve">
+    <value>퀘스트 이름</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskNo" xml:space="preserve">
+    <value>퀘스트 번호</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskStatis" xml:space="preserve">
+    <value>퀘스트 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTaskType" xml:space="preserve">
+    <value>퀘스트 유형</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTeam" xml:space="preserve">
+    <value>파티</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTime" xml:space="preserve">
+    <value>시간</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTimeWithUnit" xml:space="preserve">
+    <value>시간(시)</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblTo" xml:space="preserve">
+    <value>부터</value>
+  </data>
+  <data name="LblUnitWithMinute" xml:space="preserve">
+    <value>(단위: 분)</value>
+  </data>
+  <data name="LblUnit_Day" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="LblUnit_Hour" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="LblUnit_Minute" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="LblUnit_Month" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="LblUnit_Sec" xml:space="preserve">
+    <value>초</value>
+  </data>
+  <data name="LblUpdateTime" xml:space="preserve">
+    <value>업데이트 시간</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUpGradeTime" xml:space="preserve">
+    <value>레벨업 시간</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserActiveStatis" xml:space="preserve">
+    <value>DAU 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserInfo" xml:space="preserve">
+    <value>계정 기본 정보</value>
+  </data>
+  <data name="LblUserLoginStatis" xml:space="preserve">
+    <value>사용자 로그인 통계</value>
+  </data>
+  <data name="LblUserLoginSum" xml:space="preserve">
+    <value>유저 로그인 총 수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserLogoutNumberRank" xml:space="preserve">
+    <value>캐릭터 로그 아웃 통계</value>
+  </data>
+  <data name="LblUserLoseStatis" xml:space="preserve">
+    <value>이탈 유저 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserNo" xml:space="preserve">
+    <value>유저 번호</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserNum" xml:space="preserve">
+    <value>유저 수</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserStateBackStatis" xml:space="preserve">
+    <value>복귀 유저 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserStatis" xml:space="preserve">
+    <value>유저 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblUserSum" xml:space="preserve">
+    <value>사용자 총량</value>
+  </data>
+  <data name="LblViewChatDetail" xml:space="preserve">
+    <value>일반 대화 내용</value>
+  </data>
+  <data name="LblVocationLevelStatis" xml:space="preserve">
+    <value>직업 레벨 통계</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblVoctionChannel" xml:space="preserve">
+    <value>직업 채널</value>
+  </data>
+  <data name="LblWeekExploit" xml:space="preserve">
+    <value>이번주 획득 공훈</value>
+  </data>
+  <data name="LblWeekKill" xml:space="preserve">
+    <value>적을 무찌르다 세다</value>
+  </data>
+  <data name="LblWeekNoLoginOfUser" xml:space="preserve">
+    <value>7일 미접속 유저</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblWelcome" xml:space="preserve">
+    <value>환영합니다</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblWhiteList" xml:space="preserve">
+    <value>화이트리스트</value>
+  </data>
+  <data name="LblZone" xml:space="preserve">
+    <value>전투 지역</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="LblZoneCall" xml:space="preserve">
+    <value>전역 함화</value>
+  </data>
+  <data name="LblZoneState" xml:space="preserve">
+    <value>서버 상태</value>
+  </data>
+  <data name="Lbl_AwardProp1" xml:space="preserve">
+    <value>아이템추가1</value>
+  </data>
+  <data name="Lbl_AwardProp2" xml:space="preserve">
+    <value>아이템추가2</value>
+  </data>
+  <data name="Lbl_AwardProp3" xml:space="preserve">
+    <value>아이템추가3</value>
+  </data>
+  <data name="Lbl_AwardProp4" xml:space="preserve">
+    <value>아이템추가4</value>
+  </data>
+  <data name="Lbl_AwardProp5" xml:space="preserve">
+    <value>아이템추가5</value>
+  </data>
+  <data name="Lbl_AwardPropNum1" xml:space="preserve">
+    <value>아이템1수량</value>
+  </data>
+  <data name="Lbl_AwardPropNum2" xml:space="preserve">
+    <value>아이템2수량</value>
+  </data>
+  <data name="Lbl_AwardPropNum3" xml:space="preserve">
+    <value>아이템3수량</value>
+  </data>
+  <data name="Lbl_AwardPropNum4" xml:space="preserve">
+    <value>아이템4수량</value>
+  </data>
+  <data name="Lbl_AwardPropNum5" xml:space="preserve">
+    <value>아이템5수량</value>
+  </data>
+  <data name="Lbl_CreateTime" xml:space="preserve">
+    <value>생성시간</value>
+  </data>
+  <data name="Lbl_StartNoticeTitle" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Lbl_UserList" xml:space="preserve">
+    <value>유저 리스트</value>
+  </data>
+  <data name="LbMeritLevel" xml:space="preserve">
+    <value>캐릭터 진영 등급</value>
+  </data>
+  <data name="LbPlayerLevel" xml:space="preserve">
+    <value>캐릭터 레벨</value>
+  </data>
+  <data name="LbPlayerName" xml:space="preserve">
+    <value>캐릭터명</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="Msg_AndAboveFormat" xml:space="preserve">
+    <value>{0} 이상</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Msg_MinuteFormat" xml:space="preserve">
+    <value>{0} 분</value>
+  </data>
+  <data name="Msg_OuterNetHide" xml:space="preserve">
+    <value>外网. 이 기능은 숨기기</value>
+  </data>
+  <data name="Msg_RankFormat" xml:space="preserve">
+    <value>{0}위</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Msg_RoleGradeFormat" xml:space="preserve">
+    <value>{0}레벨</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Msg_TimesFormat" xml:space="preserve">
+    <value>{0}회</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="PurchaseLog" xml:space="preserve">
+    <value>거래소 구매 로그</value>
+  </data>
+  <data name="PutawayLog" xml:space="preserve">
+    <value>거래소 등록 로그</value>
+  </data>
+  <data name="SoldOutLog" xml:space="preserve">
+    <value>거래소 등록 취소 로그</value>
+  </data>
+  <data name="SystemBelongCompany" xml:space="preserve">
+    <value>모든 북경 작은 전기 네트워크 정보 유한 회사 저작권</value>
+  </data>
+  <data name="SystemLoginTitle" xml:space="preserve">
+    <value>WSS-통계 시스템 로그인</value>
+  </data>
+  <data name="SystemName" xml:space="preserve">
+    <value>WSS－게임 데이터 통계 시스템</value>
+  </data>
+  <data name="Tip_AwardNoIsDigital" xml:space="preserve">
+    <value>상품 번호 반드시 위해 숫자</value>
+  </data>
+  <data name="Tip_AwardNumberIsDigital" xml:space="preserve">
+    <value>상품 수량이 위해 숫자 한다</value>
+  </data>
+  <data name="Tip_Battle" xml:space="preserve">
+    <value>소속 서버</value>
+  </data>
+  <data name="Tip_BattleNo" xml:space="preserve">
+    <value>서버 번호</value>
+  </data>
+  <data name="Tip_BigZone" xml:space="preserve">
+    <value>소속 대구역</value>
+  </data>
+  <data name="Tip_BigZoneNo" xml:space="preserve">
+    <value>대구역 번호</value>
+  </data>
+  <data name="Tip_BrowserLower" xml:space="preserve">
+    <value>우정 팁: \n 너 사용하는 것은 넷스케이프, (O) 또는 기타 비 IE 탐색기, 있을 무대 일부 기능을 사용할 수 없습니다.당신 사용 IE6.0 또는 이상의 버전.</value>
+  </data>
+  <data name="Tip_CardTypeIsError" xml:space="preserve">
+    <value>카드 종류 써 정확하지 않다</value>
+  </data>
+  <data name="Tip_CDKCardGenerateNumberError" xml:space="preserve">
+    <value>카드 생성 수량이 적어 정확하지 않다</value>
+  </data>
+  <data name="Tip_CDKExecuteSuccNoInfoFormat" xml:space="preserve">
+    <value>실행 성공을 위해 {0} lot</value>
+  </data>
+  <data name="Tip_CDKExecuteTime" xml:space="preserve">
+    <value>실행 시간</value>
+  </data>
+  <data name="Tip_CDKNumberIsDigital" xml:space="preserve">
+    <value>생성 수량 반드시 위해 숫자</value>
+  </data>
+  <data name="Tip_CDKRemarkLengthLimit" xml:space="preserve">
+    <value>비고 못 보다 100 글자</value>
+  </data>
+  <data name="Tip_CDKRemarkNonEmpty" xml:space="preserve">
+    <value>비고 못 비어</value>
+  </data>
+  <data name="Tip_ConfigError" xml:space="preserve">
+    <value>설정 나타난 오류 문의 관리자</value>
+  </data>
+  <data name="Tip_Corps" xml:space="preserve">
+    <value>소속 길드</value>
+  </data>
+  <data name="Tip_CorpsPro" xml:space="preserve">
+    <value>길드 직위</value>
+  </data>
+  <data name="Tip_CreateExecute" xml:space="preserve">
+    <value>자동 실행 에러 발생(创建自动执行出现错误)</value>
+  </data>
+  <data name="Tip_DataImportSuccess" xml:space="preserve">
+    <value>데이터 가져오기 성공</value>
+  </data>
+  <data name="Tip_DataPublishSuccess" xml:space="preserve">
+    <value>데이터 발표 성공</value>
+  </data>
+  <data name="Tip_FailuerNumberFormat" xml:space="preserve">
+    <value>{0} 가지 실패</value>
+  </data>
+  <data name="Tip_Failure" xml:space="preserve">
+    <value>실패</value>
+  </data>
+  <data name="Tip_GiftAwardDefeat" xml:space="preserve">
+    <value>발송 오더 생성 실패</value>
+  </data>
+  <data name="Tip_GmIsExist" xml:space="preserve">
+    <value>GM권한이 추가되어있습니다.</value>
+  </data>
+  <data name="Tip_InfoError" xml:space="preserve">
+    <value>콜백 정보 오류. 처리할 수 없습니다.</value>
+  </data>
+  <data name="Tip_IsAdult" xml:space="preserve">
+    <value>성년 여부</value>
+  </data>
+  <data name="Tip_ItemIsDigitalFormat" xml:space="preserve">
+    <value>{0} 값 위해 숫자</value>
+  </data>
+  <data name="Tip_LimitImportOnlyExcel" xml:space="preserve">
+    <value>당신이 선택한 파일 형식이 잘못되었습니다. 밖에 EXCEL 파일 가져오기</value>
+  </data>
+  <data name="Tip_LoginAccountExistsEmpty" xml:space="preserve">
+    <value>아이디 또는 비밀번호 못 비어</value>
+  </data>
+  <data name="Tip_LoginAcountError" xml:space="preserve">
+    <value>아이디 또는 비밀번호!</value>
+  </data>
+  <data name="Tip_LoseLinkServerName" xml:space="preserve">
+    <value>缺失连接实例名</value>
+  </data>
+  <data name="Tip_Nodata" xml:space="preserve">
+    <value>해당 데이터는 존재하지 않습니다</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Tip_NoDataNeedImport" xml:space="preserve">
+    <value>필요 없는 데이터 가져오기</value>
+  </data>
+  <data name="Tip_NoResule" xml:space="preserve">
+    <value>돌아오는 결과 값이 없습니다.</value>
+  </data>
+  <data name="Tip_NoRole" xml:space="preserve">
+    <value>해당 캐릭터 정보가 없습니다</value>
+  </data>
+  <data name="Tip_NoUser" xml:space="preserve">
+    <value>해당 사용자 정보가 없습니다.</value>
+  </data>
+  <data name="Tip_NoUserInfo" xml:space="preserve">
+    <value>존재하지 않는 캐릭터입니다.</value>
+  </data>
+  <data name="Tip_OccurredErrorDataStopPublish" xml:space="preserve">
+    <value>나타난 실패한 길을 수를 발표 중지하다.</value>
+  </data>
+  <data name="Tip_PageLoading" xml:space="preserve">
+    <value>페이지 불러오는 중。。。。</value>
+  </data>
+  <data name="Tip_PleaseCDKCardType" xml:space="preserve">
+    <value>CDKey 카드 형식을 선택하십시오.</value>
+  </data>
+  <data name="Tip_PleaseImportFile" xml:space="preserve">
+    <value>일단 파일 가져오기</value>
+  </data>
+  <data name="Tip_PleaseSelectImportExcel" xml:space="preserve">
+    <value>가져올 파일 선택 Excel!</value>
+  </data>
+  <data name="Tip_ResetDataError_StopPublish" xml:space="preserve">
+    <value>원래 정한 데이터 오류, 발표 중지하다.</value>
+  </data>
+  <data name="Tip_RoleIDOrRoleName" xml:space="preserve">
+    <value>캐릭터 ID 혹은 캐릭터명을 입력해주세요.</value>
+  </data>
+  <data name="Tip_SearchInfo" xml:space="preserve">
+    <value>캐릭터 정보를 찾지 못했습니다! 다시 확인해주세요.</value>
+  </data>
+  <data name="Tip_SelectBattleZone" xml:space="preserve">
+    <value>서버를 선택해주세요.</value>
+  </data>
+  <data name="Tip_SelectServices" xml:space="preserve">
+    <value>서버를 선택해주세요.</value>
+  </data>
+  <data name="Tip_SetState" xml:space="preserve">
+    <value>서버 상태를 선택해주세요.</value>
+  </data>
+  <data name="Tip_Sign" xml:space="preserve">
+    <value>큐 정보</value>
+  </data>
+  <data name="Tip_Success" xml:space="preserve">
+    <value>성공</value>
+  </data>
+  <data name="Tip_SuccessNumberFormat" xml:space="preserve">
+    <value>{0} 가지 성공</value>
+  </data>
+  <data name="Tip_SyncDBFailure" xml:space="preserve">
+    <value>게임 DB에 데이터 연동 실패</value>
+  </data>
+  <data name="Tip_TimeError" xml:space="preserve">
+    <value>날짜가 잘못되었습니다.</value>
+  </data>
+  <data name="Tip_Title" xml:space="preserve">
+    <value>제목을 입력해주세요.</value>
+  </data>
+  <data name="Tip_UploadExcelFailure" xml:space="preserve">
+    <value>Excel 파일 업로드 실패!</value>
+  </data>
+  <data name="Tip_UploadExcelIsEmpty" xml:space="preserve">
+    <value>가져오기 Excel 파일 크기를 0 올바른지 확인하십시오.</value>
+  </data>
+  <data name="Tip_UserInfoError" xml:space="preserve">
+    <value>사용자 정보 오류</value>
+  </data>
+  <data name="Tip_WhiteListIsExist" xml:space="preserve">
+    <value>화이트 리스트 권한이 추가되어 있습니다.</value>
+  </data>
+  <data name="Tip_WriteMailContent" xml:space="preserve">
+    <value>우편 내용을 입력해주세요.</value>
+  </data>
+  <data name="Tip_WriteMaxLevel" xml:space="preserve">
+    <value>최고 레벨을 입력해주세요.</value>
+  </data>
+  <data name="Tip_WriteMinLevel" xml:space="preserve">
+    <value>최저 레벨을 입력해주세요.</value>
+  </data>
+  <data name="Tip_WriteRoleID" xml:space="preserve">
+    <value>캐릭터ID 입력</value>
+  </data>
+  <data name="Tip_WriteSearch" xml:space="preserve">
+    <value>검색 조건을 입력주세요.</value>
+  </data>
+  <data name="Tip_WriteSendUser" xml:space="preserve">
+    <value>발송자를 입력해주세요.</value>
+  </data>
+  <data name="Tip_WritetransactionID" xml:space="preserve">
+    <value>TID를 입력해주세요.</value>
+  </data>
+  <data name="Tip_WriteUserID" xml:space="preserve">
+    <value>계정ID를 입력해 주세요.</value>
+  </data>
+  <data name="Tip_WriteUserInfo" xml:space="preserve">
+    <value>유저 정보를 입력해주세요.</value>
+  </data>
+  <data name="Txt_DefaultEmailContent" xml:space="preserve">
+    <value>코믹콘에 참가하신 유저님을 위한 한정판 선물이 도착했습니다. 
+                 저희 다인에게도 많은 사랑과 애정 기다리겠습니다.
+                 우편에 첨부된 아이템을 수령해주세요!</value>
+  </data>
+  <data name="Txt_DefaultEmailTitle" xml:space="preserve">
+    <value>코믹콘 쿠폰 보상 안내</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>유저명</value>
+    <comment>TRUE</comment>
+  </data>
+  <data name="Account_btnCloseDown" xml:space="preserve">
+    <value>차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_btnGag" xml:space="preserve">
+    <value>채팅금지</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_btnUnlock" xml:space="preserve">
+    <value>차단해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardWorkOrderPoolHis" xml:space="preserve">
+    <value>보상 발송</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFullServerMailHis" xml:space="preserve">
+    <value>전서버 우편 히스토리</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGiftBattleInfo" xml:space="preserve">
+    <value>발송 서버 정보</value>
+  </data>
+  <data name="LblGiftInfo" xml:space="preserve">
+    <value>발송 정보</value>
+  </data>
+  <data name="LblGiftUserInfo" xml:space="preserve">
+    <value>발송 유저 정보</value>
+  </data>
+  <data name="LblGssOp" xml:space="preserve">
+    <value>GSS 작업</value>
+  </data>
+  <data name="LblMinAndMax" xml:space="preserve">
+    <value>최저/최고레벨</value>
+  </data>
+  <data name="LblRoleOrder" xml:space="preserve">
+    <value>캐릭터 조회</value>
+  </data>
+  <data name="LblUserOrder" xml:space="preserve">
+    <value>계정 조회</value>
+  </data>
+  <data name="LblViewHis" xml:space="preserve">
+    <value>히스토리</value>
+  </data>
+  <data name="Lbl_Order" xml:space="preserve">
+    <value>오더 번호</value>
+  </data>
+  <data name="BtnDisChatRecovery" xml:space="preserve">
+    <value>채팅금지 해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDisChatRecoveryHis" xml:space="preserve">
+    <value>채팅금지 해제 히스토리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleRecovery" xml:space="preserve">
+    <value>캐릭터 복구</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblDelete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="LblDeleteFullServicesMail" xml:space="preserve">
+    <value>풀드레스 삭제 히스토리</value>
+  </data>
+  <data name="LblDeleteGiftAward" xml:space="preserve">
+    <value>우편 발송 삭제 히스토리</value>
+  </data>
+  <data name="LblDeleteOrder" xml:space="preserve">
+    <value>삭제 오더 번호</value>
+  </data>
+  <data name="LblOpUser" xml:space="preserve">
+    <value>실행자</value>
+  </data>
+  <data name="Lbl_IsDelete" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="Tip_OrderIsDelete" xml:space="preserve">
+    <value>삭제되었습니다!</value>
+  </data>
+  <data name="Tip_OrderIsOverTime" xml:space="preserve">
+    <value>기간이 만료되었습니다!</value>
+  </data>
+  <data name="BtnConsuleWorkOrderHis" xml:space="preserve">
+    <value>계정 블록</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDisChatRecoveryHis1" xml:space="preserve">
+    <value>채팅금지 해제 히스토리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnNewReceiverWorkOrderHis" xml:space="preserve">
+    <value>캐릭터 블록</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblClose" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="LblDisRoleChatAdd" xml:space="preserve">
+    <value>채팅 금지 히스토리</value>
+  </data>
+  <data name="LblDisRoleChatDel" xml:space="preserve">
+    <value>채팅 금지 히스토리</value>
+  </data>
+  <data name="LblLockRole" xml:space="preserve">
+    <value>캐릭터 블록 히스토리</value>
+  </data>
+  <data name="LblLockUser" xml:space="preserve">
+    <value>계정 블록 히스토리</value>
+  </data>
+  <data name="LblOrderBak" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="LblRoleRecovery" xml:space="preserve">
+    <value>캐릭터 복구 히스토리</value>
+  </data>
+  <data name="LblUnLockRole" xml:space="preserve">
+    <value>캐릭터 블록 히스토리</value>
+  </data>
+  <data name="LblUnLockUser" xml:space="preserve">
+    <value>계정 블록 히스토리</value>
+  </data>
+  <data name="BtnCallTankHis" xml:space="preserve">
+    <value>외치기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCallWorkOrder" xml:space="preserve">
+    <value>채팅 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLockTime" xml:space="preserve">
+    <value>블록 시간</value>
+  </data>
+  <data name="LblLockTool" xml:space="preserve">
+    <value>블록 기능</value>
+  </data>
+  <data name="LblSelectDisRoleChatAdd" xml:space="preserve">
+    <value>채팅금지 할 캐릭터를 선택해주세요.</value>
+  </data>
+  <data name="LblSelectDisRoleChatDel" xml:space="preserve">
+    <value>채팅금지 해제할 캐릭터를 선택해주세요.</value>
+  </data>
+  <data name="LblSelectLockRole" xml:space="preserve">
+    <value>블록할 캐릭터를 선택해주세요.</value>
+  </data>
+  <data name="LblSelectLockUser" xml:space="preserve">
+    <value>블록할 계정을 선택해주세요.</value>
+  </data>
+  <data name="LblSelectRoleRecovery" xml:space="preserve">
+    <value>복구할 캐릭터를 선택해주세요.</value>
+  </data>
+  <data name="LblSelectUnLockRole" xml:space="preserve">
+    <value>해제할 캐릭터를 선택해주세요.</value>
+  </data>
+  <data name="LblSelectUnLockUser" xml:space="preserve">
+    <value>해제할 계정을 선택해주세요.</value>
+  </data>
+  <data name="LblUnLockTool" xml:space="preserve">
+    <value>해제 기능</value>
+  </data>
+  <data name="Tip_ConnectionDBError" xml:space="preserve">
+    <value>DB 연결 오류!</value>
+  </data>
+  <data name="Tip_RoleBattleZoneError" xml:space="preserve">
+    <value>캐릭터 서버 정보 오류!</value>
+  </data>
+  <data name="Tip_RoleIsLock" xml:space="preserve">
+    <value>해당 캐릭터는 이미 블록되었습니다.</value>
+  </data>
+  <data name="Tip_UserIsLock" xml:space="preserve">
+    <value>해당 계정은 이미 블록되었습니다.</value>
+  </data>
+  <data name="LblBattleZoneInfo" xml:space="preserve">
+    <value>서버 정보</value>
+  </data>
+  <data name="LblCreateCode" xml:space="preserve">
+    <value>공지 내용에 코드 생성</value>
+  </data>
+  <data name="LblDay" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="LblGssNoticeTip" xml:space="preserve">
+    <value>위치: 화면 상단</value>
+  </data>
+  <data name="LblHourse" xml:space="preserve">
+    <value>시</value>
+  </data>
+  <data name="LblInterval" xml:space="preserve">
+    <value>간격</value>
+  </data>
+  <data name="LblMessageInfo" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="LblMinutes" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="LblNoticeInfo" xml:space="preserve">
+    <value>공지 정보</value>
+  </data>
+  <data name="LblNoticeTitle" xml:space="preserve">
+    <value>공지 제목</value>
+  </data>
+  <data name="LblRunNotice" xml:space="preserve">
+    <value>공지 실행</value>
+  </data>
+  <data name="LblSecond" xml:space="preserve">
+    <value>초</value>
+  </data>
+  <data name="LblTimeInterval" xml:space="preserve">
+    <value>간격 시간</value>
+  </data>
+  <data name="Lbl_NoticeInfo" xml:space="preserve">
+    <value>공지내용</value>
+  </data>
+  <data name="Lbl_StopNotice" xml:space="preserve">
+    <value>공지 정지</value>
+  </data>
+  <data name="Tip_ConfirmRunNotice" xml:space="preserve">
+    <value>공지를 실행하겠습니까?</value>
+  </data>
+  <data name="Tip_ConfirmStopNotice" xml:space="preserve">
+    <value>공지를 정지하겠습니까?</value>
+  </data>
+  <data name="Tip_CreateCodeInfo" xml:space="preserve">
+    <value>먼저 공지 내용에 코드를 생성해주세요!</value>
+  </data>
+  <data name="Tip_NoticeLengthLimit" xml:space="preserve">
+    <value>내용은 200자를 넘을 수 없습니다.</value>
+  </data>
+  <data name="Tip_OrderNotExisit" xml:space="preserve">
+    <value>해당 오더는 존재하지 않습니다!</value>
+  </data>
+  <data name="Tip_RunNoticeIsRun" xml:space="preserve">
+    <value>해당 오더의 공지는 현재 진행 중입니다. 중지 후 다시 시도하세요.</value>
+  </data>
+  <data name="Tip_WriteNoticeInfo" xml:space="preserve">
+    <value>내용을 입력해주세요.</value>
+  </data>
+  <data name="LblRemainFourDay" xml:space="preserve">
+    <value>D-3잔존율</value>
+  </data>
+  <data name="LblRemainSixDay" xml:space="preserve">
+    <value>D-5잔존율</value>
+  </data>
+  <data name="LblRoleRemain" xml:space="preserve">
+    <value>캐릭터 잔존율 통계</value>
+  </data>
+  <data name="LblUserRemain" xml:space="preserve">
+    <value>유저 잔존율 통계</value>
+  </data>
+  <data name="GrowthFund" xml:space="preserve">
+    <value>성장 패키지 통계</value>
+  </data>
+  <data name="LblMoneyNum" xml:space="preserve">
+    <value>소비 다이아</value>
+  </data>
+  <data name="LblPhases1" xml:space="preserve">
+    <value>1단계</value>
+  </data>
+  <data name="LblPhases2" xml:space="preserve">
+    <value>2단계</value>
+  </data>
+  <data name="LblPhases3" xml:space="preserve">
+    <value>3단계</value>
+  </data>
+  <data name="LblPhases4" xml:space="preserve">
+    <value>4단계</value>
+  </data>
+  <data name="LblPhases5" xml:space="preserve">
+    <value>5단계</value>
+  </data>
+  <data name="LblPhases6" xml:space="preserve">
+    <value>6단계</value>
+  </data>
+  <data name="LblPhases7" xml:space="preserve">
+    <value>7단계</value>
+  </data>
+  <data name="LblPhases8" xml:space="preserve">
+    <value>8단계</value>
+  </data>
+  <data name="LblProductName" xml:space="preserve">
+    <value>상품명</value>
+  </data>
+  <data name="LblRoleNum" xml:space="preserve">
+    <value>구매 유저 수</value>
+  </data>
+  <data name="LblSoldNum" xml:space="preserve">
+    <value>판매 수량</value>
+  </data>
+  <data name="LblTradeNum" xml:space="preserve">
+    <value>거래 횟수</value>
+  </data>
+  <data name="RedDiamondGiftShop" xml:space="preserve">
+    <value>랜덤 패키지 상점 통계</value>
+  </data>
+  <data name="LblShopLog" xml:space="preserve">
+    <value>잡화점 통계</value>
+  </data>
+  <data name="LblShopName" xml:space="preserve">
+    <value>분류</value>
+  </data>
+</root>

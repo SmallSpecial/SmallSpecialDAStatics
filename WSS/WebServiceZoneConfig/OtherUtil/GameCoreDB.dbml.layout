@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GameCoreDB">
+  <DataContextMoniker Name="/GameCoreDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="834f7c67-1c89-4264-ac7b-d7bb9108fe7a" absoluteBounds="0.5, 1, 2, 3.4817427571614576">
+      <DataClassMoniker Name="/GameCoreDBDataContext/T_BattleZone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ae2c429-4474-4057-a88f-97b7b9160b7b" absoluteBounds="0.515, 1.46, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e8a304a-26a1-4667-9451-938f8b57f159" absoluteBounds="2.875, 0.875, 2, 0.807467041015625">
+      <DataClassMoniker Name="/GameCoreDBDataContext/T_GameServer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f115be8d-b93f-43d0-a6e9-9de53dbafd05" isExpanded="false" absoluteBounds="2.89, 1.335, 1.9700000000000002, 0.247467041015625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dabcecda-51c4-4717-8de5-c2df8c7f3dbc" absoluteBounds="8.375, 0.875, 2, 1.3805261230468746">
+      <DataClassMoniker Name="/GameCoreDBDataContext/T_GameConfig" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7540da6a-7178-4b49-b30e-e39174daf8b4" absoluteBounds="8.39, 1.335, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4249c391-e8ef-426b-abd9-08adc50b31eb" absoluteBounds="3, 3.625, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/GameCoreDBDataContext/T_GameSimpleVersionList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46d6224a-5c74-4654-89e0-ed569d9ab84c" absoluteBounds="3.0149999999999997, 4.085, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="832b252f-5629-4a74-8770-beede58d61c4" absoluteBounds="5.5, 3.625, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/GameCoreDBDataContext/T_GameVersionList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf3b6bf5-c344-4503-b5bf-1230ff4c8845" absoluteBounds="5.515, 4.085, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c779ad5-d50e-43a9-a69f-bfe95f30b5ff" absoluteBounds="6, 0.625, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/GameCoreDBDataContext/T_BattleLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ada6cfb-10f0-454d-83fc-74b2941c0598" absoluteBounds="6.015, 1.085, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

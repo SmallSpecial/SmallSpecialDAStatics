@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GameCoreDB" Class="GameCoreDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=GameCoreDB;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GameCoreDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_BattleZone" Member="T_BattleZone">
+    <Type Name="T_BattleZone">
+      <Column Name="F_ZoneID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="F_ZoneName" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="F_ZoneState" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_ZoneLine" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_ZoneAttrib" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="F_ChargeType" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_BigZoneID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_ServerType" Type="System.Int32" CanBeNull="true" />
+      <Column Name="F_FaVersions_Cur" Type="System.Int32" CanBeNull="true" />
+      <Column Name="F_ReVersions_Cur" Type="System.Int32" CanBeNull="true" />
+      <Column Name="F_FaVersionsLow_And" Type="System.Int32" CanBeNull="true" />
+      <Column Name="F_ReVersionsLow_And" Type="System.Int32" CanBeNull="true" />
+      <Column Name="F_FaVersionsLow_Ios" Type="System.Int32" CanBeNull="true" />
+      <Column Name="F_ReVersionsLow_Ios" Type="System.Int32" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_GameServer" Member="T_GameServer">
+    <Type Name="T_GameServer">
+      <Column Name="F_GSID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="F_IP" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="F_GSNAME" Type="System.String" DbType="Char(16)" CanBeNull="true" />
+      <Column Name="F_NGSID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F_ZONEID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_CampID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_GSSceneID" Type="System.String" DbType="NChar(400) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_GameConfig" Member="T_GameConfig">
+    <Type Name="T_GameConfig">
+      <Column Name="F_Key" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="F_Describe" Type="System.String" DbType="Char(256)" CanBeNull="true" />
+      <Column Name="F_Value" Type="System.String" DbType="Char(256) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_GameSimpleVersionList" Member="T_GameSimpleVersionList">
+    <Type Name="T_GameSimpleVersionList">
+      <Column Name="F_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="F_CURVERSION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_LOWVERSION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_UPFILESIZE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F_DOWNFILESIZE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F_FILENAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="F_TIME" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_GameVersionList" Member="T_GameVersionList">
+    <Type Name="T_GameVersionList">
+      <Column Name="F_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="F_CURVERSION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_LOWVERSION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_UPFILESIZE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F_DOWNFILESIZE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F_FILENAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="F_TIME" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_BattleLine" Member="T_BattleLine">
+    <Type Name="T_BattleLine">
+      <Column Name="F_NGSID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="F_Name" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="F_ZoneID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_MaxUser" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_Ip" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="F_Port" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_Main_State" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_Sub_State" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="F_DBISID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F_PingPort" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

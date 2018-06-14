@@ -1,0 +1,11 @@
+﻿.start-button{background:url(vista_start_button.gif) no-repeat 0px 3px !important;}
+.shortcut-icon{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/window.png",sizingMethod="scale");height:48px;width:48px;}
+.icon-grid48{background:url(../images/grid48x48.png) !important;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/grid48x48.png",sizingMethod="scale");}
+.icon-user48{background:url(../images/user48x48.png) !important;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/user48x48.png",sizingMethod="scale");}
+.icon-window48{background:url(../images/window48x48.png) !important;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/window48x48.png",sizingMethod="scale");}
+.desktopEl{position:absolute !important;}
+.URL{ width:100%;}
+.icon-wold48{background:url(../images/wold4848.png) !important;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/wold4848.png",sizingMethod="scale");}
+.icon-news48{background:url(../images/news48x48.png) !important;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/news48x48.png",sizingMethod="scale");}
+.icon-settings48{background:url(../images/Settings48x48.png) !important;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/Settings48x48.png",sizingMethod="scale");}
+.DM{ background:#666;}

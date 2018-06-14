@@ -1,0 +1,117 @@
+利用Javascript取和设FCKeditor值也是非常容易的，如下：
+// 获取编辑器中HTML内容
+function getEditorHTMLContents(EditorName) { 
+    var oEditor = FCKeditorAPI.GetInstance(EditorName); 
+    return(oEditor.GetXHTML(true)); 
+}
+// 获取编辑器中文字内容
+function getEditorTextContents(EditorName) { 
+    var oEditor = FCKeditorAPI.GetInstance(EditorName); 
+    return(oEditor.EditorDocument.body.innerText); 
+}
+// 设置编辑器中内容
+function SetEditorContents(EditorName, ContentStr) { 
+    var oEditor = FCKeditorAPI.GetInstance(EditorName) ; 
+    oEditor.SetHTML(ContentStr) ; 
+}
+FCKeditorAPI是FCKeditor加载后注册的一个全局对象，利用它我们就可以完成对编辑器的各种操作。
+在当前页获得 FCK 编辑器实例：
+var Editor = FCKeditorAPI.GetInstance('InstanceName');
+从 FCK 编辑器的弹出窗口中获得 FCK 编辑器实例：
+var Editor = window.parent.InnerDialogLoaded().FCK;
+从框架页面的子框架中获得其它子框架的 FCK 编辑器实例：
+var Editor = window.FrameName.FCKeditorAPI.GetInstance('InstanceName');
+从页面弹出窗口中获得父窗口的 FCK 编辑器实例： 
+var Editor = opener.FCKeditorAPI.GetInstance('InstanceName');
+获得 FCK 编辑器的内容：
+oEditor.GetXHTML(formatted); // formatted 为：true|false，表示是否按HTML格式取出
+也可用： 
+oEditor.GetXHTML();
+设置 FCK 编辑器的内容：
+oEditor.SetHTML("content", false); // 第二个参数为：true|false，是否以所见即所得方式设置其内容。此方法常用于"设置初始值"或"表单重置"哦作。
+插入内容到 FCK 编辑器：
+oEditor.InsertHtml("html"); // "html"为HTML文本
+检查 FCK 编辑器内容是否发生变化：
+oEditor.IsDirty();
+在 FCK 编辑器之外调用 FCK 编辑器工具条命令：
+命令列表如下：
+DocProps, Templates, Link, Unlink, Anchor, BulletedList, NumberedList, About, Find, Replace, Image, Flash, SpecialChar, Smiley, Table, TableProp, TableCellProp, UniversalKey, Style, FontName, FontSize, FontFormat, Source, Preview, Save, NewPage, PageBreak, TextColor, BGColor, PasteText, PasteWord, TableInsertRow, TableDeleteRows, TableInsertColumn, TableDeleteColumns, TableInsertCell, TableDeleteCells, TableMergeCells, TableSplitCell, TableDelete, Form, Checkbox, Radio, TextField, Textarea, HiddenField, Button, Select, ImageButton, SpellCheck, FitWindow, Undo, Redo
+使用方法如下：
+oEditor.Commands.GetCommand('FitWindow').Execute();
+= FCKConfig.BasePath + 'plugins/' 
+// FCKConfig.Plugins.Add( 'placeholder', 'en,it' ) ; 
+去掉//后，就相当于把placeholder这个插件功能加上了，fckeditor的插件文件都在/editor/plugins/文件夹下分类按文件夹放置的，对于fckeditor2.0来说，里面有两个文件夹，也就是有两个官方插件，placeholder这个文件夹就是我们刚才加上去的，主要用于多参数或单参数自定义标签的匹配，这个在制作编辑模板时非常管用，要想看具体实例的话，大家可以去下载acms 这个系统查看学习，另一个文件夹tablecommands就是编辑器里的表格编辑用到的了。当然，如果你想制作自己其它用途的插件，那就只要按照 fckeidtor插件的制作规则制作完放置在/editor/plugins/下就行，然后再在fckeidtor.js里再添加 FCKConfig.Plugins.Add('Plugin Name',',lang,lang');就可以了。
+第二部分 ，如何让编辑器一打开的时候，编辑工具条不出现，等点“展开工具栏”时才出现？Easy，FCKeditor本身提供了这个功能啦，打开fckconfig.js，找到
+FCKConfig.ToolbarStartExpanded = true ;改成
+FCKConfig.ToolbarStartExpanded = false ;
+就可以啦！
+第三部分，使用自己的表情图标，同样打开fckcofnig.js到最底部那一段
+FCKConfig.SmileyPath = FCKConfig.BasePath + 'images/smiley/msn/' ;
+FCKConfig.SmileyImages = ['regular_smile.gif','sad_smile.gif','wink_smile.gif'] ;
+FCKConfig.SmileyColumns = 8 ;
+FCKConfig.SmileyWindowWidth    = 320 ;
+FCKConfig.SmileyWindowHeight = 240 ;
+上面这段已经是我修改过的了，为了我发表此文的版面不会被撑得太开，我把FCKConfig.SmileyImages那一行改得只有三个表情图了。
+第一行，当然是表情图标路径的设置，第二行是相关表情图标文件名的一个List，第三行是指弹出的表情添加窗口最每行的表情数，下面两个参数是弹出的模态窗口的宽和高喽。
+第四部分，文件上传管理部分
+此部分可能是大家最为关心的，上一篇文章简单的讲了如何修改来上传文件以及使用fckeidtor2.0才提供的快速上传功能。再我们继续再深层次的讲解上传功能
+FCKConfig.LinkBrowser = true ;
+FCKConfig.ImageBrowser = true ;
+FCKConfig.FlashBrowser = true ;在fckconfig.js找到这三句，这三句不是连着的哦，只是我把他们集中到这儿来了，设置为true的意思就是允许使用fckeditor来浏览服务器端的文件图像以及flash等，这个功能是你插入图片时弹出的窗口上那个“浏览服务器”按钮可以体现出来，如果你的编辑器只用来自己用或是只在后台管理用，这个功能无疑很好用，因为他让你很直观地对服务器的文件进行上传操作。但是如果你的系统要面向前台用户或是像blog这样的系统要用的话，这个安全隐患可就大了哦。于是我们把其一律设置为false;如下
+FCKConfig.LinkBrowser = false ;
+FCKConfig.ImageBrowser = false ;
+FCKConfig.FlashBrowser = false ;
+这样一来，我们就只有快速上传可用了啊，好！接下来就来修改，同样以asp为范例进行，进入/editor/filemanager/upload/asp/打开config.asp，修改
+ConfigUserFilesPath = "/UserFiles/"这个设置是上传文件的总目录，我这里就不动了，你想改自己改了好，再打开此目录下的upload.asp文件，找到下面这一段
+Dim resourceType
+If ( Request.QueryString("Type") 
+&lt;&gt;"" ) Then
+resourceType = Request.QueryString("Type")
+Else
+resourceType = "File"
+End If 
+然后再在其后面添加
+ConfigUserFilesPath = ConfigUserFilesPath & resourceType &"/"& Year(Date()) &"/"& Month(Date()) &"/" 
+这样的话，上传的文件就进入“/userfiles/文件类型（如image或file或flash)/年/月/”这样的文件夹下了，这个设置对单用户来用已经足够了，如果你想给多用户系统用，那就这样来改
+ConfigUserFilesPath = ConfigUserFilesPath & Session("username") & resourceType &"/"& Year(Date()) &"/"& Month(Date()) &"/" 
+这样上传的文件就进入“/userfiles/用户目录/文件类型/年/月/”下了，当然如果你不想这么安排也可以修改成别的，比如说用户目录再深一层等，这里的Session("username")请根据自己的需要进行修改或换掉。
+上传的目录设置完了，但是上传程序还不会自己创建这些文件夹，如果不存在的话，上传不会成功的，那么我们就得根据上面的上传路径的要求进行递归来生成目录了。
+找到这一段
+Dim sServerDir
+sServerDir = Server.MapPath( ConfigUserFilesPath )
+If ( Right( sServerDir, 1 ) 
+&lt;&gt;"\" ) Then
+    sServerDir = sServerDir & "\"
+End If
+把它下面的这两行
+Dim oFSO
+Set oFSO = Server.CreateObject( "Scripting.FileSystemObject" ) 
+用下面这一段代码来替换
+dim arrPath,strTmpPath,intRow
+strTmpPath = ""
+arrPath = Split(sServerDir, "\") 
+Dim oFSO
+Set oFSO = Server.CreateObject( "Scripting.FileSystemObject" )
+for intRow = 0 to Ubound(arrPath)
+    strTmpPath = strTmpPath & arrPath(intRow) & "\"
+    if oFSO.folderExists(strTmpPath)=false then
+     oFSO.CreateFolder(strTmpPath)
+    end if
+next 
+用这段代码就可以生成你想要的文件夹了，在上传的时候自动生成。
+好了，上传文件的修改到现在可以暂时告一段落了，但是，对于中文用户还存在这么个问题，就是fckeditor的文件上传默认是不改名的，同时还不支持中文文件名，这样一来是上传的文件会变成“.jpg”这样的无法读的文件，再就是会有重名文件，当然重名这点倒没什么，因为fckeditor会自动改名，会在文件名后加（1）这样来进行标识。但是，我们通常的习惯是让程序自动生成不重复的文件名在刚才那一段代码的下面紧接着就是
+' Get the uploaded file name.
+sFileName = oUploader.File( "NewFile" ).Name
+看清楚了，这个就是文件名啦，我们来把它改掉，当然得有个生成文件名的函数才行，改成下面这样
+'//取得一个不重复的序号
+Public Function GetNewID()
+dim ranNum
+dim dtNow
+randomize
+dtNow=Now()
+ranNum=int(90000*rnd)+10000
+GetNewID=year(dtNow) & right("0" & month(dtNow),2) & right("0" & day(dtNow),2) & right("0" & hour(dtNow),2) & right("0" & minute(dtNow),2) & right("0" & second(dtNow),2) & ranNum
+End Function
+' Get the uploaded file name.
+sFileName = GetNewID() &"."& split(oUploader.File( "NewFile" ).Name,".")(1)
+这样一来，上传的文件就自动改名生成如20050802122536365.jpg这样的文件名了，是由年月日时分秒以及三位随机数组成的文件名了

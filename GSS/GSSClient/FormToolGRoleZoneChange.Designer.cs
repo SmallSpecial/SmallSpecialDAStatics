@@ -1,0 +1,160 @@
+﻿namespace GSSClient
+{
+    partial class FormToolGRoleZoneChange
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormToolGRoleZoneChange));
+            this.rtboxNote = new GSSUI.AControl.ARichTextBox.ARichTextBox(this.components);
+            this.btnDosure = new GSSUI.AControl.AButton.AButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnDoesc = new GSSUI.AControl.AButton.AButton();
+            this.lblUR = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboxZone = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // rtboxNote
+            // 
+            this.rtboxNote.Location = new System.Drawing.Point(14, 116);
+            this.rtboxNote.MaxLength = 100;
+            this.rtboxNote.Name = "rtboxNote";
+            this.rtboxNote.Size = new System.Drawing.Size(262, 71);
+            this.rtboxNote.TabIndex = 12;
+            this.rtboxNote.Text = global::GSSClient.Properties.Resources.d;
+            // 
+            // btnDosure
+            // 
+            this.btnDosure.BackColor = System.Drawing.Color.Transparent;
+            this.btnDosure.BackImg = ((System.Drawing.Bitmap)(resources.GetObject("btnDosure.BackImg")));
+            this.btnDosure.BacklightLTRB = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnDosure.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDosure.Location = new System.Drawing.Point(27, 193);
+            this.btnDosure.Name = "btnDosure";
+            this.btnDosure.Size = new System.Drawing.Size(95, 23);
+            this.btnDosure.TabIndex = 8;
+            this.btnDosure.Text =  LanguageResource.Language.BtnSure;
+            this.btnDosure.UseVisualStyleBackColor = true;
+            this.btnDosure.Click += new System.EventHandler(this.btnDosure_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(12, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 12);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "工具使用备注:";
+            // 
+            // btnDoesc
+            // 
+            this.btnDoesc.BackColor = System.Drawing.Color.Transparent;
+            this.btnDoesc.BackImg = ((System.Drawing.Bitmap)(resources.GetObject("btnDoesc.BackImg")));
+            this.btnDoesc.BacklightLTRB = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnDoesc.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDoesc.Location = new System.Drawing.Point(157, 193);
+            this.btnDoesc.Name = "btnDoesc";
+            this.btnDoesc.Size = new System.Drawing.Size(95, 23);
+            this.btnDoesc.TabIndex = 9;
+            this.btnDoesc.Text =  LanguageResource.Language.BtnCancel;
+            this.btnDoesc.UseVisualStyleBackColor = true;
+            this.btnDoesc.Click += new System.EventHandler(this.btnDoesc_Click);
+            // 
+            // lblUR
+            // 
+            this.lblUR.AutoSize = true;
+            this.lblUR.BackColor = System.Drawing.Color.Transparent;
+            this.lblUR.Location = new System.Drawing.Point(12, 54);
+            this.lblUR.Name = "lblUR";
+            this.lblUR.Size = new System.Drawing.Size(59, 12);
+            this.lblUR.TabIndex = 11;
+            this.lblUR.Text = "帐号\\角色";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(12, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.TabIndex = 2223334;
+            this.label1.Text = "新的战区:";
+            // 
+            // cboxZone
+            // 
+            this.cboxZone.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxZone.FormattingEnabled = true;
+            this.cboxZone.Location = new System.Drawing.Point(77, 74);
+            this.cboxZone.Name = "cboxZone";
+            this.cboxZone.Size = new System.Drawing.Size(175, 20);
+            this.cboxZone.TabIndex = 2223335;
+            // 
+            // FormToolGRoleZoneChange
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(288, 244);
+            this.Controls.Add(this.cboxZone);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.rtboxNote);
+            this.Controls.Add(this.btnDosure);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnDoesc);
+            this.Controls.Add(this.lblUR);
+            this.FormSystemBtnSet = GSSUI.AForm.ABaseForm.FormSystemBtn.btn_miniAndbtn_close;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormToolGRoleZoneChange";
+            this.Text = "角色改服工具";
+            this.Load += new System.EventHandler(this.FormToolGRoleRecover_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormToolGUserNoUse_FormClosing);
+            this.Controls.SetChildIndex(this.lblUR, 0);
+            this.Controls.SetChildIndex(this.btnDoesc, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.btnDosure, 0);
+            this.Controls.SetChildIndex(this.rtboxNote, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.cboxZone, 0);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private GSSUI.AControl.ARichTextBox.ARichTextBox rtboxNote;
+        private GSSUI.AControl.AButton.AButton btnDosure;
+        private System.Windows.Forms.Label label2;
+        private GSSUI.AControl.AButton.AButton btnDoesc;
+        private System.Windows.Forms.Label lblUR;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboxZone;
+    }
+}

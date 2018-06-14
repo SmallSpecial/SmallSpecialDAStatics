@@ -1,0 +1,12 @@
+﻿body { font-size:12px;}
+.main{margin: 200px auto;}
+.input{ width:300px; background-color:#fff;}
+.username,.pwd,.mail{ padding:2px 0 0 20px;}
+.mail{ background:url(icons/email.png) no-repeat 3px 3px !important;}
+.username{ background:url(icons/user.png) no-repeat 3px 3px !important;}
+.pwd{ background:url(icons/lock.png) no-repeat 3px 3px !important; padding:2px 0 0 20px;}
+.TextArea{}
+.icon-exclamation{padding-left: 25px !important;background: url(icons/exclamation.png) no-repeat 3px 3px !important;}
+.icon-accept {padding-left: 25px !important;background: url(icons/accept.png) no-repeat 3px 3px !important;}
+.iconadd{ background:url(icons/add.png) no-repeat 3px 3px !important;}
+.iconup{ background:url(icons/add.png) no-repeat 3px 3px !important;}

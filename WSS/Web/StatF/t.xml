@@ -1,0 +1,19 @@
+﻿<map showFCMenuItem='0' numberPrefix='' baseFontSize='12' animation='1' legendShadow='1'  showCanvasBorder='1' canvasBorderThickness='2' canvasBorderAlpha='0' showBorder='1' showShadow='1' showBevel='0' showLabels='0'  fillAlpha='100' hoverColor='639ACE' bgColor='ffffff' chartRightMargin='0' fillColor='f3fbff' chartTopMargin='0' showlegend='0' chartLeftMargin='0' chartBottomMargin='0'><colorRange>
+				<color minValue='1' maxValue='5' color='ffff00' />
+				<color minValue='5' maxValue='1000' displayValue='1000-2000PV' color='ffcc00' />
+				<color minValue='1000' maxValue='1500' displayValue='2000-5000PV' color='ff9900' />
+				<color minValue='1500' maxValue='2000' displayValue='2000-5000PV' color='ff6600' />
+				<color minValue='2000' maxValue='3500' displayValue='2000-5000PV' color='ff3300' />
+				<color minValue='3500' maxValue='5001' displayValue='2000-5000PV' color='ff0000' />
+			</colorRange><data><entity id='CN.BJ' tooltext='北京市 &lt;BR&gt;登录次数: 4501' Value='4501'  /><entity id='CN.HB' tooltext='河北省 &lt;BR&gt;登录次数: 0' Value='2'  /><entity id='CN.TJ' tooltext='天津市 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.GD' tooltext='广东省 &lt;BR&gt;登录次数: 4' Value='1005'  /><entity id='CN.GX' tooltext='广西壮族自治区 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.NM' tooltext='内蒙古自治区 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.AH' tooltext='安徽省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.CQ' tooltext='重庆市 &lt;BR&gt;登录次数: 0' Value='1501'  /><entity id='CN.FJ' tooltext='福建省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.GS' tooltext='甘肃省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.GZ' tooltext='贵州省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.HA' tooltext='海南省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.HE' tooltext='河南省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.HU' tooltext='湖北省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.HL' tooltext='黑龙江省 &lt;BR&gt;登录次数: 0' Value='2001'  /><entity id='CN.HN' tooltext='湖南省 &lt;BR&gt;登录次数: 0' Value='4600'  /><entity id='CN.JS' tooltext='江苏省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.JX' tooltext='江西省 &lt;BR&gt;登录次数: 0' Value='5'  /><entity id='CN.JL' tooltext='吉林省 &lt;BR&gt;登录次数: 0' Value='3'  /><entity id='CN.LN' tooltext='辽宁省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.NX' tooltext='宁夏回族自治区 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.QH' tooltext='青海省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.SA' tooltext='陕西省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.SD' tooltext='山东省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.SH' tooltext='上海市 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.SX' tooltext='山西省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.SC' tooltext='四川省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.XJ' tooltext='新疆维吾尔自治区 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.XZ' tooltext='西藏 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.YN' tooltext='云南省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.ZJ' tooltext='浙江省 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.HK' tooltext='香港 &lt;BR&gt;登录次数: 0' Value='1'  /><entity id='CN.MA' tooltext='澳门 &lt;BR&gt;登录次数: 0' Value='0'  /><entity id='CN.TA' tooltext='中国台湾 &lt;BR&gt;登录次数: 0' Value='0'  /></data><styles>
+				<definition>                         
+					<style name='CaptionFont' type='font' size='12'/>
+					<style name='datasetFont' type='font' size='12'/>
+					<style name='myHTMLFont' type='font' isHTML='1' />
+				</definition>
+				<application>
+					<apply toObject='CAPTION' styles='CaptionFont' />
+					<apply toObject='seriesName' styles='datasetFont' />
+					<apply toObject='TOOLTIP' styles='myHTMLFont' />
+				</application>
+			</styles></map>

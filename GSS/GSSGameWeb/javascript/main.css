@@ -1,0 +1,308 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+body
+{
+    background: #FFF url(/images/bodybg.png) repeat-x 0 0;
+  /*  scrollbar-Arrow-Color:#fff;
+    scrollbar-DarkShadow-color:#596e78;
+    scrollbar-face-color:#0b577c;
+    scrollbar-hightlight-color:#bedbe9;
+    scrollbar-base-color:#c6e3f1;*/
+}
+body, input, button, select, textarea
+{
+    font: 12px/1.5 "Lucida Grande" ,Helvetica,Arial,sans-serif;
+    color: #444;
+}
+html, body
+{
+    margin: 0;
+    height: 100%;
+}
+.buttonadd
+{
+    border: 0;
+    margin-left: 20px;
+    margin-top: 2px;
+    background: url(/images/btn_post.gif) no-repeat 0 0;
+    text-align: center;
+    color: #FFF;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    cursor:pointer;
+}
+.buttonadd:hover
+{
+    /*margin-left: 19px;*/
+    background: url(/images/btn_posto.gif) no-repeat 0 0;
+}
+.flbcc
+{
+    border: 0;
+    line-height: 20px;
+    background: url(/images/cls.gif) no-repeat 0 0;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 20px;
+}
+.flbcc:hover
+{
+    background-position: 0 -20px;
+}
+textarea,input
+{
+    resize: none;
+    border:solid 1px #7f9db9;
+}
+table
+{
+    empty-cells: show;
+    border-collapse: collapse;
+}
+caption, th
+{
+    text-align: left;
+    font-weight: 400;
+}
+ul li
+{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1em;
+}
+em, cite
+{
+    font-style: normal;
+}
+a
+{
+    color: #333;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration:underline;
+}
+a img
+{
+    border: none;
+}
+/*form and list*/
+.tfm, .datatable
+{
+    width: 100%;
+}
+.tfm caption, .tfm th, .tfm td
+{
+    padding: 5px 2px;
+}
+.tfm th
+{
+    font-weight: 700;
+    width: 140px;
+}
+.sel_avt
+{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sel_avt a
+{
+    float: left;
+    display: block;
+    margin: 15px 15px 15px 0;
+    width: 119px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    background: url(/images/bigbtn.gif) no-repeat;
+    font-size: 14px;
+    text-decoration: none;
+}
+.xs2
+{
+    font-size: 14px !important;
+}
+.datatable th
+{
+    padding: 6px 0px 6px 12px ;
+    border-bottom: 1px solid #DCDCDC;width:33px;
+}
+.datatable td
+{
+    padding: 6px 1px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.colplural
+{
+    background-color: #F5F5F5;
+    border-top: 1px solid #DCDCDC;
+}
+.datatable td.t_img
+{
+    text-align: center;
+}
+.datatable input
+{
+    margin-right:16px;
+    border-style:none;
+}
+.t_th
+{
+    width: 150px;
+}
+/*tab*/.f_tab
+{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #CDCDCD;
+    line-height: 30px;
+    margin: 3px 0;
+    padding-left: 5px;
+}
+.f_tab li
+{
+    float: left;
+    margin: 0 2px -1px 0;
+}
+* html .f_tab .cur_tab
+{
+    position: relative;
+}
+.f_tab a
+{
+    border: 1px solid #CDCDCD;
+    display: block;
+    padding: 0 6px;
+}
+.uc_header
+{
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+     margin-bottom:2px;
+}
+.uc_header .btn_uc
+{
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    font-weight: 700;
+}
+.f_tab .cur_tab a
+{
+    background: #f5f8fa;
+    border-bottom-color: #f5f8fa;
+    font-weight: 700;
+}
+
+.f_tab a:hover
+{
+    background: #e6eff6;
+    text-decoration:none;
+}
+
+.error_msg
+{
+    background: url(/images/error.gif) no-repeat 0 50%;
+}
+.right_msg
+{
+    background: url(/images/right.gif) no-repeat 0 50%;
+}
+.onerror
+{
+    padding:2px 2px 2px 22px;
+    background: url(/images/check_error.gif) no-repeat;
+    color:#f94c85;
+}
+.onright
+{
+    padding: 2px 2px 2px 22px;
+    background: url(/images/access_allow.gif) no-repeat 2px 2px;
+}
+.divadd
+{
+    width: 94%;
+    float: left;
+    padding: 1px 0px 0px 18px;
+}
+.divlist
+{
+    width: 98%;
+    float: left;
+    padding: 2px 0px 0px 2px;
+}
+.tfm
+{
+    width: 100%;
+}
+.tfm th
+{
+    font-weight: 700;
+    width: 80px;
+}
+
+.fu_list
+{
+    width: 86%;
+ 
+    font-size: 12px;
+}
+.fu_list td
+{
+    padding: 1px;
+    line-height: 20px;
+    background-color: #fff;
+}
+.fu_list table
+{
+    width: 100%;
+    border: solid 1px #ebebeb;
+    
+}
+.fu_list thead td
+{
+    background-color: #f4f4f4;
+}
+.fu_list b
+{
+    font-size: 14px;
+}
+/*file容器样式*/a.files
+{
+    width: 75px;
+    height: 25px;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #BEBEBE;
+    background: url(/images/fu_btn.gif) left top no-repeat;
+    text-decoration: none;
+}
+a.files:hover
+{
+    background-color: #FFFFEE;
+    background-position: 0 -25px;
+}
+/*file设为透明，并覆盖整个触发面*/a.files input
+{
+    margin-left: -350px;
+    font-size: 30px;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+/*取消点击时的虚线框*/a, a.files, a.files input
+{
+    outline: none; /*ff*/
+    hide-focus: expression(this.hideFocus=true); /*ie*/
+}

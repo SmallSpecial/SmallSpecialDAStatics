@@ -1,0 +1,52 @@
+﻿
+<script language="javascript" type="text/javascript">
+
+//开始处理
+function BeginTrans(msg)
+{
+    WriteText("Msg1",msg);
+}
+
+//设置进度条进度
+function SetPorgressBar(msg, pos)
+{
+    ProgressBar.style.width= pos + "%";
+    WriteText("Msg1",msg + " 已完成" + pos + "%");
+}
+
+//处理结束
+function EndTrans(msg)
+{
+    if(msg=="")
+        WriteText("Msg1","完成。");
+    else
+        WriteText("Msg1",msg);
+}
+
+//设置时间信息
+function SetTimeInfo(msg)
+{
+    WriteText("Msg2",msg);
+}
+
+// 更新文本显示信息
+function WriteText(id, str)
+{
+	var strTag = '<font face="Verdana, Arial, Helvetica" size="2" color="#ea9b02"><B>' + str + '</B></font>';	
+	if (document.all) document.all[id].innerHTML = strTag;
+}
+</script>
+
+<table align="center" style="height:10">
+    <tr style="height:45%"><td></td></tr>
+    <tr>
+        <td>
+            <div id="Msg1" style="height:16px;"><font face="Verdana, Arial, Helvetica" size="2" color="#ea9b02"><b>正在加载...</b></font></div>
+            <div id="ProgressBarSide" style="width:300px; color:Silver;border-width:1px; border-style:Solid;">
+                <div id="ProgressBar" style="height:20px; width:0%; background-color:Green; text-align:center;"></div>
+            </div>
+            <div id="Msg2" style="height:16px;"><font face="Verdana, Arial, Helvetica" size="2" color="#ea9b02"><b></b></font></div>
+        </td>
+    </tr>
+    <tr style="height:50%"><td></td></tr>
+</table>

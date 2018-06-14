@@ -1,0 +1,2044 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account_btnCloseDown" xml:space="preserve">
+    <value>차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_btnGag" xml:space="preserve">
+    <value>채팅금지</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_btnPlayNo" xml:space="preserve">
+    <value>강제 로그아웃</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_BtnRechargeException" xml:space="preserve">
+    <value>충전이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_BtnResetAntiIndulgence" xml:space="preserve">
+    <value>셧 다운 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_BtnResetBindEmail" xml:space="preserve">
+    <value>귀속메일 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_BtnResetIDCard" xml:space="preserve">
+    <value>신분증 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_BtnResetLevelPsw" xml:space="preserve">
+    <value>2차비번 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_BtnResetSecurity" xml:space="preserve">
+    <value>비번보호 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="Account_btnUnlock" xml:space="preserve">
+    <value>차단해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAcceptWorkOrder" xml:space="preserve">
+    <value>선택오더받기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAntiIndulgenceInfo" xml:space="preserve">
+    <value>셧다운정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardOrQuery" xml:space="preserve">
+    <value>보상/조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardWorkOrder" xml:space="preserve">
+    <value>보상 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardWorkOrderList" xml:space="preserve">
+    <value>보상오더리스트</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardWorkOrderPool" xml:space="preserve">
+    <value>보상오더풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardWorkOrderRecord" xml:space="preserve">
+    <value>보상오더기록</value>
+    <comment>true</comment>
+  </data>
+  <data name="btnBatchIDSealed" xml:space="preserve">
+    <value>일괄 차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnBatchUnlock" xml:space="preserve">
+    <value>일괄 차단해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnBorrowAccount" xml:space="preserve">
+    <value>계정 차용</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnBugSubmit" xml:space="preserve">
+    <value>bug 제출</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCallTank" xml:space="preserve">
+    <value>게임채팅풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCallWorkOrder" xml:space="preserve">
+    <value>채팅 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>취소</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnClearOnlineRecord" xml:space="preserve">
+    <value>계정/캐릭 온라인상태 삭제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCloseDown" xml:space="preserve">
+    <value>차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCloseDownAccount" xml:space="preserve">
+    <value>계정차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCloseDownRole" xml:space="preserve">
+    <value>캐릭차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCloseForm" xml:space="preserve">
+    <value>창 끄기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCloseSelectWorkOrder" xml:space="preserve">
+    <value>선택된 오더 끄기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCloseWorkOrder" xml:space="preserve">
+    <value>오더 끄기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCommonSentences" xml:space="preserve">
+    <value>상용문구</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnConsuleWorkOrder" xml:space="preserve">
+    <value>문의오더풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnConsult" xml:space="preserve">
+    <value>문의</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnConsultList" xml:space="preserve">
+    <value>문의리스트</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDealWithingWorkOrder" xml:space="preserve">
+    <value>처리중 오더풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDealWithTroublemakers" xml:space="preserve">
+    <value>문제 유저 처리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDealWithWorkOrder" xml:space="preserve">
+    <value>해당 오더 처리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnEndChat" xml:space="preserve">
+    <value>대화 종료</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnEquipGetbackTool" xml:space="preserve">
+    <value>장비 복구 툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFileQueryTool" xml:space="preserve">
+    <value>아이템 로그 조회 툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnfinishChatWithGenerateWorkOrder" xml:space="preserve">
+    <value>채팅완료 및 오더생성</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFinshAndFeedback" xml:space="preserve">
+    <value>완료후 피드백</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFinshChatWithSave" xml:space="preserve">
+    <value>채팅완료 및 저장</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFinshNeedScore" xml:space="preserve">
+    <value>완료후 평점필요</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFinshWorkOrder" xml:space="preserve">
+    <value>오더완료</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnGag" xml:space="preserve">
+    <value>채팅금지</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnGagTool" xml:space="preserve">
+    <value>채팅 차단툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnGamerInforQuery" xml:space="preserve">
+    <value>유저정보조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnGameUserQuery" xml:space="preserve">
+    <value>유저정보조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnHackedProcess" xml:space="preserve">
+    <value>계정도용처리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnHistoryRecord" xml:space="preserve">
+    <value>히스토리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnHistoryWorkOrder" xml:space="preserve">
+    <value>히스토리 오더풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnLeaderAuditWorkOrderPool" xml:space="preserve">
+    <value>관리자 심의 오더풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnMergeServiceGangRenamed" xml:space="preserve">
+    <value>길드명 변경(서버통합)</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnMyDealWithWorkingOrder" xml:space="preserve">
+    <value>처리중의 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnMyWorkOrderPool" xml:space="preserve">
+    <value>나의 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnNewReceiverWorkOrder" xml:space="preserve">
+    <value>새로운 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnOnlineConsume" xml:space="preserve">
+    <value>온라인 문의</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnPressReleases" xml:space="preserve">
+    <value>뉴스배포</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnPropException" xml:space="preserve">
+    <value>아이템 이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnPropLose" xml:space="preserve">
+    <value>아이템 분실</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnQuery" xml:space="preserve">
+    <value>조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnQueryAccount" xml:space="preserve">
+    <value>계정조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnQueryAwardTool" xml:space="preserve">
+    <value>보상\조회툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnQueryFDBILog" xml:space="preserve">
+    <value>FDBI로그조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnQueryRole" xml:space="preserve">
+    <value>캐릭터 조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnQueryWorkOrderInAccount" xml:space="preserve">
+    <value>해당 계정 오더조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReceive" xml:space="preserve">
+    <value>받기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReceivedException" xml:space="preserve">
+    <value>보상 이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRechargeException" xml:space="preserve">
+    <value>충전이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRefreshConsumeList" xml:space="preserve">
+    <value>문의리스트 갱신</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRemark" xml:space="preserve">
+    <value>비고</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRenamed" xml:space="preserve">
+    <value>이름 변경</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReportFalseInfo" xml:space="preserve">
+    <value>허위정보신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReportOther" xml:space="preserve">
+    <value>기타신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReportPlugin" xml:space="preserve">
+    <value>핵 신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReportPW" xml:space="preserve">
+    <value>프리섭 신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetAntiIndulgence" xml:space="preserve">
+    <value>셧 다운 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetBindEmail" xml:space="preserve">
+    <value>귀속메일 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetIDCard" xml:space="preserve">
+    <value>신분증 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetLevelPsw" xml:space="preserve">
+    <value>2차비번 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetRoleLevelPsw" xml:space="preserve">
+    <value>캐릭터 2차비번 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetSecurity" xml:space="preserve">
+    <value>비번보호 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnResetWirehousePsw" xml:space="preserve">
+    <value>창고비번 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnReturnAccount" xml:space="preserve">
+    <value>계정 돌려주기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRole" xml:space="preserve">
+    <value>캐릭터</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleChangeZone" xml:space="preserve">
+    <value>캐릭서버이전</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleChangeZoneTool" xml:space="preserve">
+    <value>캐릭서버이전툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleInfoException" xml:space="preserve">
+    <value>캐릭정보이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleOperateRecord" xml:space="preserve">
+    <value>캐릭터 조작기록</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleRecovery" xml:space="preserve">
+    <value>캐릭터 복구</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleRename" xml:space="preserve">
+    <value>캐릭명 변경</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleRenameTool" xml:space="preserve">
+    <value>캐릭명 변경툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRoleWorkOrder" xml:space="preserve">
+    <value>캐릭오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnRunNotice" xml:space="preserve">
+    <value>공지시작</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSelectUserListWithImport" xml:space="preserve">
+    <value>유저리스트 선택 및 사용</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSend" xml:space="preserve">
+    <value>발송</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSendEmail" xml:space="preserve">
+    <value>Send email</value>
+  </data>
+  <data name="BtnSendText" xml:space="preserve">
+    <value>발송내용</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnStartDealwith" xml:space="preserve">
+    <value>처리시작</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnStopNotice" xml:space="preserve">
+    <value>공지종료</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSubmitAndRun" xml:space="preserve">
+    <value>즉시실행</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSubmitWithExecute" xml:space="preserve">
+    <value>즉시실행</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSuggestion" xml:space="preserve">
+    <value>건의사항</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnSure" xml:space="preserve">
+    <value>확인</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnTurnOut" xml:space="preserve">
+    <value>전향</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnTurnOutWorkOrderPool" xml:space="preserve">
+    <value>오더풀에서 이전</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnTurnService" xml:space="preserve">
+    <value>서버이전</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnUnlock" xml:space="preserve">
+    <value>차단해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnUnlockAccount" xml:space="preserve">
+    <value>차단해제 계정</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnUnlockRole" xml:space="preserve">
+    <value>차단해제 캐릭</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWaitFeedBackWorkOrder" xml:space="preserve">
+    <value>피드백 필요 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWaitLeaderAudit" xml:space="preserve">
+    <value>심의대기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWaitScoreWorkOrder" xml:space="preserve">
+    <value>평점대기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkOrderClose" xml:space="preserve">
+    <value>오더 종료</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkorderDealwithNo" xml:space="preserve">
+    <value>오더 처리정보 저장실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkorderDealwithOK" xml:space="preserve">
+    <value>오더 처리정보 저장성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkOrderExecTank" xml:space="preserve">
+    <value>실행 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkOrderFileClickEvent" xml:space="preserve">
+    <value>오더 첨부파일</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkOrderHomePage" xml:space="preserve">
+    <value>오더 페이지</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnWorkOrderRecoveryTank" xml:space="preserve">
+    <value>오더 회수풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbAccountBaseInfo" xml:space="preserve">
+    <value>계정기본정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbAccountBaseInfoWithShortcutKey" xml:space="preserve">
+    <value>계정기본정보(우클릭으로 오더조회)</value>
+    <comment>true</comment>
+  </data>
+  <data name="gbAccountWorkOrder" xml:space="preserve">
+    <value>계정오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbCallWorkOrderDetail" xml:space="preserve">
+    <value>외침 오더 기록</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbNeedKnowItems" xml:space="preserve">
+    <value>확인 필요 정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="GBOperateList" xml:space="preserve">
+    <value>조작류</value>
+    <comment>true</comment>
+  </data>
+  <data name="gbOtherWorkOrder" xml:space="preserve">
+    <value>기타오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="GBQuestionAswerInfo" xml:space="preserve">
+    <value>문제서술[확인된 정보]</value>
+    <comment>true</comment>
+  </data>
+  <data name="GBRemarkRecord" xml:space="preserve">
+    <value>비고기록</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbRoleBaseInfo" xml:space="preserve">
+    <value>캐릭기본정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbRoleBaseInfoWithShortcutKey" xml:space="preserve">
+    <value>캐릭기본정보(우클릭으로 연관 오더 조회)</value>
+    <comment>true</comment>
+  </data>
+  <data name="gbRoleWorkOrder" xml:space="preserve">
+    <value>캐릭오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="GBToolList" xml:space="preserve">
+    <value>툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbVerifyItems" xml:space="preserve">
+    <value>검증항목</value>
+    <comment>true</comment>
+  </data>
+  <data name="GBWorkOrderDealwith" xml:space="preserve">
+    <value>오더처리</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbWorkOrderList" xml:space="preserve">
+    <value>오더 리스트</value>
+    <comment>true</comment>
+  </data>
+  <data name="GbWorkOrderListShortcukey" xml:space="preserve">
+    <value>오더 리스트(우클릭 메뉴)</value>
+    <comment>true</comment>
+  </data>
+  <data name="GpCallWorkOrderwithShortcutkey" xml:space="preserve">
+    <value>채팅 오더리스트(우클릭 메뉴)</value>
+    <comment>true</comment>
+  </data>
+  <data name="GPWorkOrderInfo" xml:space="preserve">
+    <value>오더 정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAccount" xml:space="preserve">
+    <value>계정</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAccountName" xml:space="preserve">
+    <value>계정명칭</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAccountNo" xml:space="preserve">
+    <value>게정번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAccountRetureFailure" xml:space="preserve">
+    <value>계정 돌려주기 실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAccountRetureSucc" xml:space="preserve">
+    <value>계정 돌려주기 성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblActiveName" xml:space="preserve">
+    <value>이벤트 명칭</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAllBigZone" xml:space="preserve">
+    <value>모든 서버그룹</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblallType" xml:space="preserve">
+    <value>모든 유형</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAllZone" xml:space="preserve">
+    <value>모든 서버</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAllZoneLine" xml:space="preserve">
+    <value>모든 전선</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAwardBigZone" xml:space="preserve">
+    <value>보상 서버그룹</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAwardID" xml:space="preserve">
+    <value>첨부아이템 설정</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblAwardNo" xml:space="preserve">
+    <value>보상번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblBaseInfo" xml:space="preserve">
+    <value>기본정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblBelongBigZone" xml:space="preserve">
+    <value>소속서버그룹</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblBelongZone" xml:space="preserve">
+    <value>소속서버</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblBelongZoneWithBigZone" xml:space="preserve">
+    <value>소속서버(서버그룹)</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblBigZone" xml:space="preserve">
+    <value>서버그룹</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblBigZoneNo" xml:space="preserve">
+    <value>서버그룹번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCanResetData" xml:space="preserve">
+    <value>데이터 초기화 여부</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCardNumber" xml:space="preserve">
+    <value>카드번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblClipBoard" xml:space="preserve">
+    <value>주의:클릭하여 기본정보내용 복사가능</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCloseDownStatue" xml:space="preserve">
+    <value>차단상태</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblConsume" xml:space="preserve">
+    <value>문의</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblConsumeList" xml:space="preserve">
+    <value>문의리스트</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblConsumeNo" xml:space="preserve">
+    <value>문의번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblConsumeObject" xml:space="preserve">
+    <value>문의대상</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblConsumeText" xml:space="preserve">
+    <value>문의내용</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblContacter" xml:space="preserve">
+    <value>연락자</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblContacterCall" xml:space="preserve">
+    <value>연락자 이름</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCountDown" xml:space="preserve">
+    <value>카운트다운</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCreater" xml:space="preserve">
+    <value>제작자</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCreateTime" xml:space="preserve">
+    <value>제작시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblCurrentPersonInCharge" xml:space="preserve">
+    <value>현재 담당자</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblData" xml:space="preserve">
+    <value>데이터</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblDataChange" xml:space="preserve">
+    <value>데이터 변경</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblDetail" xml:space="preserve">
+    <value>상세정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblDocumentNumber" xml:space="preserve">
+    <value>신분증 번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblEdit" xml:space="preserve">
+    <value>편집</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblEditor" xml:space="preserve">
+    <value>편집자</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblEndRunning" xml:space="preserve">
+    <value>운행중지</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblEndTime" xml:space="preserve">
+    <value>종료시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblFailureStopPlacard" xml:space="preserve">
+    <value>공지종료실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblFrom" xml:space="preserve">
+    <value>from</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGame" xml:space="preserve">
+    <value>게임채팅풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGameBigZone" xml:space="preserve">
+    <value>게임서버그룹</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGameName" xml:space="preserve">
+    <value>게임명칭</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGameZone" xml:space="preserve">
+    <value>게임서버</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGiftName" xml:space="preserve">
+    <value>선물명칭</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGiftNo" xml:space="preserve">
+    <value>선물번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGiftNumber" xml:space="preserve">
+    <value>선물수량</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGiftType" xml:space="preserve">
+    <value>선물유형</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblGssNetSet" xml:space="preserve">
+    <value>Gss인터넷설정</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblImportUserList" xml:space="preserve">
+    <value>적용된 유저리스트</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblInitiatorName" xml:space="preserve">
+    <value>시작자 이름</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblInitiatorNameIsRequire" xml:space="preserve">
+    <value>시작자 이름을 입력하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblIsAdult" xml:space="preserve">
+    <value>성인여부</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblIsSecurity" xml:space="preserve">
+    <value>비번보호 여부</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLastLoginTime" xml:space="preserve">
+    <value>최후 접속시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLastOnlineIP" xml:space="preserve">
+    <value>최후 온라인 ip</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLastOnlineTime" xml:space="preserve">
+    <value>최후 온라인 시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLevel" xml:space="preserve">
+    <value>레벨</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLimitTimeNoun" xml:space="preserve">
+    <value>시간제한</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLoding" xml:space="preserve">
+    <value>로딩중…</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblLogin" xml:space="preserve">
+    <value>로그인</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMaxLevel" xml:space="preserve">
+    <value>최고레벨</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMinLevel" xml:space="preserve">
+    <value>최저레벨</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyAcceptWorkOrder" xml:space="preserve">
+    <value>내가 받은 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyAllWorkOrder" xml:space="preserve">
+    <value>나의 모든 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyCloseWorkOrder" xml:space="preserve">
+    <value>종료한 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyFinishWorkOrderForWaitFeedbook" xml:space="preserve">
+    <value>종료후 피드백 필요 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyHistoryWorkOrder" xml:space="preserve">
+    <value>나의 히스토리</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyTurnOutWorkOrder" xml:space="preserve">
+    <value>전출한 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblMyWaitScoreWorkOrder" xml:space="preserve">
+    <value>평점 대기 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNextPage" xml:space="preserve">
+    <value>다음</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNode" xml:space="preserve">
+    <value>노드</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNoticeList" xml:space="preserve">
+    <value>공지리스트</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNoticeRange" xml:space="preserve">
+    <value>공지범위</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNoticeState" xml:space="preserve">
+    <value>공지상태</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNoticeText" xml:space="preserve">
+    <value>공지내용</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblNowUser" xml:space="preserve">
+    <value>현제유저</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblOftenGameLocation" xml:space="preserve">
+    <value>자주 사용지점</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblOnlineStatue" xml:space="preserve">
+    <value>온라인 상태</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblOperate" xml:space="preserve">
+    <value>조작</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblOther" xml:space="preserve">
+    <value>기타</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblOtherInfoWriteRemark" xml:space="preserve">
+    <value>주의:기타정보는 비고에 입력하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblOtherWorkOrder" xml:space="preserve">
+    <value>기타오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPackage" xml:space="preserve">
+    <value>가방</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPackUp" xml:space="preserve">
+    <value>닫기</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPassword" xml:space="preserve">
+    <value>비번</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPlayNO" xml:space="preserve">
+    <value>강제 로그아웃</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPlayNOTool" xml:space="preserve">
+    <value>로그아웃 툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPreview" xml:space="preserve">
+    <value>미리보기</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPrevious" xml:space="preserve">
+    <value>이전</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblPreviousPersonInCharge" xml:space="preserve">
+    <value>전 담당자</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblProp" xml:space="preserve">
+    <value>아이템</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblProvideFullName" xml:space="preserve">
+    <value>유저명 제공</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblProviderFullDocumentNo" xml:space="preserve">
+    <value>신분증 번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblQueryOnlineState" xml:space="preserve">
+    <value>온라인 상태 조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblQueryWhereArea" xml:space="preserve">
+    <value>조건 조회구역</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblReady" xml:space="preserve">
+    <value>준비완료</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblReadyWorkOrderPool" xml:space="preserve">
+    <value>준비 오더풀</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblReceiveData" xml:space="preserve">
+    <value>데이터 받기</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblReceiveRange" xml:space="preserve">
+    <value>데이터 범위</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRegisterTime" xml:space="preserve">
+    <value>가입시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRelatedInfoItem" xml:space="preserve">
+    <value>연관정보항목</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRemark" xml:space="preserve">
+    <value>비고</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRepairFailure" xml:space="preserve">
+    <value>수정불가 최근 데이터로 회복가능</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblReset" xml:space="preserve">
+    <value>재입력</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRole" xml:space="preserve">
+    <value>캐릭터</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRoleName" xml:space="preserve">
+    <value>캐릭터 명칭</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRoleNo" xml:space="preserve">
+    <value>캐릭번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRoleStatue" xml:space="preserve">
+    <value>캐릭터 상태</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRunning" xml:space="preserve">
+    <value>운행중</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblRunStatue" xml:space="preserve">
+    <value>운행상태</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSave" xml:space="preserve">
+    <value>저장</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSecurityVerify" xml:space="preserve">
+    <value>비번보호 문제검증</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblServiceIP" xml:space="preserve">
+    <value>서버ip</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblServicePort" xml:space="preserve">
+    <value>서버포트</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSource" xml:space="preserve">
+    <value>소스</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblStartRunning" xml:space="preserve">
+    <value>운행시작</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblStartTime" xml:space="preserve">
+    <value>시작시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSuccStopPlacard" xml:space="preserve">
+    <value>공지종료성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSureAccount" xml:space="preserve">
+    <value>계정확인</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSureOther" xml:space="preserve">
+    <value>기타확인</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSureSecurity" xml:space="preserve">
+    <value>비번보호확인</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSystemName" xml:space="preserve">
+    <value>GSS게임서버 시스템</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTel" xml:space="preserve">
+    <value>전화번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTelFormIsError" xml:space="preserve">
+    <value>전화번호 격식틀림</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTelNotAllowBlank" xml:space="preserve">
+    <value>전화번호 비어있음</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTime" xml:space="preserve">
+    <value>시간제한</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTimeLimit" xml:space="preserve">
+    <value>제한시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTitle" xml:space="preserve">
+    <value>타이틀</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblTitleCannotBlank" xml:space="preserve">
+    <value>타이틀이 비어있습니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblToolRecord" xml:space="preserve">
+    <value>툴 기록</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblToolUse" xml:space="preserve">
+    <value>툴 사용</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblType" xml:space="preserve">
+    <value>유형</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnitDay" xml:space="preserve">
+    <value>일</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnitMonth" xml:space="preserve">
+    <value>월</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnitYear" xml:space="preserve">
+    <value>년</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnit_Number" xml:space="preserve">
+    <value>수량</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnknowBigZone" xml:space="preserve">
+    <value>알수없는 서버</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnknowZone" xml:space="preserve">
+    <value>알수없는 서버</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUnknowZoneLine" xml:space="preserve">
+    <value>알수없는 전선</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUpdateTime" xml:space="preserve">
+    <value>갱신시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUser" xml:space="preserve">
+    <value>유저</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblUserList" xml:space="preserve">
+    <value>유저리스트 선택 및 사용</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblVipLevel" xml:space="preserve">
+    <value>vip레벨</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWaitLeaderAuditOfWorkOrder" xml:space="preserve">
+    <value>심의 대기중인 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderFlow" xml:space="preserve">
+    <value>오더 프로세스</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderLimit" xml:space="preserve">
+    <value>오더 제한시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderNo" xml:space="preserve">
+    <value>오더 번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderRecord" xml:space="preserve">
+    <value>오더 기록</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderRemark" xml:space="preserve">
+    <value>오더 비고</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderSatue" xml:space="preserve">
+    <value>오더 상태</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderSource" xml:space="preserve">
+    <value>오더 소스</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderStatueChange" xml:space="preserve">
+    <value>오더 상태변경</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderTitle" xml:space="preserve">
+    <value>오더 타이틀</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblWorkOrderType" xml:space="preserve">
+    <value>오더 유형</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblZone" xml:space="preserve">
+    <value>서버</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblZoneNo" xml:space="preserve">
+    <value>서버번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="Map_AwardUserSheetName" xml:space="preserve">
+    <value>보상유저</value>
+    <comment>true</comment>
+  </data>
+  <data name="Map_RoleNo" xml:space="preserve">
+    <value>캐릭번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="Map_UserNo" xml:space="preserve">
+    <value>유저번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="Map_ZoneNo" xml:space="preserve">
+    <value>서버번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnAwardOrQuery" xml:space="preserve">
+    <value>보상/조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnAwardWorkOrder" xml:space="preserve">
+    <value>보상 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_btnBatchIDSealed" xml:space="preserve">
+    <value>일괄 차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnBatchUnlock" xml:space="preserve">
+    <value>일괄 차단해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnBugSubmit" xml:space="preserve">
+    <value>bug 제출</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnCallWorkOrder" xml:space="preserve">
+    <value>채팅 오더</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnDealWithTroublemakers" xml:space="preserve">
+    <value>문제 유저 처리</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnGamerInforQuery" xml:space="preserve">
+    <value>유저정보조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnHackedProcess" xml:space="preserve">
+    <value>계정도용처리</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnLoginAward" xml:space="preserve">
+    <value>로그인 보상</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnMergeServiceGangRenamed" xml:space="preserve">
+    <value>길드명 변경(서버통합)</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnPressReleases" xml:space="preserve">
+    <value>뉴스배포</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnReportFalseInfo" xml:space="preserve">
+    <value>허위정보신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnReportOther" xml:space="preserve">
+    <value>기타신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnReportPlugin" xml:space="preserve">
+    <value>핵 신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnReportPW" xml:space="preserve">
+    <value>프리섭 신고</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnSuggestion" xml:space="preserve">
+    <value>건의사항</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnCardNumber" xml:space="preserve">
+    <value>카드번호</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_btnCloseDown" xml:space="preserve">
+    <value>차단</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_btnGag" xml:space="preserve">
+    <value>채팅금지</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnPropException" xml:space="preserve">
+    <value>아이템 이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnPropLose" xml:space="preserve">
+    <value>아이템 분실</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnReceivedException" xml:space="preserve">
+    <value>보상 이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnRenamed" xml:space="preserve">
+    <value>이름 변경</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnResetWirehousePsw" xml:space="preserve">
+    <value>창고비번 비우기</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnRoleInfoException" xml:space="preserve">
+    <value>캐릭정보이상</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnRoleRecovery" xml:space="preserve">
+    <value>캐릭터 복구</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnTurnService" xml:space="preserve">
+    <value>서버이전</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_btnUnlock" xml:space="preserve">
+    <value>차단해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_AcceptSelectWorkOrder" xml:space="preserve">
+    <value>선택한 모든 오더를 받겠습니까?</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_AccountHasBeenCloseDown" xml:space="preserve">
+    <value>해당 계정은 차단되었습니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_AccountLeastInputTopThree" xml:space="preserve">
+    <value>계정은 첫 3자리를 입력해야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_AutidPassAndTurnout" xml:space="preserve">
+    <value>심이 통과 및 전달</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_AwardUserListExcel" xml:space="preserve">
+    <value>사용자 리스트에는 캐릭터 명을 포함해야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ChatDetail" xml:space="preserve">
+    <value>채팅내용</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CheckSureSubmitWithExecute" xml:space="preserve">
+    <value>\"즉시실행\"을 선택시 \n\"확인\"을 클릭할 필요가 없습니다.\n게임툴을 실행하면 자동으로 진행합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_Client" xml:space="preserve">
+    <value>클라이언트</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownAccountWithRole" xml:space="preserve">
+    <value>차단계정\캐릭</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownFailure" xml:space="preserve">
+    <value>차단실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownFailureFormat" xml:space="preserve">
+    <value>[{0}]차단실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownSucc" xml:space="preserve">
+    <value>차단성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownSuccFormat" xml:space="preserve">
+    <value>[{0}]차단성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownTimeSpan" xml:space="preserve">
+    <value>차단시간</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CloseDownTool" xml:space="preserve">
+    <value>차단 툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ConfigNoExists" xml:space="preserve">
+    <value>설정파일 존재하지 않음</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ConnectionService" xml:space="preserve">
+    <value>서버연결성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ConnectionServiceError" xml:space="preserve">
+    <value>서버연결실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CopyWorkOrderToClipBoard" xml:space="preserve">
+    <value>오다의 기본정보 복사성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CreateWorkNeedUserAndRoleInfo" xml:space="preserve">
+    <value>오더생성시 유저의 캐릭터의 정보프로필은 꼭 기재바람</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CreateWorkOrderSnap" xml:space="preserve">
+    <value>오더 생성시 게임정보 프로필</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CustomerServiceCounter" xml:space="preserve">
+    <value>cs읽음</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_CustomerServiceNotRead" xml:space="preserve">
+    <value>cs읽지않음</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_DoubleLogoForChangeNetConfig" xml:space="preserve">
+    <value>로그인 창 logo를 더블클릭하면\r\nGSS인터넷 설정수정가능</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_EmailInfoIsRequired" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tip_ErrorAccountOrPassword" xml:space="preserve">
+    <value>계정및 비번오류</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ErrorGetWorkOrderHistory" xml:space="preserve">
+    <value>오더 히스토리 추출데이터 오류</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ErrorLoginNetError" xml:space="preserve">
+    <value>시스템 로그인시 인터넷 오류발생</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ErrorSaveNetConfig" xml:space="preserve">
+    <value>인터넷 설정 저장실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ErrorSaveNetConfigTip" xml:space="preserve">
+    <value>인터넷 설정저장 오류,설정한 파일 존재하지 않거나 버전이 통일되지 않음</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ErrorServiceIPFormat" xml:space="preserve">
+    <value>서버ip주소 격식오류</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_FeedbackNeedScore" xml:space="preserve">
+    <value>피드백 종료 및 평점 필요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_GameDataPullError" xml:space="preserve">
+    <value>게임데이터 획득실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_GameTool" xml:space="preserve">
+    <value>게임툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_GameUseNotIsRequire" xml:space="preserve">
+    <value>게임 유저 리스트 가 비어있습니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_GetError" xml:space="preserve">
+    <value>획득오류</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_Info" xml:space="preserve">
+    <value>정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_InfoInGame" xml:space="preserve">
+    <value>게임내 정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_InitErrorLoginAgain" xml:space="preserve">
+    <value>초기화 실패 재로그인 하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_InputInWorkword" xml:space="preserve">
+    <value>오더 비고에 기입하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ItemIsRequiredFormat" xml:space="preserve">
+    <value>[{0}]는 꼭 입력해야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LeftLiDisplayHistoryWorkOrder" xml:space="preserve">
+    <value>알림:좌측의 오더리스트를 클릭하여 선택된 오더 히스토리를 확인할수 있습니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LimitNoticeMsgLength" xml:space="preserve">
+    <value>공지내용은 최대 300자입니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LoseCacheRefuseComing" xml:space="preserve">
+    <value>캐시로딩실패,시스템 진입불가</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LoseWorkOrderStatueFormat" xml:space="preserve">
+    <value>GSS서버 관리자에 연락하세요 기본데이터가 부족합니다.【{0}】필요항목</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_LossLogicData" xml:space="preserve">
+    <value>시스템 기본 데이터 없음</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_MinLevelShouldLessMaxLevel" xml:space="preserve">
+    <value>최저레벨이 최고레벨보다 낮아야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_NotcieIsRequire" xml:space="preserve">
+    <value>메시지 내용을 비우면 안됩니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_NoticeMessgaeIsRequired" xml:space="preserve">
+    <value>공지내용을 입력하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_OnlyMark_SetRequireOrInfo" xml:space="preserve">
+    <value>비고만 가능(요구 혹은 정보)</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_OnlyRunSignleApp" xml:space="preserve">
+    <value>GSS게임 서버시스템 운행중\n(동시에 한 개만 가능)</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_OperateRemark" xml:space="preserve">
+    <value>(오더조작에 연관된 내용을 기입하세요)</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_OtherInfoNoEmpty" xml:space="preserve">
+    <value>기타:내용이 비어 있으면 안됩니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_PleaseInputAccountOrPassword" xml:space="preserve">
+    <value>계정과 비번을 입력하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_PleaseInputQueryWhere" xml:space="preserve">
+    <value>조회조건을 입력하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_PleaseInspectNetOrService" xml:space="preserve">
+    <value>인터넷 혹은 서버를 체크하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_PleaseSelect" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tip_PleaseSelectBigZoneAndZone" xml:space="preserve">
+    <value>게임 서버그룹 및 서버를 선택하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_PleaseSelectDataFile" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tip_PortShouldNumber" xml:space="preserve">
+    <value>포트가 번호여야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_Position" xml:space="preserve">
+    <value>위치</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_QueryRoleNameInputLimit" xml:space="preserve">
+    <value>캐릭명은 최소 2자을 입력하여야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RealtimeQueryGameUserInfoTool" xml:space="preserve">
+    <value>실시간 게임정보:유저 정보조회툴</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ReasonOrText" xml:space="preserve">
+    <value>원인 혹은 내용</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ReceiveDataError" xml:space="preserve">
+    <value>획득데이터 오류</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ReceiverOnlineConsumeError" xml:space="preserve">
+    <value>온라인 문의 오더 획득실패 잠시후 사용해보세요!</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RefuseDealwithWordorder" xml:space="preserve">
+    <value>[비고:해당 오더의 담당자가 아닙니다.]</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RemarkNoEmpty" xml:space="preserve">
+    <value>비고내용이 비어있으면 안됩니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_RunNoticeFailure" xml:space="preserve">
+    <value>공지 실행 실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ScoreAndFinshWorkorder" xml:space="preserve">
+    <value>평점 및 오더 완료</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SelectDepart" xml:space="preserve">
+    <value>부서를 선택하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SelectResponsiblePerson" xml:space="preserve">
+    <value>담당자를 선택하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SelectTurnToResponsible" xml:space="preserve">
+    <value>넘겨줄 담당자를 선택하세요</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_Service" xml:space="preserve">
+    <value>서버단</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_StartSystem" xml:space="preserve">
+    <value>시스템 재가동</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_StartTimeShouldLessEndTime" xml:space="preserve">
+    <value>시작시간이 종료시간보다 빨라야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SuccessSaveNetConfig" xml:space="preserve">
+    <value>인터넷 설정 저장성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SuccRunPlacard" xml:space="preserve">
+    <value>공지실행 성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SureExitApp" xml:space="preserve">
+    <value>시스템을 종료하시겠습니까&gt;</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SureRunSelectNotcie" xml:space="preserve">
+    <value>해당 오더의 공지를 실행하시겠습니까?</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SureStopSelectNotcie" xml:space="preserve">
+    <value>선택한 오더 공지를 중지하겠습니까?</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_SystemChatReplyPhrase" xml:space="preserve">
+    <value>안녕하세요|알겠습니다|도움이 더 필요한가요?|
+소중한 의견 감사합니다|감사합니다|빠른 시일 내에 처리하겠습니다|지지해 주셔서 감사합니다|죄송합니다.빠른 시일 내에 처리하겠습니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_TCPError" xml:space="preserve">
+    <value>인터넷 데이터 조회 실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_TheWorkOrderNeedGameUserIfno" xml:space="preserve">
+    <value>해당 오더는 게임 계정 정보가 필요합니다.다시 시도 부탁드립니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_TimeoutTip" xml:space="preserve">
+    <value>주:빨강색 화면 화이트는 시간 초과를 의미합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_Tip" xml:space="preserve">
+    <value>알림 정보</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ToDo" xml:space="preserve">
+    <value>진행 예정인 작업</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_UnlockFailureFormat" xml:space="preserve">
+    <value>해제[{0}]실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_UnlockSuccFormat" xml:space="preserve">
+    <value>해제[{0}]성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_USerRead" xml:space="preserve">
+    <value>유저 확인 완료</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_UserToolInputRemark" xml:space="preserve">
+    <value>툴 사용 비고를 반드시 입력하여야 합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderCompleted" xml:space="preserve">
+    <value>오더 완성</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderCreateFailure" xml:space="preserve">
+    <value>오더 생성 실패</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderCreateFailureWithTool" xml:space="preserve">
+    <value>오더 생성에 실패하였습니다!툴 사용이 불가합니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderCreateSucc" xml:space="preserve">
+    <value>오더 생성 성공</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderCreateSuccWithExecute" xml:space="preserve">
+    <value>오더 생성에 성공하였으며 집행중입니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderLoseAccountOrRoleWithInvalid" xml:space="preserve">
+    <value>오더에 게임 계정 혹은 캐릭터가 없으므로 사용할 수 없습니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderLoseAccountWithInvalid" xml:space="preserve">
+    <value>오더에 게임 계정이 없으므로 사용할 수 없습니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkorderLoseGameAccount" xml:space="preserve">
+    <value>오더에 게임 계정이 없으므로 사용할 수 없습니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderMarkFormat" xml:space="preserve">
+    <value>오더 점수는 {0}</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_WorkOrderTiltleIsRequire" xml:space="preserve">
+    <value>오더 제목 입력이 필요합니다</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_Dealwithing" xml:space="preserve">
+    <value>처리중</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_History" xml:space="preserve">
+    <value>오더 완성</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_LeaderAudit" xml:space="preserve">
+    <value>팀장님의 심의가 필요합니다.</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_NewReceive" xml:space="preserve">
+    <value>접수 완료</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_Prepare" xml:space="preserve">
+    <value>처리 대기중</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_Recovery" xml:space="preserve">
+    <value>오더 종료</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_TurnOut" xml:space="preserve">
+    <value>현재 전달 대상</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_WaitFeedbook" xml:space="preserve">
+    <value>피드백 대기중</value>
+    <comment>true</comment>
+  </data>
+  <data name="WorkOrderStatueEnum_WaitScore" xml:space="preserve">
+    <value>평점 대기중</value>
+    <comment>true</comment>
+  </data>
+  <data name="Tip_ExcelDefaultSheetNameFormat" xml:space="preserve">
+    <value>When you import data, make sure that the default sheet [{0}] exists</value>
+  </data>
+  <data name="Map_RoleName" xml:space="preserve">
+    <value>role name</value>
+  </data>
+  <data name="Tip_ExcelTemplateError" xml:space="preserve">
+    <value>excel templae error</value>
+  </data>
+  <data name="Tip_PleaseSetEmailReceiver" xml:space="preserve">
+    <value>please set email receiver</value>
+  </data>
+  <data name="BtnClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="BtnLoad" xml:space="preserve">
+    <value>loading</value>
+  </data>
+  <data name="LblBody" xml:space="preserve">
+    <value>content</value>
+  </data>
+  <data name="LblDownloadTemplate" xml:space="preserve">
+    <value>download template</value>
+  </data>
+  <data name="LblEmailInfo" xml:space="preserve">
+    <value>email information</value>
+  </data>
+  <data name="LblEquipNo" xml:space="preserve">
+    <value>equip no</value>
+  </data>
+  <data name="LblExcel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LblFallType" xml:space="preserve">
+    <value>드랍 이벤트 유형</value>
+    <comment>True</comment>
+  </data>
+  <data name="LblLevelLimit" xml:space="preserve">
+    <value>level limit</value>
+  </data>
+  <data name="NoWorkOrderOfMenu_EquipFallForm" xml:space="preserve">
+    <value>equip fall</value>
+  </data>
+  <data name="NoWorkOrderOfMenu_ExchangeForm" xml:space="preserve">
+    <value>exchange active</value>
+  </data>
+  <data name="NoWorkOrderOfMenu_ExpMoneyActiveForm" xml:space="preserve">
+    <value>exp / gold active</value>
+  </data>
+  <data name="EBugbearType_All" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="EBugbearType_Boss" xml:space="preserve">
+    <value>보스 몬스터</value>
+  </data>
+  <data name="EBugbearType_Eliten" xml:space="preserve">
+    <value>정예 몬스터</value>
+  </data>
+  <data name="EBugbearType_Normal" xml:space="preserve">
+    <value>일반 몬스터</value>
+  </data>
+  <data name="LblFallPer" xml:space="preserve">
+    <value>드랍 확률</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblSenceNo" xml:space="preserve">
+    <value>sence No</value>
+  </data>
+  <data name="Tip_ActiveNameIsRequire" xml:space="preserve">
+    <value>active name is require</value>
+  </data>
+  <data name="Tip_NumberIsRequire" xml:space="preserve">
+    <value>number is require</value>
+  </data>
+  <data name="Tip_PleaseSelectFallType" xml:space="preserve">
+    <value>please select fall type</value>
+  </data>
+  <data name="Tip_PRIsRequire" xml:space="preserve">
+    <value>The numerator and denominator of probability is required</value>
+  </data>
+  <data name="Tip_RoleLevelIsReqire" xml:space="preserve">
+    <value>role level is require</value>
+  </data>
+  <data name="Tip_SceneInputLimit" xml:space="preserve">
+    <value>scene id is require。【 if scene is array ,please input as example： 23,94】</value>
+  </data>
+  <data name="Tip_PleaseSetEquip" xml:space="preserve">
+    <value>please  input equip .No</value>
+  </data>
+  <data name="BtnSaveWorkOrderAndSyncConfig" xml:space="preserve">
+    <value>Save and config</value>
+  </data>
+  <data name="Tip_Error" xml:space="preserve">
+    <value>지정된 형식에 맞게 사용자 정보를 입력해주세요.</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnAwardWorkOrderPoolHis" xml:space="preserve">
+    <value>보상 발송</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnCallTankHis" xml:space="preserve">
+    <value>외치기</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnConsuleWorkOrderHis" xml:space="preserve">
+    <value>계정 블록</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDealWithingWorkOrderHis" xml:space="preserve">
+    <value>채팅 금지</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnNewReceiverWorkOrderHis" xml:space="preserve">
+    <value>캐릭터 블록</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnViewHis" xml:space="preserve">
+    <value>히스토리 조회</value>
+    <comment>true</comment>
+  </data>
+  <data name="LblReadyWorkOrderPoolHis" xml:space="preserve">
+    <value>로그인 보상</value>
+    <comment>true</comment>
+  </data>
+  <data name="Other_BtnFullServiceEmail" xml:space="preserve">
+    <value>풀 드레스 메일</value>
+  </data>
+  <data name="LblRedDiamond" xml:space="preserve">
+    <value>붉은 드릴</value>
+    <comment>true</comment>
+  </data>
+  <data name="Role_BtnDisChatRecover" xml:space="preserve">
+    <value>禁言恢复</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDisChatRecovery" xml:space="preserve">
+    <value>채팅금지 해제</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnDisChatRecoveryHis" xml:space="preserve">
+    <value>채팅금지 해제 히스토리</value>
+    <comment>true</comment>
+  </data>
+  <data name="BtnFullServerMailHis" xml:space="preserve">
+    <value>전서버 우편 히스토리</value>
+    <comment>true</comment>
+  </data>
+</root>

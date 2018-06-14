@@ -1,0 +1,80 @@
+﻿body
+{
+}
+.itemtitle
+{
+    font-family: 华文宋体;
+    height: 20px;
+}
+.main
+{
+    color: #33CCFF;
+}
+.search
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    color: #006699;
+    font-size: smaller;
+    font-weight: bold;
+}
+.gridv
+{
+    margin: 5px;
+}
+.button
+{
+    margin: 5px 5px 0px 5px;
+    width: 90px;
+    padding-top: 5px;
+}
+.buttonblue
+{
+    border: 0;
+    margin-left: 5px;
+    margin-top: 2px;
+    background: url(../images/btn_post.gif) no-repeat 0 0;
+    text-align: center;
+    color: #FFF;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    cursor:pointer;
+}
+.buttonblueo
+{
+    border: 0;
+    margin-left: 5px;
+    margin-top: 2px;
+    background: url(../images/btn_posto.gif) no-repeat 0 0;
+    text-align: center;
+    color: #FFF;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    cursor:pointer;
+}
+.titletip
+{
+    margin-left: 10px;
+    margin-bottom: 1px;
+    clear: both;
+    color: #006699;
+    font-size: smaller;
+    font-weight: bold;
+}
+.tyellow
+{
+    color: #FF6600;
+}
+a
+{
+    color: #0099CC;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: #0099CC;
+}
