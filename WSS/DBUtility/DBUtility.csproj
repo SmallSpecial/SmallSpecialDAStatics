@@ -100,10 +100,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DocumentFormat.OpenXml">
-      <HintPath>..\Lib\openxml\DocumentFormat.OpenXml.dll</HintPath>
+      <HintPath>..\..\bin\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml.Extensions">
-      <HintPath>..\Lib\openxml\DocumentFormat.OpenXml.Extensions.dll</HintPath>
+      <HintPath>..\..\bin\DocumentFormat.OpenXml.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

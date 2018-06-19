@@ -50,28 +50,34 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Coolite.Ext.Web, Version=0.8.2.2648, Culture=neutral, PublicKeyToken=f58c952e9aa5b80a, processorArchitecture=MSIL" />
+    <Reference Include="Coolite.Ext.Web, Version=0.8.2.2648, Culture=neutral, PublicKeyToken=f58c952e9aa5b80a, processorArchitecture=MSIL">
+      <HintPath>..\..\bin\Coolite.Ext.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Coolite.Utilities, Version=1.0.0.2622, Culture=neutral, PublicKeyToken=f06596a209371c29, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DBUtility\OtherBin\Coolite.Utilities.dll</HintPath>
     </Reference>
-    <Reference Include="DBHelperSql, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e637763ca4cd391d, processorArchitecture=MSIL" />
+    <Reference Include="DBHelperSql, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e637763ca4cd391d, processorArchitecture=MSIL">
+      <HintPath>..\..\bin\DBHelperSql.dll</HintPath>
+    </Reference>
     <Reference Include="FusionCharts, Version=3.2.2.1, Culture=neutral, PublicKeyToken=58bb3098fe7f0ede, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\资料2\20120203\FusionChartsSuiteEval\FusionChartsSuiteEval\FusionCharts XT\Code\CS\Bin\FusionCharts.dll</HintPath>
+      <HintPath>..\..\bin\FusionCharts.dll</HintPath>
     </Reference>
     <Reference Include="FusionMaps, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\资料2\20120203\FusionMaps_Trial\FusionMaps_Trial\Code\CS_NET\bin\FusionMaps.dll</HintPath>
+      <HintPath>..\..\bin\FusionMaps.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.UI.WebControls">
       <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=9ad232b50c3e6444, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=9ad232b50c3e6444, processorArchitecture=MSIL">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="OpenFlashChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\资料2\20120111\open-flash-chart-2-Lug-Wyrm-Charmer\dot-net-library\written-by-xiao-yifang\ofcWebTest\Bin\OpenFlashChart.dll</HintPath>
+      <HintPath>..\..\bin\OpenFlashChart.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -107,6 +113,8 @@
     <Content Include="Dictionary\Modify.aspx" />
     <Content Include="Dictionary\Show.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="js\json_parse.js" />
+    <Content Include="js\json_parse_state.js" />
     <Content Include="Menus\Add.aspx" />
     <Content Include="Menus\delete.aspx" />
     <Content Include="Menus\List.aspx" />
@@ -144,6 +152,8 @@
     <Content Include="Users\Modify.aspx" />
     <Content Include="Users\Show.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Web.csproj.vspscc" />
+    <Content Include="Web.Publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminF\head.aspx.cs">
@@ -931,6 +941,9 @@
     </Compile>
     <Compile Include="Tasks\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHandler.ashx.cs">
+      <DependentUpon>UserHandler.ashx</DependentUpon>
     </Compile>
     <Compile Include="Users\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
@@ -1815,6 +1828,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="UserHandler.ashx" />
     <None Include="Web References\WebServiceXLJ\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

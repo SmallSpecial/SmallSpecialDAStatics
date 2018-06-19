@@ -101,7 +101,7 @@
   <ItemGroup>
     <Reference Include="Coolite.Ext.Web, Version=0.8.2.2648, Culture=neutral, PublicKeyToken=f58c952e9aa5b80a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Web\bin\Coolite.Ext.Web.dll</HintPath>
+      <HintPath>..\..\bin\Coolite.Ext.Web.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
